@@ -38,3 +38,38 @@ Structural evaluations do not measure model-trigger accuracy.
 The [reference example observations](../reference/example-verification.md) pin
 source excerpts to the captured application. They do not replace current
 harness verification.
+
+## Observed local verification
+
+Verified on 2026-09-06 10:30 UTC after updating `LICENSE` and rebuilding
+the local history with João as author.
+
+The new root commit `52c9fb9` passed the full `make ci` gate through the
+installed Lefthook pre-commit hook:
+
+- Python suite: 561 passed, with no failures or skips.
+- Shell safeguard suite: 84 passed, zero failures.
+- Inventory, coverage, resource links and native Claude manifests: passed.
+- All five generated targets and their reviewed snapshots: passed.
+- Structural evaluations: all 51 skills passed the 0.95 threshold; all 26 agents
+  scored 1.000. Skill average was 0.984.
+- Staged Markdown, JSON and shell checks: passed.
+
+A fresh local clone of `16edd69` matched the committed tree and had a clean
+working directory. A scan of every commit found no reference to the previous
+maintainer. This clone check covered Git history and file contents; the full CI
+gate ran in the workspace using its installed dependencies.
+
+All four plugins identify João in their manifests and marketplace entries.
+`LICENSE` identifies João in its copyright notice. The independent `catchup`
+version remains `0.1.0`.
+
+The local history starts with a new root commit. The configured GitHub `origin`
+URL and Git identity were preserved. Prior commits were archived outside the
+repository before the history was rebuilt.
+
+These are local results. Hosted GitHub Actions, native runtime smoke tests,
+provider evaluations, registry refresh and application database/browser/device
+checks were not run as part of this preparation. The optional SkillSpector scan
+was not run because the scanner was unavailable. No push or release publication
+was performed.
