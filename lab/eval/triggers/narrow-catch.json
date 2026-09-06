@@ -1,0 +1,22 @@
+{
+  "skill": "narrow-catch",
+  "description_summary": "Use when auditing broad catch blocks that swallow programmer errors, misclassify unknown failures, or retry permanent storage/job errors.",
+  "should_trigger": [
+    "Narrow this broad catch so unexpected TypeScript errors still propagate.",
+    "Replace catch-and-ignore with handling for one known error type.",
+    "Inspect which thrown values this storage catch should classify.",
+    "Use unknown error narrowing before accessing the driver error code.",
+    "Keep an expected AppError separate from programmer defects."
+  ],
+  "should_trigger_test": [
+    "Rethrow an unexpected filesystem error instead of reporting a successful archive.",
+    "Preserve worker retry behavior when narrowing an exception handler."
+  ],
+  "should_not_trigger": [
+    "Audit retained React state after repeated screen mount and unmount.",
+    "Find the suspected N+1 queries in this Drizzle loader.",
+    "Watch this pull request for new review comments and check results.",
+    "Freeze edits to the database package for this investigation.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

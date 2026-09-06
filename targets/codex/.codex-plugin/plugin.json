@@ -1,0 +1,10 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "Generated TypeScript, Fastify, React, Drizzle, worker, testing, and security skills for Codex",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "TypeScript starter Skills",
+    "shortDescription": "Generated TypeScript and Fastify development workflows"
+  }
+}

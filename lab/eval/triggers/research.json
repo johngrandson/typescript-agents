@@ -1,0 +1,22 @@
+{
+  "skill": "research",
+  "description_summary": "Use when investigating TypeScript starter patterns or evaluating npm packages against official sources and resolved versions.",
+  "should_trigger": [
+    "Research official guidance for this TypeScript package design decision.",
+    "Compare upstream approaches using primary sources and our locked versions.",
+    "Investigate whether this library supports the behavior we need.",
+    "Write an evidence-backed research note about Node lifecycle handling.",
+    "Research a Fastify integration tradeoff before we choose an implementation."
+  ],
+  "should_trigger_test": [
+    "Separate upstream facts from inferences in the research result.",
+    "Compare alternatives without installing another framework into the starter."
+  ],
+  "should_not_trigger": [
+    "Execute the tasks in this existing implementation plan.",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "skill": "investigate",
+  "description_summary": "Investigate bugs and errors in TypeScript starter \u2014 root-cause analysis for crashes, exceptions, stack traces, test failures. Use --parallel for deep 4-track investigation.",
+  "should_trigger": [
+    "Diagnose this reproducible Fastify error before changing any code.",
+    "Find the root cause of the stale mobile screen after reconnect.",
+    "Reproduce this failing TypeScript behavior and test a hypothesis.",
+    "Investigate why the web client sometimes drops session updates.",
+    "Debug the first error from this failed workspace build."
+  ],
+  "should_trigger_test": [
+    "Separate the trigger from downstream symptoms in this worker crash.",
+    "Use independent investigations to narrow a bug crossing several package boundaries."
+  ],
+  "should_not_trigger": [
+    "Create an implementation plan for a feature spanning API, database and clients.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation.",
+    "Walk me through how this TypeScript starter plugin is organized."
+  ]
+}

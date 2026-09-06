@@ -1,0 +1,71 @@
+name: Quality Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  local-contracts:
+    name: Lint, tests, projections and structural evaluations
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - name: Enable pinned pnpm
+        run: corepack enable && corepack prepare pnpm@10.6.5 --activate
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Bun for the Amp protocol test harness
+        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+      - name: Install harness dependencies
+        run: |
+          pnpm install --frozen-lockfile
+          python3 -m pip install -r requirements.txt ruff yamllint
+      - name: Python lint
+        run: ruff check conftest.py lab/ scripts/ plugins/typescript-starter/ --select E,F,W --ignore E501,E402
+      - name: Python formatting observations
+        continue-on-error: true
+        run: ruff format --check lab/ scripts/
+      - name: YAML lint
+        run: >-
+          yamllint -c .yamllint.yml .yamllint.yml .github lefthook.yml
+          lab/tournament/config.yaml
+          plugins/typescript-starter/skills/deps-audit/priv/semgrep/typescript-supply-chain.yaml
+      - name: Shell lint
+        run: |
+          sudo apt-get update && sudo apt-get install -y shellcheck
+          find plugins/typescript-starter/hooks/scripts lab/autoresearch/scripts -name '*.sh' -exec shellcheck {} +
+          shellcheck lab/eval/run_eval.sh scripts/pre-commit.sh
+      - name: Local acceptance gate
+        run: pnpm verify
+
+  dependency-audit:
+    name: Harness dependency advisories
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Install frozen harness tooling
+        run: |
+          corepack enable && corepack prepare pnpm@10.6.5 --activate
+          pnpm install --frozen-lockfile
+          python3 -m pip install pip-audit
+      - name: Audit npm tooling dependencies
+        run: pnpm audit --audit-level=high
+      - name: Audit Python tooling dependencies
+        if: always()
+        continue-on-error: true
+        run: pip-audit -r requirements.txt

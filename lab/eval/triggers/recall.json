@@ -1,0 +1,22 @@
+{
+  "skill": "recall",
+  "description_summary": "Use when recalling prior starter work from solution docs, Git history or an available session-history tool, with cited evidence.",
+  "should_trigger": [
+    "Find how we fixed this problem in a previous session.",
+    "Search earlier session history for the migration decision.",
+    "Recall the work recorded before yesterday session ended.",
+    "Find the transcript evidence behind our earlier implementation choice.",
+    "Locate previous session notes about this repeated package error."
+  ],
+  "should_trigger_test": [
+    "Distinguish remembered decisions from guesses when session evidence is missing.",
+    "Recover the context from an earlier conversation without recreating its work."
+  ],
+  "should_not_trigger": [
+    "The stale response fix worked; capture it as a reusable solution.",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Execute the tasks in this existing implementation plan.",
+    "Watch this pull request for new review comments and check results.",
+    "Freeze edits to the database package for this investigation."
+  ]
+}

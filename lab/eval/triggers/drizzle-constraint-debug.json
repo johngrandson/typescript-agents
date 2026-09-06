@@ -1,0 +1,22 @@
+{
+  "skill": "drizzle-constraint-debug",
+  "description_summary": "Use when a Postgres SQLSTATE or named unique, foreign-key, check, or not-null constraint fails through Drizzle.",
+  "should_trigger": [
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Trace SQLSTATE 23503 back to the schema and migration state.",
+    "Find why a generated migration conflicts with existing rows.",
+    "Investigate a constraint name mismatch without resetting the database.",
+    "Explain a repository insert failure using sanitized database error evidence."
+  ],
+  "should_trigger_test": [
+    "Reproduce the constraint failure in disposable Postgres before proposing a fix.",
+    "Distinguish a domain conflict from an unexpected driver error wrapper."
+  ],
+  "should_not_trigger": [
+    "Find the suspected N+1 queries in this Drizzle loader.",
+    "Audit retained React state after repeated screen mount and unmount.",
+    "Watch this pull request for new review comments and check results.",
+    "Freeze edits to the database package for this investigation.",
+    "Record this reviewed exact package artifact in dependency-vet.json."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "skill": "SKILL_NAME",
+  "description_summary": "One-line summary of what the skill does",
+  "should_trigger": [
+    "Realistic user prompt that SHOULD load this skill",
+    "Another realistic prompt - varied phrasing",
+    "Casual/informal version of the same intent",
+    "Edge case that still belongs to this skill",
+    "Different scenario within the skill's domain"
+  ],
+  "should_not_trigger": [
+    "Similar-sounding prompt that belongs to a DIFFERENT skill",
+    "Generic prompt that should NOT load any specific skill",
+    "Prompt for an adjacent but distinct domain"
+  ]
+}

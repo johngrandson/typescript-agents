@@ -1,0 +1,22 @@
+{
+  "skill": "review",
+  "description_summary": "Use after implementation for read-only review of requirements, TypeScript correctness, security, tests and affected starter domains.",
+  "should_trigger": [
+    "Review this branch diff for correctness and starter architecture issues.",
+    "Perform a read-only review of changes since the merge base.",
+    "Inspect the changed API and repository code for actionable defects.",
+    "Review this patch with file and line evidence and relevant tests.",
+    "Check whether the proposed changes satisfy the stated requirements."
+  ],
+  "should_trigger_test": [
+    "Report a concrete cross-client regression introduced by this diff.",
+    "Keep preexisting unrelated issues separate from new review findings."
+  ],
+  "should_not_trigger": [
+    "Address the unresolved review comments on this GitHub pull request.",
+    "Execute the tasks in this existing implementation plan.",
+    "Watch this pull request for new review comments and check results.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

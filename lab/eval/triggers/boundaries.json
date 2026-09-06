@@ -1,0 +1,22 @@
+{
+  "skill": "boundaries",
+  "description_summary": "Use when analyzing TypeScript package imports, Fastify module coupling, repository ports, or the impact of splitting a module.",
+  "should_trigger": [
+    "Assess imports and coupling across the Fastify modules and workspace packages.",
+    "Map package boundaries before splitting this repository adapter.",
+    "Find dependency cycles that cause runtime initialization hazards.",
+    "Score our service and repository boundaries with file evidence.",
+    "Check whether the worker imports API implementation code."
+  ],
+  "should_trigger_test": [
+    "Propose an extraction while preserving public package exports and consumers.",
+    "Distinguish a type-only import cycle from an unsafe runtime dependency."
+  ],
+  "should_not_trigger": [
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Watch this pull request for new review comments and check results.",
+    "Freeze edits to the database package for this investigation.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Record this reviewed exact package artifact in dependency-vet.json."
+  ]
+}

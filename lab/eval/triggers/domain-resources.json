@@ -1,0 +1,22 @@
+{
+  "skill": "domain-resources",
+  "description_summary": "Use when designing a domain operation across shared TypeBox contracts, Fastify services, Drizzle repositories, effects, and clients.",
+  "should_trigger": [
+    "Design a domain operation across TypeBox contracts, services and repository ports.",
+    "Add a session capability without coupling its service to Fastify.",
+    "Model validation and domain behavior separately from Drizzle persistence.",
+    "Identify which existing layer should own this session invariant.",
+    "Trace a domain change through shared contracts and both clients."
+  ],
+  "should_trigger_test": [
+    "Explain why a Session identifier is not an authenticated user identity.",
+    "Keep a domain resource change compatible with memory and Postgres adapters."
+  ],
+  "should_not_trigger": [
+    "Audit retained React state after repeated screen mount and unmount.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Watch this pull request for new review comments and check results.",
+    "Freeze edits to the database package for this investigation.",
+    "Fetch official Fastify documentation for the version in our lockfile."
+  ]
+}

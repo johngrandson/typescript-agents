@@ -1,0 +1,8 @@
+{
+  "name": "drizzle",
+  "version": "1.0.0",
+  "description": "Compatibility namespace for the TypeScript starter plugin's /drizzle:* commands",
+  "author": {
+    "name": "João"
+  }
+}

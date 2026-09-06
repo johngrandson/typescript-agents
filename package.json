@@ -1,0 +1,48 @@
+{
+  "name": "pi-typescript-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generated TypeScript, Fastify, React, Drizzle, worker, testing, and security skills for Pi",
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "skills": [
+      "./targets/pi/skills"
+    ]
+  },
+  "scripts": {
+    "lint": "markdownlint \"**/*.md\" --ignore node_modules --ignore reports --ignore analysis --ignore scratchpad --ignore lab/findings",
+    "lint:fix": "markdownlint \"**/*.md\" --fix --ignore node_modules --ignore reports --ignore analysis --ignore scratchpad --ignore lab/findings",
+    "eval": "bash lab/eval/run_eval.sh --changed",
+    "eval:all": "bash lab/eval/run_eval.sh --all",
+    "eval:skills": "bash lab/eval/run_eval.sh --skills",
+    "eval:agents": "bash lab/eval/run_eval.sh --agents",
+    "eval:triggers": "bash lab/eval/run_eval.sh --triggers",
+    "eval:full": "bash lab/eval/run_eval.sh --all && bash lab/eval/run_eval.sh --triggers",
+    "eval:fix": "bash lab/eval/run_eval.sh --fix",
+    "eval:ci": "bash lab/eval/run_eval.sh --ci",
+    "test": "python3 -m pytest lab/eval/tests/ scripts/tests/ plugins/typescript-starter/hooks/tests/ -v",
+    "prepare": "node scripts/install-hooks.mjs",
+    "verify": "make ci-local"
+  },
+  "devDependencies": {
+    "lefthook": "1.13.6",
+    "markdownlint-cli": "^0.49.1",
+    "semver": "7.7.2",
+    "tsx": "^4.23.12",
+    "typescript": "5.9.3"
+  },
+  "author": "João",
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.5",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "lefthook"
+    ]
+  }
+}

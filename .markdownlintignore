@@ -1,0 +1,12 @@
+# Paths excluded from markdown lint (gitignore syntax, auto-read by markdownlint).
+# Single source of truth — honored by both `pnpm lint` and `make lint`,
+# so the ignore set does not have to be duplicated across configs.
+node_modules/
+reports/
+analysis/
+scratchpad/
+lab/findings/
+
+# Untracked non-source content (promo assets, tool cache) — not plugin docs.
+social/
+.rtk/

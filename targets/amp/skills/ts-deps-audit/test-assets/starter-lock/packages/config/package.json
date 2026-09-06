@@ -1,0 +1,48 @@
+{
+  "name": "@starter/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared build/lint/test configuration for every workspace.",
+  "exports": {
+    "./eslint": "./eslint.base.mjs",
+    "./prettier": "./prettier.config.mjs",
+    "./vitest": "./vitest.base.ts",
+    "./tsconfig.node.json": "./tsconfig.node.json",
+    "./tsconfig.react.json": "./tsconfig.react.json"
+  },
+  "files": [
+    "eslint.base.mjs",
+    "prettier.config.mjs",
+    "vitest.base.ts",
+    "tsconfig.node.json",
+    "tsconfig.react.json",
+    "eslint.architecture.mjs"
+  ],
+  "peerDependencies": {
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vitest": "^5.0.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "typescript-eslint": "^8.18.1"
+  },
+  "peerDependenciesMeta": {
+    "vitest": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "vite": "8.2.2",
+    "vitest": "5.0.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test:run": "node --test scripts/__tests__/*.test.mjs"
+  }
+}

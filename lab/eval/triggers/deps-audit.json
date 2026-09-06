@@ -1,0 +1,22 @@
+{
+  "skill": "deps-audit",
+  "description_summary": "Audit pnpm lock changes and npm package bytes for supply-chain risks, lifecycle effects, publisher changes and advisories. Use after dependency changes, on lockfile PRs, or to preview candidates without installation.",
+  "should_trigger": [
+    "Audit the pnpm lock dependency graph for supply-chain risks.",
+    "Inspect package tarballs and verify their locked integrity before installation.",
+    "Compare dependency risk between this base commit and the new lock.",
+    "Run an offline dependency audit using recorded registry fixtures.",
+    "Check lifecycle scripts, advisories and unexpected package origins."
+  ],
+  "should_trigger_test": [
+    "Keep the audit incomplete when required source coverage is unavailable.",
+    "Audit aliases and workspace dependencies without treating local packages as registry downloads."
+  ],
+  "should_not_trigger": [
+    "Update compatible dependency patches in the web workspace and verify them.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Implement a transactional write using the existing Drizzle repository adapter.",
+    "Implement the web session mutation through the existing Server Action.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

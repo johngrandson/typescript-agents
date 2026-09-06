@@ -1,0 +1,22 @@
+{
+  "skill": "pnpm-compression",
+  "description_summary": "Use when verbose pnpm, Turbo, TypeScript, ESLint or Vitest output obscures errors; retain raw logs and original command exit status.",
+  "should_trigger": [
+    "Reduce noisy pnpm and Turbo output using the existing RTK setup.",
+    "Configure output compression while preserving failing command exit codes.",
+    "Inspect why compressed lint output hides the first useful diagnostic.",
+    "Make long workspace test output easier to read without losing logs.",
+    "Check whether RTK can filter these installed package scripts."
+  ],
+  "should_trigger_test": [
+    "Compare raw and compressed output for a failed Turbo task.",
+    "Preserve full failure artifacts when summarizing command output."
+  ],
+  "should_not_trigger": [
+    "Run the appropriate typechecks, lint and tests for these starter changes.",
+    "Update compatible dependency patches in the web workspace and verify them.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

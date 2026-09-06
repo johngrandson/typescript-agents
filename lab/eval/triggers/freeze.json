@@ -1,0 +1,22 @@
+{
+  "skill": "freeze",
+  "description_summary": "Scope or freeze which files Claude can edit during debugging, a refactor, or review. Use when edits should stay in specific dirs, or for a read-only investigate lock. Backed by a sentinel + PreToolUse hook.",
+  "should_trigger": [
+    "Freeze edits to the database package for this investigation.",
+    "Make this session read only using the existing edit freeze.",
+    "Allow editing only apps/mobile and keep other directories frozen.",
+    "Turn off the explicit editing freeze for the authorized task.",
+    "Inspect the current allowed edit directories."
+  ],
+  "should_trigger_test": [
+    "Explain which editing tools the freeze covers and why Bash is different.",
+    "Narrow the edit scope without allowing paths that escape through symlinks."
+  ],
+  "should_not_trigger": [
+    "Fix this typo in one mobile component with a contained edit.",
+    "Execute the tasks in this existing implementation plan.",
+    "Review this branch diff for correctness and starter architecture issues.",
+    "Audit the pnpm lock dependency graph for supply-chain risks.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

@@ -1,0 +1,2057 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-05T22:07:09.286165+00:00",
+  "head": "83c342202be4ca403a467506bff182455fed60d6",
+  "gitStatus": [
+    " M docs/superpowers/plans/2026-08-21-api-elysia-bun.md"
+  ],
+  "files": [
+    {
+      "path": ".agents/skills/starter-architecture/SKILL.md",
+      "sha256": "adb2631ab91b7db8a39b9451a7b8eed56467cabd68799320ddc3fe7c8f223981",
+      "executable": 0
+    },
+    {
+      "path": ".agents/skills/starter-architecture/references/adding-a-module.md",
+      "sha256": "3e70443a6f0a27507a1880aea4e08ef8bb5dc2153a6db0a6f814387bb7646a2c",
+      "executable": 0
+    },
+    {
+      "path": ".agents/skills/starter-architecture/references/layer-cheatsheet.md",
+      "sha256": "29ad4b0a233d49987f76b9d74f00ec171c2943163f2edfadd8bf66574d484c83",
+      "executable": 0
+    },
+    {
+      "path": ".agents/skills/starter-architecture/references/realtime.md",
+      "sha256": "175edd7f2abce941a70ae261138083886837f2dc3c81fe2d056a61d29bb568fe",
+      "executable": 0
+    },
+    {
+      "path": ".claude/plans/starter-consistency/reviews/starter-consistency-triage.md",
+      "sha256": "1e38f0828eaef5048da3cb2e18c0c08dd2d0cf3dd0ab1cc388c6d5e7896076e8",
+      "executable": 0
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "0bd7f87a77b6cc918cd2133bb54f4bcb92bcd9ffd8475bd7ab08bf64af04814d",
+      "executable": 0
+    },
+    {
+      "path": ".env.example",
+      "sha256": "cf94c22f3c45b87ecf351ad6fe2283dce9b5176af7a9f86b5a92c0da59762f5e",
+      "executable": 0
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "85690db61fa071af3844bec485eedade97a2880020dd950fe03586d45f7db350",
+      "executable": 0
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "9e1e98c6bb0a9a3081206b11a5371017e720c5e40c36c4919829cfacdb2fbb61",
+      "executable": 0
+    },
+    {
+      "path": ".github/workflows/dependencies.yml",
+      "sha256": "e51a9d1c8714e6598ca78e0d32dcb70946604ab49775bd80d95f056ba1a99dd1",
+      "executable": 0
+    },
+    {
+      "path": ".github/workflows/mobile.yml",
+      "sha256": "627ed793b7cbc060ccaa932b0f688779a72447e8e4c2408410b305a546055125",
+      "executable": 0
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "1d39082f01feac839c59ff4435cd22b9868edf7c6bae458051b4e06690b0de05",
+      "executable": 0
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "97806e3408b9124b0e2e023772fadd1a633dc1a0e9314797bfa12f92639b0d7e",
+      "executable": 0
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "e29ab16727398b72baf54412ad6634a9994d20668fd8940a64184d3c6bcf6c57",
+      "executable": 0
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "7ef20ff785098090ebce91499164f4c659d9c2dcca772f9fcf10870857515a7a",
+      "executable": 0
+    },
+    {
+      "path": "README.md",
+      "sha256": "9f632e7ebc82b6d24a7305507620703c52f0448c4cf529110404129975057b5a",
+      "executable": 0
+    },
+    {
+      "path": "RULES.md",
+      "sha256": "f3530fca473a7f251830b986a16420fa46d7662b9ca7d239bb00fc798224f699",
+      "executable": 0
+    },
+    {
+      "path": "SKILLS.md",
+      "sha256": "6c6d5fe2c7157e49563b6d5b9643e6bdbeded7599af52482b1553df8d0775b8b",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/CLAUDE.md",
+      "sha256": "2501c18cc751ee204b69210e545be7e2b8436d7958ebd40607856eddcc5d818b",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/eslint.config.mjs",
+      "sha256": "cf0825d4995776735602f8c3e08eca1e537b47670ff2f3b973e5832c09fdf4d7",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/package.json",
+      "sha256": "ebd4417240f71bd40d95ea23d1bba01e751bc06eb268a950470046f543753ddb",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/prettier.config.mjs",
+      "sha256": "1a159398cb5b4dfdd3e2c31e2c5b3e3a8195319772f01e22a1bad8c9a6834243",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/app.ts",
+      "sha256": "b50301c59551b844a64b87a22f8369fb76734a80c0fad5ab4cbf58d9edf32433",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/appIsolation.test.ts",
+      "sha256": "f8acf098197121f26f3a7cdcf064bf81954561d4e6170d0d53a65c73bdee8953",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/databaseErrors.test.ts",
+      "sha256": "2d45901304333d26434ff591c16b65114a4ba6a1fa6fd8cefc0c4e7081b06d67",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/errors.test.ts",
+      "sha256": "1b594762c2ba47106d2a295d86c69dbcfb9792202cf8988fea2778dcb4824901",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/eventBus.test.ts",
+      "sha256": "a65109f2b7b7be6e6ccddab0aba5ebbe00cee69e376dc3b00e6b2e6e202cee4a",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/httpErrors.test.ts",
+      "sha256": "132c843f1d4b743b39800bf82d705be970cd3454ff3aba04ba2e2e1bbd921e9c",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/lifecycle.test.ts",
+      "sha256": "d0b14280980efdbd661e305810379c80526e0a6da777c9001e0fa3f51c98fba7",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/retention.test.ts",
+      "sha256": "57f46c02576e9f6ec74b7a485bb96d0671384d3446827ecf19fe58c2c7745df0",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/sessionAdmission.test.ts",
+      "sha256": "3bda17d159d01b205c7e422a45d397bd72a3f1deef08a1f61cf13e01941a6163",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/sessionRecovery.test.ts",
+      "sha256": "ba89e2614669e0f0bc1ccc8d09763db9975da6522cf97639be4633789e1b7b39",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/streamLifecycle.test.ts",
+      "sha256": "3a8d7a933b1aebc4d8a9b6f9a679f5f6f528c4eba009445b633d4c504a3a3b1d",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/streamOutbox.test.ts",
+      "sha256": "1685a76661b1f73d0183f2dfd63b256717cacbbd604e9f5adb029a84c0d46c97",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/subscriberIsolation.test.ts",
+      "sha256": "a984b29ced82c8d81221f684477190410f87cdcf7ce8444d72858a31b413699f",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/support/realtimeClient.ts",
+      "sha256": "9cfec0489b500e36b6f372a10d9421cb1a2cc79a9d1e072e66330923e8853e2c",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/__tests__/support/subscriberSocket.ts",
+      "sha256": "aebe438e639c37b48f39e454099b638e0e751aff3d12646bd71fd7e00d764125",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/context.ts",
+      "sha256": "719f0642a8cfdc559ab4d2bb41e61bfc90d2b7989f8eb0c8bb8356295150b732",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/errors.ts",
+      "sha256": "980efb9a86046a691d3600ca083f8a6b912d97067a18a1456960ecc31412d1e3",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/eventBus.ts",
+      "sha256": "e08a994812c92740fff89f3ea781160ae7dd9e5903f0e2d29c513fa77724e04b",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/lifecycle.ts",
+      "sha256": "c64c23d928ce18a5f0edf5eccdf2eaac7e45b5aab20a384f82d56bda912e01ed",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/sessionRecoveryStream.ts",
+      "sha256": "ec6022cd23d9087671627204f5964595a34e2853193d8f7bec27db07ed8044ef",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/sseSocket.ts",
+      "sha256": "7196d00e225a614f4dbab3bcdfa1f8a9b87f4b470e292b17bd808c6a8ede2d6b",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/streamOutbox.ts",
+      "sha256": "64ce3b1f879bba119170dde62e2f4fc7ba7f06bf2a74e50fca33f8c32194ef84",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/core/webSocket.ts",
+      "sha256": "b49e19918e94e8a489434c656da4334ebf2113bd058d2326936e9049a4c6fb00",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/index.ts",
+      "sha256": "6e062977e8602522ce0059770261b0e3ec3deddaf7a26b17b25b926a875c1310",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/modules/health/routes.ts",
+      "sha256": "657b7975b6020080491e1b3be75d1109e9573b838a91b3fc5afebd5972a5e920",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/modules/sessions/__tests__/routes.test.ts",
+      "sha256": "d00fbf67ef1b62303f9306430342b846853ebd94389b5eabc7983de1f906342f",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/modules/sessions/__tests__/service.test.ts",
+      "sha256": "e6933d9ce806d7184b99bcb477395aea526a3b3e65161c297891ae24134ad90d",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/modules/sessions/routes.ts",
+      "sha256": "3e683de162f38753b09c693cb110900cc5acdeeabea3c126bba125667c621162",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/modules/sessions/schemas.ts",
+      "sha256": "78e213e77b0d3072e6d8448a0577ead22d56110f353c86af9756d3afb2bf4a31",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/modules/sessions/service.ts",
+      "sha256": "7d9d0393396c6549831fab54fdf9b05bf41c964b2bc8300d18917272ae240cb7",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/modules/storage/__tests__/storageRoutes.test.ts",
+      "sha256": "4fecc09df36210b502bdca92adf6ef2af98c5da38ad39684e11c147b4b325fc2",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/modules/storage/storageRoutes.ts",
+      "sha256": "fdde43d9210650829a7c300150253dfaf4c5113e4e9cd42784bbde0e5759e0c4",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/plugins/registry.ts",
+      "sha256": "85de123be481b9e60b45207779fe5db3094d9c7bdfa09d26a882a0927a2d9a89",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/types/index.ts",
+      "sha256": "37bd222a6200af40aa5a39367b1b972a051a03dc7aa8486d5f61edd034a5b9c3",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/types/schemas.ts",
+      "sha256": "2cd26740d8cd88a99470b614c55725f5cef15a3500208efd607028c37fc17ddd",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/src/types/validators.ts",
+      "sha256": "9e958f4d9b85afdf0554f82a0247acf651976b001b99e52f7fb2502592ed93e3",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/tsconfig.eslint.json",
+      "sha256": "8d56a13995644b68dd526b131706b15ac3c67da653d088e6910c9681b4ad9878",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/tsconfig.json",
+      "sha256": "491406a1f874a1b19a1391580e39183b12bedc9a409e203d1a9aedd047e23c0e",
+      "executable": 0
+    },
+    {
+      "path": "apps/api/vitest.config.ts",
+      "sha256": "2206847e5f3504846b074821a0d6f127d1747c6a0f7f0c5735b70ad123b9fcbb",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/.gitignore",
+      "sha256": "9fa5099ddf19e63e2efb462cb58c19338c51ae7a6ac1c7d29fb153a1a17c1eb1",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/CLAUDE.md",
+      "sha256": "9b9ce6799b0eb9132f44b7cdb8d61087a4ce225844d5c6d27c57033ff03aad42",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/eslint.config.mjs",
+      "sha256": "cf0825d4995776735602f8c3e08eca1e537b47670ff2f3b973e5832c09fdf4d7",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/package.json",
+      "sha256": "24208dbd3c8743d6ee7a095de48f2514329063bbad0a0a82a96a55e1790d766e",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/playwright.config.ts",
+      "sha256": "b6e0f85bd7f506d0fe3df03bd2385e647bb5d88399f6fdb4530488f0380cb4a3",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/prettier.config.mjs",
+      "sha256": "1a159398cb5b4dfdd3e2c31e2c5b3e3a8195319772f01e22a1bad8c9a6834243",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/support/api.ts",
+      "sha256": "53e4f474aad1cf25e38ea3b07ff16f9beae598101720c59feb95bd39dea96d22",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/support/deployment-fixture.mts",
+      "sha256": "d798c1a95015cf70f2f4e71367642de802abfff26314a406b65e65b7cd6dd135",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/support/deployment-smoke.mts",
+      "sha256": "7b6cad314e8eb31bf5d80872aeead5b5dac9d2c3deaccfda912c81ce6b82cf81",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/support/development-smoke.mts",
+      "sha256": "fd089a7f5dfee90527f06269abe37fe53bce17d995ef13cda89c0b0c4d231ede",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/support/global-setup.ts",
+      "sha256": "2d9f9fae4fa8c97b3e796eeee0193de98f98994d5f6ee47d12db822715f2378b",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/support/global-teardown.ts",
+      "sha256": "5a36726fd266989c7c09395bdfc8d101d1e1f22e2cf1e0e9060ce4cebb1837b6",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/support/runtime-inspection.mjs",
+      "sha256": "d914c68ceaa94dc78069df8b6d07cdf2e43f91ce10b74e3ac5d46327bad66148",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/support/start-server.mjs",
+      "sha256": "62506cf322bc959da8bef41ad5fb922a0a94e1141015c0839a922ac696a376a7",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/support/urls.ts",
+      "sha256": "ca4ccb2d24eddcfd0df753529ac316957e6978a7da5fe669e5bf57c0f9935f5e",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/tests/mobile-api.spec.ts",
+      "sha256": "73c1980039a66e3073f18305ad9bda9f9d2efdea9186b98ef5c761bf850dff49",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/tests/realtime.spec.ts",
+      "sha256": "e404400c9ae0bb95147827ef365dcbde552ffb197dfd4cf42f68e11842189ff9",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/tests/sessions.spec.ts",
+      "sha256": "930fb25e3186d8293b1f7ec0b8d391a9f950546f284487405100b3e411cbf0c6",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/tests/theme.spec.ts",
+      "sha256": "afe80e43c0ccb2a228c7f4d94925615ad3d15c2f77094a9e67e9d63c22d5cdc2",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/tsconfig.eslint.json",
+      "sha256": "8d56a13995644b68dd526b131706b15ac3c67da653d088e6910c9681b4ad9878",
+      "executable": 0
+    },
+    {
+      "path": "apps/e2e/tsconfig.json",
+      "sha256": "a20fc0bb2c41744f4a8adb3ceff67656bbaccb1d214e75070932332bc33aeb7c",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/CLAUDE.md",
+      "sha256": "2bea4670fb9b96082c6c7fe60ac22fc660ed21548d09a6c2af5a8b40b996eff1",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/app.json",
+      "sha256": "95cd98b60e48b994aac9fe8c8bd0b2f4a16e8fe5645bd2315f952643739820db",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/babel.config.js",
+      "sha256": "2c443f9052cc4ff5c2528d64a8c729ff8e053c0fd84a8a8049d2af279e82b125",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/eslint.config.mjs",
+      "sha256": "5c03d267ebe52eed76602d8d617de76e1a530762531e4df44cb617c88b35244c",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/index.ts",
+      "sha256": "e6ee445c25ce3c8cfa88fa4e6c352cad9cc84c28782c457644c529b24852b841",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/metro.config.js",
+      "sha256": "d8912f6b61fdef615f04fa9c3120683d173be40890f9080075af01e00852e0a4",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/package.json",
+      "sha256": "4f1ffae8d8deaabc2f49eca86b11699f7708bd5dac17f6c270ec1218f88ef1e6",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/prettier.config.mjs",
+      "sha256": "1a159398cb5b4dfdd3e2c31e2c5b3e3a8195319772f01e22a1bad8c9a6834243",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/App.tsx",
+      "sha256": "7214af694e9d5406d4ff85b6f078e51fdb97e545a5546ba11d4d2a8223b0c2d7",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/components/shared/ErrorMessage.tsx",
+      "sha256": "78fabf565c0cd69b10ea49601cc25f27bb78f865b4c8a1d8b3e227e45b0dde8c",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/components/shared/LoadingOverlay.tsx",
+      "sha256": "f39a4329043fbc17deb36dfac638c9dad5c03e4e771f41a0b3e66d77341ee6b2",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/components/shared/ScreenLayout.tsx",
+      "sha256": "d858667082cf1da5b2911747e16e65963b2ade94ef3219cd6c66072edde513e2",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/components/shared/StatusPill.tsx",
+      "sha256": "8569898825a3d18668fc5eaab907dd4967c3982ef9ee7a01e4f2cfd5a7061d1b",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/navigation/RootNavigator.tsx",
+      "sha256": "710cff2f723b024c8ea2fd8e1871b7196874e6eeef76d62f8a5ae20dd0274b25",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/navigation/navigationTypes.ts",
+      "sha256": "d5b05e43c50457ffe7d8ff6bfda46017b1d0e1bef7c8de3f8ec578a327add51f",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/screens/SessionDetail/SessionDetailScreen.tsx",
+      "sha256": "9c9063e772ce8ad9af933a1079194a06d3c515b68c9075d99613fa6a867ec44e",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/screens/SessionDetail/__tests__/loadOwnership.test.ts",
+      "sha256": "fa2a14c561afb002562debc2ef51f1e5b922f831ac72c25e451785cb409cfa35",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/screens/SessionDetail/__tests__/mutations.test.ts",
+      "sha256": "2c62771dc106859bfef772a7e2c0f5271b4cc371165b156fb1ff8771a4d1d1ae",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/screens/SessionDetail/__tests__/recovery.test.ts",
+      "sha256": "91156dbc7289ec3c193bd83a14630a317c1bb8073779f545cc79aa7febadf535",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/screens/SessionDetail/__tests__/useSessionDetail.test.ts",
+      "sha256": "6a38237575794f38231e7db80b99739ba157537a32f4bf67de17b6cadda90dc6",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/screens/SessionDetail/useSessionDetail.ts",
+      "sha256": "7103f77353155074580f3322916589337bb9a27df217fcae3622a500ea8d6076",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/screens/SessionDetail/useSessionMutations.ts",
+      "sha256": "2016941af012aa6530aa8d353a23c2abc7a636996756caa41470b4b252added4",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/screens/Sessions/SessionsScreen.tsx",
+      "sha256": "aa93fd97f98600e8c71079f223586e6b4043510378767a62c71a785e00ccfdd6",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/screens/Sessions/useSessions.ts",
+      "sha256": "2fd173b767608a6b64f4a2432b19841609423ac2fc2b13de33daf4412fa6a3ac",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/services/__tests__/apiService.test.ts",
+      "sha256": "a68c63f9cf2b71b89879220391fff7240f960f38ec82aba4695690fd35f611dd",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/services/__tests__/config.test.ts",
+      "sha256": "709ab6749924416f253bedc1a792f8072c0a684539f5766d7b83e1e6e4fd3c5c",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/services/__tests__/support/fakeWebSocket.ts",
+      "sha256": "dbad621fcb9371cdac9e09eff44055b4280040a8b373a5516e1cb9c5b276fb67",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/services/__tests__/support/recoveryFixtures.ts",
+      "sha256": "7951fbf169e546095dc335ebeffc1e987b8a94d7a1cf05a0c11f35d7c195f596",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/services/__tests__/websocketRecovery.test.ts",
+      "sha256": "de8aff02149f533a50edf58f603ddd1c61e72044f3e125a36a30593cefacae4c",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/services/__tests__/websocketService.test.ts",
+      "sha256": "ecf1943f7a261de0d2211f7e03b7b092343bcb7cb29810e6275428c8a86d06ba",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/services/apiService.ts",
+      "sha256": "41d6eb269a0588d419018b53cd887dadbe27d0597f91d425e6765808cb6523ba",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/services/apiUrl.ts",
+      "sha256": "992d74f4eb2d10e36845efb9eb80dd15e9731f79d96b55b188bd43d462937ffb",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/services/config.ts",
+      "sha256": "d190384912a303ca597e0efd08f1fecdc8bd31a75745618b914625743f3c0111",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/services/websocketService.ts",
+      "sha256": "9f7f89cb51a39c7053c6648884b2316fd7e38ddbdc865c6a67a7e54748b28759",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/store/__tests__/connectionStore.test.ts",
+      "sha256": "b436c73fd2400844960af19fb5f6646bdb8272e876f05a72f7e4239fa8bef10b",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/store/__tests__/sessionsStore.test.ts",
+      "sha256": "ab897720c791e29f6fc2af91c9c73f686953fda88450c7f4d918ab42fd82a790",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/store/connectionStore.ts",
+      "sha256": "7321ba43a8b0df2143cbdc4099beb00101f698173413d8e5deb51febb3bc709e",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/store/index.ts",
+      "sha256": "bc691f75b31fabd9468936748e966a9a2b76c2de4446ca608fbbe66be4a7cdc2",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/store/sessionsStore.ts",
+      "sha256": "82c0cc9e118ae0a71764eb96cd88c10b720a1857ac22d3e8641409e8c31e075a",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/theme/theme.ts",
+      "sha256": "e31a824b08689d2b5690e4f259453d1cedac19a793f352697561c1099baa1d31",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/types/index.ts",
+      "sha256": "e92d32fb060449051b92bfe508e066f8c84191523f2c8600ca0f0d4ed6203d59",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/src/types/validators.ts",
+      "sha256": "fd0ca1c52aec02e37aa6136099a8cf2b1defacee53800caec85e4596647075e0",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/tsconfig.eslint.json",
+      "sha256": "8d56a13995644b68dd526b131706b15ac3c67da653d088e6910c9681b4ad9878",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/tsconfig.json",
+      "sha256": "7391a778b9d8d23f8fdd60e0904165bc72c06b73b5d6f48079cf6c0cfd4ad60f",
+      "executable": 0
+    },
+    {
+      "path": "apps/mobile/vitest.config.mts",
+      "sha256": "6dc5fc9cbbad54f2bf8c0656ee75f24f6f49a9efc65a177dfd968b9aab0d97ba",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/CLAUDE.md",
+      "sha256": "268db9cef82ba10ab2da2cd233ca36bae7f867c043e2d4e5a2f82c86e7cf7a07",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/app/actions/actions.ts",
+      "sha256": "f1cb5437daf1d7975141850e7c902e24828834c0e1396d829e7fba6782731f95",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/app/api/sessions/[sessionId]/events/route.ts",
+      "sha256": "e3e3c4d834b28a11bde4187392bc0a8f6a81ec9e3f92fb8913350fd6a7b49cdc",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/app/globals.css",
+      "sha256": "950252065e24c8f54cea7c579d99865b77c1f7234ed2e5ea1b44957dd5ecd7e3",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/app/layout.tsx",
+      "sha256": "54dc9330f012912ebc08693c6645b3866d4e07784e30af7b5cc991e8fa8c9a37",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/app/page.tsx",
+      "sha256": "980fdeafccff087f1aa3fd3d5b0488b14485c991e62cbdcbb26dc105700b3250",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/app/sessions/[sessionId]/page.tsx",
+      "sha256": "d2c113ff92f43060d0aeda409a8c390c4151ab70cefcd8ebb072ce98d8ee3d53",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/components/session-list/create-session-form.tsx",
+      "sha256": "3ff5d3700c0a22b019598a5e55a9a44932f696aad246c52068d646f58c9254a6",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/components/session-panel/__tests__/add-item-form.test.tsx",
+      "sha256": "c818f223da2d2080271cfdb44a50dc854c6146ece23d605abbed4ed2849544df",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/components/session-panel/__tests__/mutation-transitions.test.tsx",
+      "sha256": "39ba7b62f75149723438c19280cc0c303a4f61c1c337e90816f7fa2d79e76fcc",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/components/session-panel/__tests__/session-event-validation.test.ts",
+      "sha256": "69c24fb8f1ce3ca4afda614607d1fd60be4b64c0cd4285ee777b3fbea0f74672",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/components/session-panel/components/add-item-form.tsx",
+      "sha256": "9bc99a1da3068f8396649fe4960faf12ec7e6e02706a50284091b02bc5ba3dcd",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/components/session-panel/components/item-row.tsx",
+      "sha256": "e64f27295771df22b095becc0ab018db166a76c30abc19ce49a9b48594b54976",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/components/session-panel/components/participants-bar.tsx",
+      "sha256": "b783973fa32423a743f4cdd90bc7ebac254e58b33e1be968c28abe965f902c03",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/components/session-panel/contexts/session-actions-context.tsx",
+      "sha256": "7ec7ce9f8bcf890ea83ecbf6faf3f8b43cf5df11aed6ec77cb8c6f51a6381110",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/components/session-panel/hooks/use-session-events.ts",
+      "sha256": "12a0bd5f8ed1534f0284ddcf6f6277909f13ef3f0fa1ea6d64492e50b599950c",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/components/session-panel/session-panel.tsx",
+      "sha256": "b3f506f27d70c0d7e7f74c646c24c9cde747f4cf66e0f878743d420db328f5ff",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/eslint.config.mjs",
+      "sha256": "ca989260edf95d115c45e1d37d22ba396c195f4fa05eb0e4ab72279b7078e512",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/__tests__/action-results.test.ts",
+      "sha256": "161ea55330b4f2d3fefdb22be48ea4a30ddbf2e5734b933fedcf7d119c38d224",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/__tests__/api-client.test.ts",
+      "sha256": "178520f02ac01bc8594b6288fcf72647e782b8f23af73fc8bee08f35aa816854",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/__tests__/contract-validation.test.ts",
+      "sha256": "b2ef1fcd50920bd048c6293728b5f62c55da79948a6b38ca5625133dc514ba71",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/__tests__/request-deadlines.test.ts",
+      "sha256": "3abbc65c89846fb0a237e808c25f899a8e40ada1ee435ca335d27b88b32f1c76",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/__tests__/session-stream.test.ts",
+      "sha256": "865e250aa1984e210dff30a407cd2ac23abfbf6310cf909e04e3e9183d61fa91",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/__tests__/sse-proxy.test.ts",
+      "sha256": "a532fe3a8373822feb97568bbb145e4aba4d607430cbcf0934505bd86cabb682",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/__tests__/storage-client.test.ts",
+      "sha256": "3c544db3d60185f4cc14c8c4596ff21caedfce9a1273b6510bbec2e78e1891c1",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/__tests__/support/session-stream.ts",
+      "sha256": "ada747b3d8640def3500f0ff199f7ea166f99d20077ea64095132c4fb3322d51",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/action-result.server.ts",
+      "sha256": "6dbec29d26797ed7e4c6ae7ee0e3baed1bbb12d3fd147bd10be09bd7bb498a8b",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/api-client.ts",
+      "sha256": "ba3d5cab9e5ebc16cf8b23fa871a3f5e105e5218ea944d04583409c932c9cc71",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/request-deadline.ts",
+      "sha256": "fd11741f18b468834cefbb565e4cd7b077aa2b0336879ba08bef1fc05ad98790",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/server-url.server.ts",
+      "sha256": "b4b34738e63e1ca370f702997b453285ef7b6d51c6e43142142507408a5584bd",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/session-queries.server.ts",
+      "sha256": "b8bcd88e67e2c50f154f162ed4b0fece81ab4f3fa06ce27ffb5dfdf364d7062b",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/session-stream.ts",
+      "sha256": "6cc05ebb3aea5392922bbe78a8e3fd8cbf43c708ad9592275519827ceea5b9d9",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/storage-client.ts",
+      "sha256": "af2703e99e10b7cede862d4c23f9b7ea8c17c0422bbc653854b0edcdb394fea2",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/types/index.ts",
+      "sha256": "cbee8a58cbf5a4af9990d4d14006c7e75a4b61f83b1021598993d1812c1208f8",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/lib/types/validators.ts",
+      "sha256": "0ca4b96ff746dc98485f617d6fc9d178bb6a80597cea5f3c6c34d6ec7e1a9eae",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/next.config.mjs",
+      "sha256": "a93b1aa1a8eadbe30598d6e855fa49c99b12a0c545612d0c1047299df1ebd32a",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "f8e9ee05258e1957470deae8697be11f291dbc501e0602bed520eeae2383f7b3",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/postcss.config.mjs",
+      "sha256": "d7cf5e4736be10181738a9384d2eb6a7e55ba390999ef8ad78e386b794ff0b84",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/prettier.config.mjs",
+      "sha256": "1a159398cb5b4dfdd3e2c31e2c5b3e3a8195319772f01e22a1bad8c9a6834243",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/public/favicon.svg",
+      "sha256": "b0065040703faf198d9a286581cc2dce3359203605e0d6268c1f0aad3cca0c0d",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/scripts/build.mjs",
+      "sha256": "076613153836196885cc5018956b2031c948542e6f4a1a14f267d7d9cb023b6e",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/tsconfig.eslint.json",
+      "sha256": "8d56a13995644b68dd526b131706b15ac3c67da653d088e6910c9681b4ad9878",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/tsconfig.json",
+      "sha256": "4881688ffae9cefaa59244487877d6cddaecc83e551005e03132f0c0bd8318ad",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/vitest.config.mts",
+      "sha256": "f64d3ba4779dde6dea5cdbb71e9b2e930cc3815dd8c30921d63e2f8f3ec8a73b",
+      "executable": 0
+    },
+    {
+      "path": "apps/web/vitest.setup.ts",
+      "sha256": "91a3c8962a0edcb956206a501d943fe99e1c78c6d4d8b5c9a948a3362c75978c",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/CLAUDE.md",
+      "sha256": "322aec9c76d524d01bf6c2ee3b79453190e2052df7d29d8b957fa3adb9a8af13",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/eslint.config.mjs",
+      "sha256": "cf0825d4995776735602f8c3e08eca1e537b47670ff2f3b973e5832c09fdf4d7",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/package.json",
+      "sha256": "d8e3e36b4783594ae2c24d67a4c7cd9c74faf1417381d2594ca5631bb04ea81a",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/prettier.config.mjs",
+      "sha256": "1a159398cb5b4dfdd3e2c31e2c5b3e3a8195319772f01e22a1bad8c9a6834243",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/__tests__/databaseErrors.test.ts",
+      "sha256": "6f23bf46b29d704c67bfa61fe3524a119de91a35dc974402772322f563a6a9fa",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/__tests__/job-policy.test.ts",
+      "sha256": "d01a22462a1f20929536103bf4a91990d04cebfabc22cf620f2653fe3a14a766",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/__tests__/leases.test.ts",
+      "sha256": "619e953559389ca12a5bbd3eb72ba296e28b4a893c86f9d206c3be69e594276c",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/__tests__/retire-legacy-jobs.test.ts",
+      "sha256": "aa7b35d2c4eac4731ea340dfa0668910d9d1e1cca45b5375e440444da9877f46",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/__tests__/runner.test.ts",
+      "sha256": "d7077bc9e8f6141c6bede24c925c0a2c3cd11138132ae81274fd75a7508955ed",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/__tests__/shutdown.test.ts",
+      "sha256": "c3ef96743bf55833b62b8accda674d674e2f989e579fdfc0e851fee1a17eef55",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/__tests__/support/shutdown-child.ts",
+      "sha256": "650c2a52fb98c8992f381c7a660469fe6a02a81a5f4b5cc9b529b8e54f788874",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/errors.ts",
+      "sha256": "5ee51e7880c10aad8f466bb7435ded03c0327bdf3408db7035ba2bcbad4fe667",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/handlers/__tests__/archive-session.test.ts",
+      "sha256": "4c78057cf5b4c05983cd07f30ecbdb87a0ee191e16d39a79e247e9708b0e990c",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/handlers/archive-session.ts",
+      "sha256": "f927f29c3ad4a882b2c34d42efa14f3615d482930e9d180da70aa015de3d2a2c",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/handlers/index.ts",
+      "sha256": "6558a245f5ca7b78556799358ac59f8b99ae0782e189f95f4a7913ad826783b8",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/index.ts",
+      "sha256": "7b0db2bc3736ea52a5c207cb42a321f87260c766ae9be75afd5b3b44ebdcd462",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/registry.ts",
+      "sha256": "16edc8d18b5d7f7f4d50df482d9bf4542dd8f0e62e8c944fc81ca307b578e15b",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/retire-legacy-jobs.ts",
+      "sha256": "0c262a7f548cc6761a8c50edd8a559d2d0cfb8d26d85493f16947871aeb1089b",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/runner.ts",
+      "sha256": "551d670aaeab8edd5917f3c3fe577b24b8eea0797d8009ffd260938dc493d383",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/shutdown.ts",
+      "sha256": "805cbb3cdee40f94b083469f5532537161e0d45dc742c3f69d7ba44475429308",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/src/types/validators.ts",
+      "sha256": "9e958f4d9b85afdf0554f82a0247acf651976b001b99e52f7fb2502592ed93e3",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/tsconfig.eslint.json",
+      "sha256": "8d56a13995644b68dd526b131706b15ac3c67da653d088e6910c9681b4ad9878",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/tsconfig.json",
+      "sha256": "491406a1f874a1b19a1391580e39183b12bedc9a409e203d1a9aedd047e23c0e",
+      "executable": 0
+    },
+    {
+      "path": "apps/worker/vitest.config.ts",
+      "sha256": "2206847e5f3504846b074821a0d6f127d1747c6a0f7f0c5735b70ad123b9fcbb",
+      "executable": 0
+    },
+    {
+      "path": "compose.dev.yaml",
+      "sha256": "904e24efc7d26e96167eba9d46f915b6b2f6b709b0f4d15075f22ee9922a315d",
+      "executable": 0
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "3fe8c641e8b59177fb72124bad219b3a3278745b6747b5d4f3621416eee00c76",
+      "executable": 0
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "6624c96d580d367957fcae134b0644fbd884580bb63857f4fe3f6b5d23841aa7",
+      "executable": 0
+    },
+    {
+      "path": "docs/deployment.md",
+      "sha256": "ac230f9cc18d89c0dc165c2d70598dfdd1c67bd19e3a3acff41e01f696510011",
+      "executable": 0
+    },
+    {
+      "path": "docs/document-storage.md",
+      "sha256": "22729770d5ae967cf2441987459f2bcd565114385a07c249fcc3a87efe021172",
+      "executable": 0
+    },
+    {
+      "path": "docs/job-metadata-rollout.md",
+      "sha256": "4147dd47f15369d11fd538ead0f5e878a923a4fea422846adfe433067958d877",
+      "executable": 0
+    },
+    {
+      "path": "docs/job-processing.md",
+      "sha256": "bd2071767b57005956b8380eb807a5e3646597821e03dbf781bb37ec377c43bb",
+      "executable": 0
+    },
+    {
+      "path": "docs/job-recurrence.md",
+      "sha256": "8a403cc85515505fbf93d815285c9ba4c0e068a163ec7598859276527070c856",
+      "executable": 0
+    },
+    {
+      "path": "docs/layers.md",
+      "sha256": "45bab025949fb892f67df035a1c36bdde312d93b22ee12cc57ab97b752038005",
+      "executable": 0
+    },
+    {
+      "path": "docs/operating-modes.md",
+      "sha256": "5448b56a7fa8641baff50c561c1df01e91a5a846ae39466a56824893b1257e87",
+      "executable": 0
+    },
+    {
+      "path": "docs/reference/codehorizon-teardown.md",
+      "sha256": "cf6feaae7eabeea2457676ac2da7f625816e5c8fbf416f3d0561e607c7405fe2",
+      "executable": 0
+    },
+    {
+      "path": "docs/reference/smelter-editor-teardown.md",
+      "sha256": "6e07bd1d1a7f5925a03922c4c13e6e099a505e9301d90940bfd01fb1fe1366e3",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-architecture-enforcement.md",
+      "sha256": "f804e6d5b874886ba533cb5e1ebdc404d9a838aa6178af8f3d274230d7272115",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-backend-audit.md",
+      "sha256": "2d3b763af8ef89d11e5cf49e0b6fe3c61d76d75ae026b4b72b39017b0388b66c",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-clients-audit.md",
+      "sha256": "a7fc6d780e796bde27ebfb3041c432fd96aaf3e240d82cfb34b083441d32b67d",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-container-ownership.md",
+      "sha256": "03f6b038f605334077d73a1bfbc0c859f3785ef0ca050b1410209abbb1b12e90",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-dependency-security.md",
+      "sha256": "e51b4ed96eb35c74b8e4e8fb27a81b8ce6e6ba34109426a723245b233c9a51e2",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-deployment-migrations.md",
+      "sha256": "0f34a96c0aae12481ccc89ecee54afcef5ffd541f322201a3c59b5c0c8e83da9",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-development-modes.md",
+      "sha256": "626fdbb2d2dda734d7699747e6c3edff825d8a163fa386ed9947f8804322d897",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-docker-development.md",
+      "sha256": "a5636eb43a1382030fd506abebcf71717bab65ca61864d0a7d1c9db62a48d003",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-drizzle-maintenance.md",
+      "sha256": "5b4cfbf6b344915effd0507134c9a37485ab9d7cf89b21ac26389459140d1583",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-expo-maintenance.md",
+      "sha256": "a86bbdef7b621470a0c5be759803d63704215b3ca7b37b0bf0718a5a12d8fd0f",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-job-recovery-design.md",
+      "sha256": "0487d09446505f531c2f6f450a748a97071228139df06e6cf53846e653e765f1",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-mobile-mutations.md",
+      "sha256": "03f0aaf93279b652b7040717a0c912ed20d7cc7a67f54ac57f34b7d85180d82f",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-mobile-read-ownership.md",
+      "sha256": "82aaa0ca99ecae3daf13fa0627f7f071d46bfa616b9eb077fb1a885f7b520fc4",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-native-accessibility.md",
+      "sha256": "00e0392a335baf315ec14f5767071170124de7ca46cc726f91fe1475b37c7ab7",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-next-maintenance-update.md",
+      "sha256": "93abd7a104c6f6e429d320c337de591bc0fd35366c67bb11ba633b71dd6fbdde",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-postgres-contract-isolation.md",
+      "sha256": "6acdc5e38a73a3636574bb9769438d89dbf6f95be9b26d34f605721ae9c6315e",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-private-web-origin.md",
+      "sha256": "f006e17aebcc075087ca44e4824df64c6b292bc6cb8dfa836a6ab0acff90ea3c",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-runtime-packaging.md",
+      "sha256": "2239edbb34a9fd0ab137cd51165d098bc61a39959624dde8804988cc6426d75b",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-session-admission.md",
+      "sha256": "4ea6eab3581cf5fbc08f6316fd5098a25a306d0d2df9e2b189d6bcf21c3368c1",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-session-concurrency.md",
+      "sha256": "f2dad02a3dc7f8cd7932d11535e33fd60b27d8b9767643dbbb9e8748aad96c25",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-session-recovery-design.md",
+      "sha256": "32ff3a378d8b4edcc86c87720598e0fc262797521e837477e4dc1245778745e3",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-shared-input-contracts.md",
+      "sha256": "866ffa902ddf6ee57be07f703e703c483240266edade7f3a1464fef79ae0c3cb",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-shared-response-contracts.md",
+      "sha256": "5463f32cc9db94b39bfc5fca832d8ce4cccfe67377855cb73a0d80184b77b017",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-starter-audit.md",
+      "sha256": "ea92e275e9eb1bc76633f0398b42e3c05ed4eb22b428f9c034e10ab3e4d53fb1",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-structured-logging.md",
+      "sha256": "a530533e5690baed60e149a587f2f90f53dec86a0d032cd44a86474c1630f4b3",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-tailwind-class-merging.md",
+      "sha256": "579e5f6227588b09fc306e2cef6390bb6831dc977c956de5894891b23ef11eeb",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-tailwind-color-scheme.md",
+      "sha256": "a4b16cdec51dc1203f7ff27686a8894dba70f2834ac3e6d12a1138372225c68a",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-test-tool-maintenance.md",
+      "sha256": "b4f32fd8040cc24634eba6a762411ba3d11251db390dfdf2455c9ad2d894c8e5",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-tooling-audit.md",
+      "sha256": "af07224ce04ddcd78a698c6955a96ab79907f278670196c0e377394e958d35e8",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-web-action-results.md",
+      "sha256": "9007886d8587bf343bdeb2b2a8737910b1f66f9142f00adde528eb806b817fb3",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-web-mutation-transitions.md",
+      "sha256": "926dd1c682766199ef56547e4ab33223ab093a14dd4d42f85a4270ff64c3a8a9",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-web-request-deadlines.md",
+      "sha256": "6989dbd268a5c54d7b9729f2b4103282392613f6baa6c44d27c0c63c5371351e",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-web-server-queries.md",
+      "sha256": "b19c9294078412d3b7abadfe626758be42e0f8f301236013029f59e28912945e",
+      "executable": 0
+    },
+    {
+      "path": "docs/research/2026-09-05-worker-shutdown.md",
+      "sha256": "51a3776518206b4d9d2221fdf3c2753b51c0838041d57583c698d34e2d63aab6",
+      "executable": 0
+    },
+    {
+      "path": "docs/security/dependency-reviews.json",
+      "sha256": "4ef02347761636ea1a86d8aaf2832ae175b4d1383b8dd16ee8e54d279d6194eb",
+      "executable": 0
+    },
+    {
+      "path": "docs/session-expiration.md",
+      "sha256": "07cc69cb53d86333e39601ca3f415f67106c1f0e9db2f95f0c8b387a6c5f339c",
+      "executable": 0
+    },
+    {
+      "path": "docs/stream-lifecycle.md",
+      "sha256": "4b780c1e0d78502aee30e4524575afd972c5261d80f72d2867df0c3202a25b50",
+      "executable": 0
+    },
+    {
+      "path": "docs/superpowers/plans/2026-08-21-api-elysia-bun.md",
+      "sha256": "7a5136bdbeeae7252847e712560b8f8008007444de376057d62d4a8083865574",
+      "executable": 0
+    },
+    {
+      "path": "docs/superpowers/plans/2026-09-05-starter-consistency-refactor.md",
+      "sha256": "b3914a9e4bb1f2546964feb84990e0cbbc6eff1bff46f7bf51459236d33bfb1c",
+      "executable": 0
+    },
+    {
+      "path": "docs/superpowers/specs/2026-08-21-api-elysia-bun-design.md",
+      "sha256": "6bed207c6bb998c4ba432ee03dde2cfce971014dac57c27eec5649fecfbd87ec",
+      "executable": 0
+    },
+    {
+      "path": "entrypoint.dev.sh",
+      "sha256": "4b8fc5f92f06701a6f31925cf89191b4fd35c87d7ea847157cc833a6e7dffb2b",
+      "executable": 1
+    },
+    {
+      "path": "entrypoint.sh",
+      "sha256": "bb66d97989c531fc610d1cb3fbb130fe52454f52d208a3581c71b82f69da38f6",
+      "executable": 1
+    },
+    {
+      "path": "knip.json",
+      "sha256": "8c5929eb8cc692121c684b8b240b59ed6e7ceb6369b06b5750336eeecf3538a8",
+      "executable": 0
+    },
+    {
+      "path": "lefthook.yml",
+      "sha256": "630f3298fb7dd54772ffe58b705cefa8dd89011d84f703ae304bad6c10056b2f",
+      "executable": 0
+    },
+    {
+      "path": "llms.txt",
+      "sha256": "1529df68ddee04bd800b8ee431bbd7088dca4d84bc83072c3e9bd071b4a90f72",
+      "executable": 0
+    },
+    {
+      "path": "package.json",
+      "sha256": "ca082098272d8cd5deaea5cf3ca15fb8d8644def705de292714e137da9c17057",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/CLAUDE.md",
+      "sha256": "04086a2d4a1e05c14052350e38c77d1e93e17825d8ed319846e85dfb4449581e",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/eslint.architecture.mjs",
+      "sha256": "8529ae11f5ce7adfc5af78a1a7a462e1116cf166c177ffb5064da09797d0d412",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/eslint.base.mjs",
+      "sha256": "1c2c91c736b2e96ca30bfe6864a391334718a4227e4aba297931303efd153010",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/eslint.config.mjs",
+      "sha256": "4d0f7f0a09acaf830f2a7e7d44101a6739b9dea30c99685164ae91599f86b499",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/package.json",
+      "sha256": "40039d8a39a9dae5bdb21e7bec58b27bb9ede601c368d7fc9acb21f0260a09ea",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/prettier.config.mjs",
+      "sha256": "6244cc361dbcdafc434279381d63d25558f1bc2dea5bd85c3cf36f339069ec7b",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/scripts/__tests__/architecture.test.mjs",
+      "sha256": "280de3b0dddec7d7bfccef327032c013f3a4642ada65ca12f6a23d2a3d75b10a",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/scripts/__tests__/audit-policy.test.mjs",
+      "sha256": "741c96c2840beb9e7567f0b1378acbed4327552b324cae273c103e153fbc7529",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/scripts/audit-policy.mjs",
+      "sha256": "4ec694e5dffefbf507f0bd34fa7aabe7965782e5a4854cbf495748fc4547c630",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/scripts/dependency-review.mjs",
+      "sha256": "3f1a7e45e09c8344bb6703d3821aca18dc60984da56e7509392ad7263330802c",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/tsconfig.eslint.json",
+      "sha256": "c0aa89644e5cf35b0b6b6858dde146d03304b4652160410d7efe06f2db5e7d03",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/tsconfig.node.json",
+      "sha256": "1b798a15493a44633261592f42de5da9e375a697b2b974b4a80a711fc31b7ecf",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/tsconfig.react.json",
+      "sha256": "4a032376ad216228e541d22647210d072198422115dd32e711d7b6c070de6867",
+      "executable": 0
+    },
+    {
+      "path": "packages/config/vitest.base.ts",
+      "sha256": "a9081456f2b54fe6d8b3fa0235aa5265a2ff536986906736a8ac1c6d89ac1ca6",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/CLAUDE.md",
+      "sha256": "ccad39992f448be81a5357ed8e90c9f3abaa614c15fa1b208d4143634b28c167",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle.config.ts",
+      "sha256": "4bc2992cfb5a24a2c5db601f17904307853d88681e7161ef486ec86940985d97",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/0000_sturdy_shatterstar.sql",
+      "sha256": "24ad011df8a76546c1d6be56c7843061817a698a2099f41ffd00965f50d807fe",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/0001_job_lease_metadata.sql",
+      "sha256": "270e80432cb47bb26854ed3e4f82cb0f07e185aed7570d2fe3d6aeb07ebdd7fe",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/0002_job_lease_recovery.sql",
+      "sha256": "69a1ae0a0ff66a073aa7d357a2c57c5dea54c6acae3360fcace727b5184f6c60",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/0003_job_recurrence_identity.sql",
+      "sha256": "7857f58e9716b187ced8a7c87d98997ff10f8a0f512699f2520a0c1ca4791327",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/0004_session_revisions.sql",
+      "sha256": "b6e1e907d267d90f18b111c3a5136a45d543834f585e265ac659fa430f608b04",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/meta/0000_snapshot.json",
+      "sha256": "44fa0d1e0964625a4ac3613f56fc65707bc6eca0b93e9b4a6e795bbadb518185",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/meta/0001_snapshot.json",
+      "sha256": "75487a8a6eed53ae79556fc89dec22e6791f4754a2fe77ff2b30b13a30d8db4e",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/meta/0002_snapshot.json",
+      "sha256": "d8b6b0e18d9729d5ec14ad42dc11e254d8a53aaf94540bbc3ac84115edc7b06d",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/meta/0003_snapshot.json",
+      "sha256": "3b9a3c85771fd9c49ac4a8006628cbf7c9ebb28c13d189509d44e3e3f9f8b0bb",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/meta/0004_snapshot.json",
+      "sha256": "659452ffc9e0faa2a51224d990d419dd5500852219c52f57f4237c9ec0bc4317",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/drizzle/meta/_journal.json",
+      "sha256": "1c615489bb14a14d1ffb6170bce29564c12c6c5c55a8ee425175cd5ba2221212",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/eslint.config.mjs",
+      "sha256": "cf0825d4995776735602f8c3e08eca1e537b47670ff2f3b973e5832c09fdf4d7",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/package.json",
+      "sha256": "a02018d3e736e1d1bcf4fbc7c0fb849aa1e9b9b863501db6691b9a8b80ca9d1a",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/prettier.config.mjs",
+      "sha256": "1a159398cb5b4dfdd3e2c31e2c5b3e3a8195319772f01e22a1bad8c9a6834243",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/scripts/drizzle-env.mjs",
+      "sha256": "cb2549c72e0a1326c082843bb77bea378ff7cfaf50dd5aadd5f361d668f9ae74",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/disposable-postgres.test.ts",
+      "sha256": "e7cae8cda0d2df7a4af5dd2a6b354c9269986882712164a93571f0f17e1dc37e",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/document-store.test.ts",
+      "sha256": "f58ea437468fea2facf75d974a59b9696fb1e91a40458138271738b2f3649b49",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/drizzle-config.test.ts",
+      "sha256": "ed8afb3f3e230654ad6e4c684d549315d28c1ec9a460c7080af4f068cd0832c3",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/drizzle-env.test.ts",
+      "sha256": "aa53948f1ba5d53609f6ccf08f824100b5086a0304f6d1c05e49078f3f9d5eef",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/errors.test.ts",
+      "sha256": "07bd08820c8e3c1ca9b16e2bba28ae28bb00141e2247ad1a637607ecd80678ee",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/job-lease.contract.ts",
+      "sha256": "b76d5d226a527b1c53be77faf1a83083c8e74ccc370662debffd76c354fa5e11",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/job-recurrence.contract.ts",
+      "sha256": "da762a423a9096274b29c148c90aeadcbbecd8475da3fbc51dfbe86b0d1ac2c1",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/job-repository.contract.ts",
+      "sha256": "b31a2caad9484d3cf7cec5cb4246644f2d3b98531eef86c7b9d322ca8a3cfe7d",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/postgres-job-leases.ts",
+      "sha256": "7848605782c8be53853125eb27fb9580397a626e41968573b0427b3b0bde95ae",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/postgres-job-migration.ts",
+      "sha256": "2bf53e195c09ef70ec57a27cefc7624934918ef0c787676c72671f189c1ab4af",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/postgres-job-recurrence.ts",
+      "sha256": "70461d58bb9b084ca698b857be8d6a64af2748b8854ca585430bedd4b394cb7e",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/postgres-session-concurrency.ts",
+      "sha256": "27f64027e9410682f2c2ce585206b953264b248daab9d3c314d92aea37fa4745",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/postgres-session-migration.ts",
+      "sha256": "795e71c08de222cb73f7e2d6c9aa6c149ac82c6c05b5ab53dca5fa3d820ab3e9",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/postgres.test.ts",
+      "sha256": "d1784536245eb8954a122dd4081f77800a7591aa89b44ec57cccce6b0d94bc33",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/repositories.test.ts",
+      "sha256": "3e170240769710b20d1a8ffca1f3c82e4ef716b987ae95ad4ff28a53e9deeb84",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/repository-config.test.ts",
+      "sha256": "130cc5969862cd2d9c930ec8d2f9d6dfa2296891a1835fdb5e51e14d5c4cc062",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/session-repository.contract.ts",
+      "sha256": "f9d6912f8bbbd26a44942b407f31e8b09e108572813dafaf7b8ade8f043deabc",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/session-revision.contract.ts",
+      "sha256": "ab28f1ebd9f184e929c3ab4510c1584dfbd32a0c0f075f0cbecc0146f8f272dc",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/storage-mode.test.ts",
+      "sha256": "5fefb9791844d0fc337b0170596bcbf4d75a7410e44cef887951c30dfe2b04d1",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/__tests__/support/disposable-postgres.ts",
+      "sha256": "fcecadd8e122cd6de67e5cc2da00145baf27489803aa0e8fc9de48ad6eaab18b",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/client.ts",
+      "sha256": "e709842516d8c6be06a9ca1c763e0da058e1dd66af82e06fc1fe8900740e59c9",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/document-store.ts",
+      "sha256": "12e4a551c94e7825c60e9d0ac341d0914134947dbc1a0b0d434acb676811f3cc",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/drizzle-job-repository.ts",
+      "sha256": "c4d76a80d37221b8c7090e112f98d9127eccf8181f6fd349aa1008dcfda2ff65",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/drizzle-repository.ts",
+      "sha256": "a5a7d78f5e0601db55402ba870d33b4d3597e5e6e247505655a7f5a2b752a7fc",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/errors.ts",
+      "sha256": "434e3e53fd95fe66bbdbbefc956a44a8728584de2696c79df5c9cb116767bb45",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/index.ts",
+      "sha256": "548b0003ac202e8a6d53e8afbca579d843de2c1ff4e6bfcabcf20bde18d6abb6",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/job-policy.ts",
+      "sha256": "bde4b7fe73974f09978828e6afc6fe05ac3f3fb4fb81d4abbc85e00ae60e52d2",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/maintenance.ts",
+      "sha256": "d7dd8011b495d87dc636d6f068dacb70780b71337eb8c7cb7411709df00ea65f",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/memory-repository.ts",
+      "sha256": "e96df6d0ba64a3a50cfa779086653807d786d89e420a42ca0a8d18a817ccbd93",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/migrate.ts",
+      "sha256": "a9e4b0365d59f558c8091391a28590d864c85379ee237e6f8322bea8f80ce853",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/repository.ts",
+      "sha256": "8b154bb240982b005afc3d652670a3f636308a475a5fedfb7e944eb41967fe94",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/schema.ts",
+      "sha256": "8f6b3c84a458c4595bb7b1272cbc799b0c13ee242594318d137d36d2e97683ca",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/src/session-revision.ts",
+      "sha256": "ed454c640fe75b3f963ebd693f6814a07223d2a56cd016cf7a9c8f60bbde5700",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/tsconfig.eslint.json",
+      "sha256": "8d56a13995644b68dd526b131706b15ac3c67da653d088e6910c9681b4ad9878",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/tsconfig.json",
+      "sha256": "6b2f7152fdcd6389a7c9c719728d6cf838d7812b53dc67f444b5fa1a86a7b9a2",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/vitest.config.ts",
+      "sha256": "41635aad18b3d159158ad541def18a6e9deb4ee44b2cf77cad4802cf95c41d01",
+      "executable": 0
+    },
+    {
+      "path": "packages/db/vitest.postgres.config.ts",
+      "sha256": "32bdd4ea7d467e91ecaeb7504f5e59c0deac0f56ed8a5974b8a894b66442acac",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/CLAUDE.md",
+      "sha256": "b3381c5af2f8435da7629525e0b08303eaed6eeb2734b9c8104c3bb2cb3d8023",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/eslint.config.mjs",
+      "sha256": "cf0825d4995776735602f8c3e08eca1e537b47670ff2f3b973e5832c09fdf4d7",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/package.json",
+      "sha256": "3826a78c9e96893cbebd56224c1807f08e93fc74c8ad69bbc2c56fe08c53c29f",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/prettier.config.mjs",
+      "sha256": "1a159398cb5b4dfdd3e2c31e2c5b3e3a8195319772f01e22a1bad8c9a6834243",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/src/__tests__/create-env.test.ts",
+      "sha256": "4e01bb395db41595dfe440b17ba49e81faafefbed80b7a634657527b28719ccd",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/src/__tests__/load.test.ts",
+      "sha256": "2d021de29dfa42b59e13fffb37e18cc39e27f5dfe5fdf935671aeee6e279816f",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/src/__tests__/server.test.ts",
+      "sha256": "02f51a2b77c83e59c718010d93a05beac5584a68bd846ac3bb471414f1b53bc9",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/src/__tests__/web.test.ts",
+      "sha256": "83d2aebad3704b79f7cbe1636d670e461d96fd4737bf7d6f23e08670ac5c867c",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/src/create-env.ts",
+      "sha256": "5f01b719e1420b8c867011d10e63134477f355e94e25e62d2a7510c49317ab77",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/src/index.ts",
+      "sha256": "fc3f4e57c10b5f273c997397bebabe62c9fee3b239142eedfb252005c3a85b35",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/src/load.ts",
+      "sha256": "9309d3a44a24cbd727b19da7d3eba98976fb8b8ccc86c6e19ce589db1e3c622e",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/src/server.ts",
+      "sha256": "06eec4b1a4b819055a5c92f6fe5481cbf4a06715f88883e93b11045be0e381af",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/src/storage.ts",
+      "sha256": "c8a22ff8a7eebfffce21f9cc871ec11dfbf2321f39b13879790af76ea8c7a976",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/src/web.ts",
+      "sha256": "dc03d83273d1c6ec36c13b7c53c833732b234f9faccdd65005eb17cfc0436c2c",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/tsconfig.eslint.json",
+      "sha256": "8d56a13995644b68dd526b131706b15ac3c67da653d088e6910c9681b4ad9878",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/tsconfig.json",
+      "sha256": "6b2f7152fdcd6389a7c9c719728d6cf838d7812b53dc67f444b5fa1a86a7b9a2",
+      "executable": 0
+    },
+    {
+      "path": "packages/env/vitest.config.ts",
+      "sha256": "d3d970362071d21119394696b7ede049db412aabcf388142cda89025d1f197f0",
+      "executable": 0
+    },
+    {
+      "path": "packages/logger/CLAUDE.md",
+      "sha256": "17a16e874b957f5ecb64819a1ac5ee5e0fea47e193b0940bfb8a63c0d942bc90",
+      "executable": 0
+    },
+    {
+      "path": "packages/logger/eslint.config.mjs",
+      "sha256": "cf0825d4995776735602f8c3e08eca1e537b47670ff2f3b973e5832c09fdf4d7",
+      "executable": 0
+    },
+    {
+      "path": "packages/logger/package.json",
+      "sha256": "d004c2805d91eb7a94f0ff1ed6f5c6d0258a9bb38ad5fd1adda1d42ab63d3555",
+      "executable": 0
+    },
+    {
+      "path": "packages/logger/prettier.config.mjs",
+      "sha256": "1a159398cb5b4dfdd3e2c31e2c5b3e3a8195319772f01e22a1bad8c9a6834243",
+      "executable": 0
+    },
+    {
+      "path": "packages/logger/src/__tests__/logger.test.ts",
+      "sha256": "4207c82404f29c6778e6398003a8badcb16116a10b5496bda218d01665f31d5a",
+      "executable": 0
+    },
+    {
+      "path": "packages/logger/src/index.ts",
+      "sha256": "7252711dd78e1b69a8097af679fe0b54e45c5e2341112ac70074ee5b56254217",
+      "executable": 0
+    },
+    {
+      "path": "packages/logger/tsconfig.eslint.json",
+      "sha256": "8d56a13995644b68dd526b131706b15ac3c67da653d088e6910c9681b4ad9878",
+      "executable": 0
+    },
+    {
+      "path": "packages/logger/tsconfig.json",
+      "sha256": "6b2f7152fdcd6389a7c9c719728d6cf838d7812b53dc67f444b5fa1a86a7b9a2",
+      "executable": 0
+    },
+    {
+      "path": "packages/logger/vitest.config.ts",
+      "sha256": "d3d970362071d21119394696b7ede049db412aabcf388142cda89025d1f197f0",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/CLAUDE.md",
+      "sha256": "ad6ad8f006279ef9412d2e1e990e48800b358911e7fd6bd3b643c57420912dce",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/eslint.config.mjs",
+      "sha256": "cf0825d4995776735602f8c3e08eca1e537b47670ff2f3b973e5832c09fdf4d7",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/package.json",
+      "sha256": "746e4d1d0fc5c14d59fb998ed2fae5ce3c089ef4d44225fc8d07e4089a020b0c",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/prettier.config.mjs",
+      "sha256": "1a159398cb5b4dfdd3e2c31e2c5b3e3a8195319772f01e22a1bad8c9a6834243",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/__tests__/response-envelopes.test.ts",
+      "sha256": "81deb76355825d254dfb83b4d2484ae038dd9f03a6ce5195d5a88afa9ec9b691",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/__tests__/runtime-entry.test.ts",
+      "sha256": "2ff7254d121b7d5e374d02cdf36cc2342df8ae8a333663c49c763b3766e54628",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/__tests__/session-inputs.test.ts",
+      "sha256": "8908f5e5059efb5260c1d33f13c5e88fa83ab7c21800afb09646fa51276fec95",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/__tests__/session-projection.test.ts",
+      "sha256": "49ef0ec665bfa90d34b7599ef61d11c5916be01e97b456cce2f4dbfb09c49efa",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/__tests__/session-recovery.test.ts",
+      "sha256": "d2ed044730403bd184d415c2ec32ff87c3be62927f044fede9155ab4ead4adaf",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/__tests__/session-responses.test.ts",
+      "sha256": "807f8a4cd8cc98d35e00e01840e5b201f8b67b7b5c81feca00ff8261d6ec5f57",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/__tests__/session-v2.test.ts",
+      "sha256": "fc240295dde59ddce23f3164fc59adbc995deddbda1f9f178856d9c9bf2a0141",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/__tests__/storage-responses.test.ts",
+      "sha256": "8ea9a585969f4c10508a0db5afbbb400067a0f4ba81e10a06c81cd93393bfe3b",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/common.ts",
+      "sha256": "6f178240b1b16c1b6299aa0c9f7bc566556e97271d6d0667389ff421e2234ed0",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/events.ts",
+      "sha256": "75a974be0bcf1fa00234fc070f053ceb24e0f34c96e4947a1721ada46c44d12e",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/index.ts",
+      "sha256": "57cedd35cb71d4ca9f94d8a01b06ab6affeea56c58f2b7dc4efcc674ab34c9fa",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/schemas/common.ts",
+      "sha256": "704f85dbe43d8e3b8378f669db307a99fd5505856e853383f27a339813dd0a65",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/schemas/events.ts",
+      "sha256": "984b7f8941afe3896409bbe7c770dc09517185609969342048dafe7506b0ec6d",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/schemas/index.ts",
+      "sha256": "046cb0bb930ae3ed9f0cfbc524047f0af02166b9fbcf632796c570a46286beef",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/schemas/session-v2.ts",
+      "sha256": "850b86d7f58503a47d4b5bcc5a82d49b96a04139e7ae6e4c1e3aa438b7d6b022",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/schemas/session.ts",
+      "sha256": "818545b66dfda834bdd8f90d294d062fc1c9e4d1d56f21d4746dcfa5ae0616b9",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/schemas/storage.ts",
+      "sha256": "b81f1c7e99ce7c3d36336e7962639ece630ef09f13bdd357ccaccf9a9ec0daca",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/session-projection.ts",
+      "sha256": "7c74dc33ce99d148e5216c73f0d0897b3ecefa4b6b92d74fbac4b704917db897",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/session-recovery.ts",
+      "sha256": "b042f3d93088666b9642d4cc91b81eec7262b12dd1c1d8529af61349307689f0",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/session-v2.ts",
+      "sha256": "d562c3ae0b5ef1a3ec7a0b3e63cca4e3faf2cb321cf138cf99f5f2054c8525c3",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/session.ts",
+      "sha256": "cd5abcb4ab2f0362d54117500de6e57df4c904df114fc0f49e1fc5771a7db932",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/storage.ts",
+      "sha256": "2f7d16b3ed9392e81dbbc9919614d4ea5a2c24183ab898c514ef62632706f023",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/validators/common.ts",
+      "sha256": "218c6c6c95e01bf3ebd9eb19b08229f3c2488dfed07f0b1ef76b2858860482ba",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/validators/formats.ts",
+      "sha256": "2b492beac35df4a861c2543c37023638c6d3b686947e72391634ca84864f6b3d",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/validators/index.ts",
+      "sha256": "875de2dd898e24351734ed5fe2bd82a0d422e849f34e45ab398d386aef914540",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/validators/session-v2.ts",
+      "sha256": "910c6374e7fca37e052e37b5c243af02162ad99982d95f7a5c0babdc3365a70a",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/validators/session.ts",
+      "sha256": "cd42c8c1e917aa741ad70c30d907d8f506d47ada8c92c3be487697a1109ba7ec",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/src/validators/storage.ts",
+      "sha256": "00ad327dcc01c3d3216ccd1913d4c1ea6912c69c9663c67030571b1f44e8705a",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/tsconfig.eslint.json",
+      "sha256": "8d56a13995644b68dd526b131706b15ac3c67da653d088e6910c9681b4ad9878",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/tsconfig.json",
+      "sha256": "6b2f7152fdcd6389a7c9c719728d6cf838d7812b53dc67f444b5fa1a86a7b9a2",
+      "executable": 0
+    },
+    {
+      "path": "packages/types/vitest.config.ts",
+      "sha256": "2206847e5f3504846b074821a0d6f127d1747c6a0f7f0c5735b70ad123b9fcbb",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/CLAUDE.md",
+      "sha256": "f0e93adef4dba06a8dcf94e2d201652c16d3708736fad1c7e1cee1f703188c0b",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/eslint.config.mjs",
+      "sha256": "cf0825d4995776735602f8c3e08eca1e537b47670ff2f3b973e5832c09fdf4d7",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/package.json",
+      "sha256": "1bedf3c6eef721e10654bd1c13fb6223a14a036d9cee0cfb807caed525946a12",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/prettier.config.mjs",
+      "sha256": "1a159398cb5b4dfdd3e2c31e2c5b3e3a8195319772f01e22a1bad8c9a6834243",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/src/__tests__/button.test.tsx",
+      "sha256": "ad37c96c917f50d074bff3114abcdb449d18be7f29d902d130f569f33b67fdad",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/src/components/button.tsx",
+      "sha256": "649beb2ba8880d7dd15144ced92fc85b12238427517181daa661add769bf2c90",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/src/components/card.tsx",
+      "sha256": "c776b5a5616952def606255fd76d84ab118d40e7f7b0a6dbe042900633f1957c",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/src/components/input.tsx",
+      "sha256": "4ae245fcbcbf835cbba7e9edb76bdc350d6068b20b547348ec933fcd132b3b47",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/src/components/status-badge.tsx",
+      "sha256": "f1bfe19909e43c3e703240ac5e8554664f117aaa2655cdcfecf1fa1d1719ef8f",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/src/index.ts",
+      "sha256": "f790ca39f75109ce74199d6fba0568404ad8458a475cebf93ece029f1e895ff8",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/src/lib/utils.ts",
+      "sha256": "b9ff28e726e2b87a4c50f887a46e6b2835f2e59f56882c63428211aef3545f6e",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/src/styles/globals.css",
+      "sha256": "2454c91496ee6f673b5d6e39145f85a5864c0779494fd8373216577d3af98616",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/tsconfig.eslint.json",
+      "sha256": "8d56a13995644b68dd526b131706b15ac3c67da653d088e6910c9681b4ad9878",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/tsconfig.json",
+      "sha256": "9732a913b34b3310474a0a50e1ae603eca6b1b3f9630ca1dc0ee29b7104cf002",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/vitest.config.mts",
+      "sha256": "cfd46f756be503fbabac9c6d21e7195fe84d78427f98f0ac506a9a27d9382c95",
+      "executable": 0
+    },
+    {
+      "path": "packages/ui/vitest.setup.ts",
+      "sha256": "91a3c8962a0edcb956206a501d943fe99e1c78c6d4d8b5c9a948a3362c75978c",
+      "executable": 0
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "804655edb5a89f5e062fcef861844307b7f8b6e045836d32c8e17b49ca12f013",
+      "executable": 0
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha256": "253208fa7c1b64372c219b9e19cef15ed70ca93b66a4d5c4c4d2297a5aff8880",
+      "executable": 0
+    },
+    {
+      "path": "prettier.config.mjs",
+      "sha256": "e7af94668e14131027d71313a6ec9b4ec9c2da034bca43cccad4154fb0c8efe6",
+      "executable": 0
+    },
+    {
+      "path": "skills-lock.json",
+      "sha256": "e579539ea4d12da90d4b5cb44e8828a0aa5355e5955934cb4bf12abf8179e942",
+      "executable": 0
+    },
+    {
+      "path": "tsconfig.base.json",
+      "sha256": "73204b5a40bf3bc5a62faa238013ce63e87256119a05f13eccade71b766d49a6",
+      "executable": 0
+    },
+    {
+      "path": "turbo.json",
+      "sha256": "ad038bfcd2b4a24e5915c59e28e03d28e6a60231c7d893088c07600df3ce3114",
+      "executable": 0
+    }
+  ],
+  "snapshotSha256": "a1ce35559cd9237e323123b3ce8143fd6add2d6bf94c6203d769243d7a380636",
+  "exclusions": [
+    ".cache",
+    ".expo",
+    ".git",
+    ".next",
+    ".remember",
+    ".turbo",
+    "__pycache__",
+    "build",
+    "coverage",
+    "data",
+    "dist",
+    "node_modules",
+    "playwright-report",
+    "reports",
+    "test-results",
+    ".env (except .env.example)",
+    ".npmrc",
+    "private keys, database files, logs, compiler cache"
+  ],
+  "sourceName": "typescript_starter"
+}

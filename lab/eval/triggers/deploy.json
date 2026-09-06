@@ -1,0 +1,22 @@
+{
+  "skill": "deploy",
+  "description_summary": "Use when editing Docker/Compose, production builds, environment validation, migrations, health checks, graceful shutdown, or deployment smoke tests.",
+  "should_trigger": [
+    "Review the existing Docker and Compose production deployment setup.",
+    "Verify migration ordering before the API starts in the image.",
+    "Configure deployment using the starter environment and storage modes.",
+    "Check a built image with the existing deploy smoke tests.",
+    "Explain how production API and worker processes share persistent storage."
+  ],
+  "should_trigger_test": [
+    "Investigate why the deployed container uses the memory driver unexpectedly.",
+    "Verify shutdown and health behavior in the prepared deployment artifact."
+  ],
+  "should_not_trigger": [
+    "Implement the web session mutation through the existing Server Action.",
+    "Find the suspected N+1 queries in this Drizzle loader.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Freeze edits to the database package for this investigation.",
+    "Record this reviewed exact package artifact in dependency-vet.json."
+  ]
+}

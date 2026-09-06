@@ -1,0 +1,5827 @@
+{
+  "schemaVersion": 2,
+  "plugin": "typescript-starter",
+  "starterSnapshotSha256": "a1ce35559cd9237e323123b3ce8143fd6add2d6bf94c6203d769243d7a380636",
+  "scope": "Current canonical resources, tooling, tests, evaluations and generated distributions. Active is an inventory state; verification results are recorded separately.",
+  "items": [
+    {
+      "id": ".github/dependabot.yml",
+      "kind": "integration",
+      "paths": [
+        ".github/dependabot.yml"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": ".github/workflows/cassette-regen.yml",
+      "kind": "integration",
+      "paths": [
+        ".github/workflows/cassette-regen.yml"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": ".github/workflows/lint.yml",
+      "kind": "integration",
+      "paths": [
+        ".github/workflows/lint.yml"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "distribution:amp",
+      "kind": "distribution",
+      "paths": [
+        "targets/amp"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "distribution:codex",
+      "kind": "distribution",
+      "paths": [
+        "targets/codex"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "distribution:dsh",
+      "kind": "distribution",
+      "paths": [
+        "targets/dsh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "distribution:opencode",
+      "kind": "distribution",
+      "paths": [
+        "targets/opencode"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "distribution:pi",
+      "kind": "distribution",
+      "paths": [
+        "targets/pi"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "docs/quality/coverage.json",
+      "kind": "documentation",
+      "paths": [
+        "docs/quality/coverage.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "docs/reference/example-verification.md",
+      "kind": "documentation",
+      "paths": [
+        "docs/reference/example-verification.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "docs/quality/inventory.json",
+      "kind": "documentation",
+      "paths": [
+        "docs/quality/inventory.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "config/registry-capture-packages.json",
+      "kind": "documentation",
+      "paths": [
+        "config/registry-capture-packages.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "docs/reference/starter-snapshot.json",
+      "kind": "documentation",
+      "paths": [
+        "docs/reference/starter-snapshot.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/.gitignore",
+      "kind": "evaluation",
+      "paths": [
+        "lab/.gitignore"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/.gitignore",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/.gitignore"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/SKILL.md",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/program.md",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/program.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/references/mutation-strategies.md",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/references/mutation-strategies.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/references/state-management.md",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/references/state-management.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/retention.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/retention.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/scripts/checks.sh",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/scripts/checks.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/scripts/protected_sections.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/scripts/protected_sections.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/scripts/run-iteration.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/scripts/run-iteration.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/scripts/score-skill.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/scripts/score-skill.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/tests/__init__.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/tests/__init__.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/tests/test_deviation_dispatch.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/tests/test_deviation_dispatch.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/autoresearch/tests/test_protected_sections.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/autoresearch/tests/test_protected_sections.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/.gitignore",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/.gitignore"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/README.md",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/README.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/__init__.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/__init__.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/agent_matchers.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/agent_matchers.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/agent_scorer.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/agent_scorer.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/baseline.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/baseline.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/compare.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/compare.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/compare_models.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/compare_models.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/dimensions/__init__.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/dimensions/__init__.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/dimensions/accuracy.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/dimensions/accuracy.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/dimensions/behavioral.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/dimensions/behavioral.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/dimensions/clarity.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/dimensions/clarity.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/dimensions/completeness.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/dimensions/completeness.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/dimensions/conciseness.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/dimensions/conciseness.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/dimensions/safety.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/dimensions/safety.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/dimensions/specificity.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/dimensions/specificity.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/dimensions/triggering.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/dimensions/triggering.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/_template.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/_template.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/audit.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/audit.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/background-jobs.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/background-jobs.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/boundaries.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/boundaries.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/brainstorm.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/brainstorm.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/brief.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/brief.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/challenge.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/challenge.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/codex-loop.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/codex-loop.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/compound-docs.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/compound-docs.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/compound.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/compound.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/deploy.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/deploy.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/deps-audit.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/deps-audit.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/deps-update.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/deps-update.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/deps-vet.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/deps-vet.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/docs-fetcher.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/docs-fetcher.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/document.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/document.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/domain-resources.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/domain-resources.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/drizzle-constraint-debug.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/drizzle-constraint-debug.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/drizzle-n1-check.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/drizzle-n1-check.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/drizzle-patterns.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/drizzle-patterns.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/examples.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/examples.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/fastify-modules.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/fastify-modules.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/freeze.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/freeze.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/full.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/full.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/help.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/help.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/init.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/init.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/intent-detection.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/intent-detection.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/intro.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/intro.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/investigate.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/investigate.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/learn-from-fix.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/learn-from-fix.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/narrow-catch.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/narrow-catch.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/perf.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/perf.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/permissions.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/permissions.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/plan.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/plan.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/pnpm-compression.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/pnpm-compression.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/pr-review.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/pr-review.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/quick.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/quick.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/react-patterns.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/react-patterns.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/react-state-audit.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/react-state-audit.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/recall.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/recall.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/research.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/research.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/review.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/review.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/runtime-inspection.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/runtime-inspection.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/security.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/security.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/techdebt.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/techdebt.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/testing.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/testing.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/trace.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/trace.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/triage.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/triage.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/typescript-idioms.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/typescript-idioms.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/verify.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/verify.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/watch-pr.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/watch-pr.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/evals/work.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/evals/work.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/generate_evals.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/generate_evals.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/matchers.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/matchers.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/run_eval.sh",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/run_eval.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/schemas.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/schemas.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/scorer.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/scorer.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/tests/__init__.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/tests/__init__.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/tests/test_behavioral_gate.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/tests/test_behavioral_gate.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/tests/test_consistency.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/tests/test_consistency.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/tests/test_deviation_classifier.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/tests/test_deviation_classifier.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/tests/test_matchers.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/tests/test_matchers.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/tests/test_scorer.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/tests/test_scorer.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/tests/test_typescript_fixtures.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/tests/test_typescript_fixtures.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/trigger_scorer.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/trigger_scorer.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/.gitignore",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/.gitignore"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/__init__.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/__init__.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/_template.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/_template.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/audit.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/audit.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/background-jobs.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/background-jobs.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/boundaries.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/boundaries.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/brainstorm.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/brainstorm.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/brief.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/brief.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/challenge.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/challenge.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/codex-loop.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/codex-loop.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/compound-docs.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/compound-docs.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/compound.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/compound.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/deploy.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/deploy.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/deps-audit.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/deps-audit.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/deps-update.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/deps-update.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/deps-vet.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/deps-vet.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/deviation_classifier.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/deviation_classifier.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/deviation_types.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/deviation_types.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/docs-fetcher.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/docs-fetcher.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/document.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/document.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/domain-resources.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/domain-resources.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/drizzle-constraint-debug.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/drizzle-constraint-debug.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/drizzle-n1-check.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/drizzle-n1-check.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/drizzle-patterns.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/drizzle-patterns.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/examples.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/examples.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/fastify-modules.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/fastify-modules.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/freeze.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/freeze.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/full.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/full.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/generate_triggers.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/generate_triggers.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/help.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/help.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/init.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/init.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/intent-detection.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/intent-detection.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/intro.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/intro.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/investigate.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/investigate.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/learn-from-fix.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/learn-from-fix.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/narrow-catch.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/narrow-catch.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/perf.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/perf.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/permissions.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/permissions.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/plan.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/plan.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/pnpm-compression.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/pnpm-compression.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/pr-review.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/pr-review.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/quick.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/quick.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/react-patterns.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/react-patterns.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/react-state-audit.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/react-state-audit.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/recall.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/recall.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/research.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/research.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/review.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/review.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/runtime-inspection.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/runtime-inspection.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/security.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/security.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/strip_hints.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/strip_hints.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/techdebt.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/techdebt.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/testing.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/testing.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/trace.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/trace.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/triage.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/triage.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/typescript-idioms.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/typescript-idioms.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/verify.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/verify.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/watch-pr.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/watch-pr.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/triggers/work.json",
+      "kind": "evaluation",
+      "paths": [
+        "lab/eval/triggers/work.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/skillspector/scan.sh",
+      "kind": "evaluation",
+      "paths": [
+        "lab/skillspector/scan.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/tournament/__init__.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/tournament/__init__.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/tournament/config.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/tournament/config.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/tournament/config.yaml",
+      "kind": "evaluation",
+      "paths": [
+        "lab/tournament/config.yaml"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/tournament/description_tournament.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/tournament/description_tournament.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/tournament/llm.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/tournament/llm.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/tournament/prompts.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/tournament/prompts.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/tournament/test_tournament.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/tournament/test_tournament.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/tournament/tournament.py",
+      "kind": "evaluation",
+      "paths": [
+        "lab/tournament/tournament.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/catchup/.claude-plugin/plugin.json",
+      "kind": "manifest",
+      "paths": [
+        "plugins/catchup/.claude-plugin/plugin.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/catchup/README.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/catchup/README.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/catchup/agents/catchup-runner.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/catchup/agents/catchup-runner.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/catchup/skills/catchup/SKILL.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/catchup/skills/catchup/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/catchup/skills/catchup/references/brief-format.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/catchup/skills/catchup/references/brief-format.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/catchup/skills/catchup/references/config-schema.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/catchup/skills/catchup/references/config-schema.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/catchup/skills/catchup/references/source-adapters.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/catchup/skills/catchup/references/source-adapters.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/catchup/skills/catchup/references/time-window.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/catchup/skills/catchup/references/time-window.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/catchup/skills/ketchup/SKILL.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/catchup/skills/ketchup/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/drizzle/.claude-plugin/plugin.json",
+      "kind": "manifest",
+      "paths": [
+        "plugins/drizzle/.claude-plugin/plugin.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/drizzle/skills/constraint-debug/SKILL.md",
+      "kind": "alias",
+      "paths": [
+        "plugins/drizzle/skills/constraint-debug/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/drizzle/skills/n1-check/SKILL.md",
+      "kind": "alias",
+      "paths": [
+        "plugins/drizzle/skills/n1-check/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/react/.claude-plugin/plugin.json",
+      "kind": "manifest",
+      "paths": [
+        "plugins/react/.claude-plugin/plugin.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/react/skills/state-audit/SKILL.md",
+      "kind": "alias",
+      "paths": [
+        "plugins/react/skills/state-audit/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/.claude-plugin/plugin.json",
+      "kind": "manifest",
+      "paths": [
+        "plugins/typescript-starter/.claude-plugin/plugin.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/authorization-reviewer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/authorization-reviewer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/background-jobs-specialist.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/background-jobs-specialist.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/call-tracer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/call-tracer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/codex-reviewer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/codex-reviewer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/context-supervisor.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/context-supervisor.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/deep-bug-investigator.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/deep-bug-investigator.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/dependency-analyzer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/dependency-analyzer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/deployment-validator.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/deployment-validator.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/domain-resource-designer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/domain-resource-designer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/drizzle-schema-designer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/drizzle-schema-designer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/iron-law-judge.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/iron-law-judge.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/node-runtime-advisor.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/node-runtime-advisor.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/npm-deps-triager.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/npm-deps-triager.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/npm-library-researcher.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/npm-library-researcher.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/parallel-reviewer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/parallel-reviewer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/planning-orchestrator.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/planning-orchestrator.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/query-optimizer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/query-optimizer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/react-architect.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/react-architect.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/requirements-verifier.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/requirements-verifier.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/security-analyzer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/security-analyzer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/starter-patterns-analyst.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/starter-patterns-analyst.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/testing-reviewer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/testing-reviewer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/typescript-reviewer.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/typescript-reviewer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/verification-runner.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/verification-runner.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/web-researcher.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/web-researcher.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/agents/workflow-orchestrator.md",
+      "kind": "agent",
+      "paths": [
+        "plugins/typescript-starter/agents/workflow-orchestrator.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/amp/ts-watch-pr.ts",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/amp/ts-watch-pr.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/amp/watch-pr/SKILL.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/amp/watch-pr/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/amp/watch-pr/references/watcher-mechanics.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/amp/watch-pr/references/watcher-mechanics.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/README.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/hooks/README.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/docs/code-quality.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/hooks/docs/code-quality.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/docs/context-injection.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/hooks/docs/context-injection.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/docs/failure-recovery.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/hooks/docs/failure-recovery.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/docs/safety-gates.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/hooks/docs/safety-gates.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/docs/session-lifecycle.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/hooks/docs/session-lifecycle.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/docs/workflow-state.md",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/hooks/docs/workflow-state.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/hooks.json",
+      "kind": "manifest",
+      "paths": [
+        "plugins/typescript-starter/hooks/hooks.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/block-dangerous-ops.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/block-dangerous-ops.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/check-branch-freshness.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/check-branch-freshness.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/check-format.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/check-format.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/check-pending-plans.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/check-pending-plans.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/check-resume.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/check-resume.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/check-scratchpad.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/check-scratchpad.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/debug-statement-warning.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/debug-statement-warning.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/deps-audit-gate.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/deps-audit-gate.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/detect-domain-resources.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/detect-domain-resources.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/detect-runtime-tools.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/detect-runtime-tools.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/error-critic.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/error-critic.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/freeze-gate.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/freeze-gate.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/hook_runtime.py",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/hook_runtime.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/inject-iron-laws.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/inject-iron-laws.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/iron-law-verifier.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/iron-law-verifier.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/log-progress.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/log-progress.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/plan-stop-reminder.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/plan-stop-reminder.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/postcompact-verify.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/postcompact-verify.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/precompact-rules.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/precompact-rules.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/route-intent.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/route-intent.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/security-reminder.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/security-reminder.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/setup-dirs.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/setup-dirs.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/stop-failure-log.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/stop-failure-log.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/scripts/typescript-failure-hints.sh",
+      "kind": "hook",
+      "paths": [
+        "plugins/typescript-starter/hooks/scripts/typescript-failure-hints.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/tests/block-dangerous-ops_test.sh",
+      "kind": "test",
+      "paths": [
+        "plugins/typescript-starter/hooks/tests/block-dangerous-ops_test.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/hooks/tests/test_hooks.py",
+      "kind": "test",
+      "paths": [
+        "plugins/typescript-starter/hooks/tests/test_hooks.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/settings.json",
+      "kind": "integration",
+      "paths": [
+        "plugins/typescript-starter/settings.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/audit/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/audit/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/audit/references/architecture-checks.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/audit/references/architecture-checks.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/audit/references/scoring-methodology.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/audit/references/scoring-methodology.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/background-jobs/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/background-jobs/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/background-jobs/references/queue-config.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/background-jobs/references/queue-config.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/background-jobs/references/recurrence-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/background-jobs/references/recurrence-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/background-jobs/references/testing-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/background-jobs/references/testing-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/background-jobs/references/worker-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/background-jobs/references/worker-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/boundaries/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/boundaries/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/boundaries/references/context-design.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/boundaries/references/context-design.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/boundaries/references/refactoring-boundaries.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/boundaries/references/refactoring-boundaries.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/brainstorm/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/brainstorm/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/brainstorm/references/interview-techniques.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/brainstorm/references/interview-techniques.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/brainstorm/references/research-integration.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/brainstorm/references/research-integration.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/brief/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/brief/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/brief/references/briefing-guide.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/brief/references/briefing-guide.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/brief/references/visual-explainer.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/brief/references/visual-explainer.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/challenge/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/challenge/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/codex-loop/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/codex-loop/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/codex-loop/references/codex-cli.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/codex-loop/references/codex-cli.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/compound-docs/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/compound-docs/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/compound-docs/references/resolution-template.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/compound-docs/references/resolution-template.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/compound-docs/references/schema.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/compound-docs/references/schema.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/compound/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/compound/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/compound/references/compound-workflow.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/compound/references/compound-workflow.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deploy/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/deploy/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deploy/references/docker-config.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deploy/references/docker-config.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deploy/references/host-adaptation.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deploy/references/host-adaptation.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/priv/protected-names.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/priv/protected-names.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/priv/semgrep/typescript-supply-chain.yaml",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/priv/semgrep/typescript-supply-chain.yaml"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/priv/yara/npm-malware.yar",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/priv/yara/npm-malware.yar"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/references/cache-and-gate.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/references/cache-and-gate.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/references/implementation.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/references/implementation.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/analysis.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/analysis.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/audit_core.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/audit_core.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/deps_audit.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/deps_audit.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/diff_cves.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/diff_cves.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/diff_findings.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/diff_findings.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/findings_to_sarif.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/findings_to_sarif.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/ledger.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/ledger.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/require_tool.cjs",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/require_tool.cjs"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/scan_source.cjs",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/scan_source.cjs"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/semver.cjs",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/semver.cjs"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/scripts/transport.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/scripts/transport.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/README.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/README.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/apps/api/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/apps/api/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/apps/e2e/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/apps/e2e/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/apps/mobile/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/apps/mobile/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/apps/web/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/apps/web/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/apps/worker/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/apps/worker/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/capture.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/capture.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/config/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/config/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/db/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/db/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/env/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/env/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/logger/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/logger/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/types/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/types/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/ui/package.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/packages/ui/package.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/pnpm-lock.yaml",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/pnpm-lock.yaml"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/pnpm-workspace.yaml",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/starter-lock/pnpm-workspace.yaml"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-audit/test-assets/synthetic/native-cases.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-audit/test-assets/synthetic/native-cases.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-update/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-update/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-update/references/update-workflow.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-update/references/update-workflow.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-update/scripts/deps_update.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-update/scripts/deps_update.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-vet/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-vet/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-vet/references/ledger.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-vet/references/ledger.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/deps-vet/scripts/deps_vet.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/deps-vet/scripts/deps_vet.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/docs-fetcher/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/docs-fetcher/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/docs-fetcher/scripts/docs_fetcher.py",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/docs-fetcher/scripts/docs_fetcher.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/document/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/document/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/document/references/doc-best-practices.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/document/references/doc-best-practices.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/document/references/doc-templates.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/document/references/doc-templates.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/document/references/documentation-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/document/references/documentation-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/document/references/output-format.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/document/references/output-format.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/domain-resources/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/domain-resources/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-constraint-debug/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-constraint-debug/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-constraint-debug/references/constraint-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-constraint-debug/references/constraint-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-n1-check/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-n1-check/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-n1-check/references/batch-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-n1-check/references/batch-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-n1-check/references/query-optimization.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-n1-check/references/query-optimization.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-patterns/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-patterns/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-patterns/references/fulltext-search.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-patterns/references/fulltext-search.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-patterns/references/input-contracts.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-patterns/references/input-contracts.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-patterns/references/migrations.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-patterns/references/migrations.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-patterns/references/queries.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-patterns/references/queries.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/drizzle-patterns/references/transactions.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/drizzle-patterns/references/transactions.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/references/starter-examples.json",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/references/starter-examples.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/references/starter-examples.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/references/starter-examples.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/api/src/modules/sessions/__tests__/routes.test.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/api/src/modules/sessions/__tests__/routes.test.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/api/src/modules/sessions/routes.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/api/src/modules/sessions/routes.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/api/src/modules/sessions/service.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/api/src/modules/sessions/service.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/mobile/src/screens/SessionDetail/useSessionDetail.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/mobile/src/screens/SessionDetail/useSessionDetail.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/mobile/src/services/apiService.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/mobile/src/services/apiService.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/mobile/src/store/sessionsStore.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/mobile/src/store/sessionsStore.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/web/app/actions/actions.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/web/app/actions/actions.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/web/app/api/sessions/[sessionId]/events/route.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/web/app/api/sessions/[sessionId]/events/route.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/web/lib/session-stream.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/web/lib/session-stream.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/worker/src/handlers/archive-session.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/worker/src/handlers/archive-session.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/apps/worker/src/runner.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/apps/worker/src/runner.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/packages/db/drizzle/0004_session_revisions.sql",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/packages/db/drizzle/0004_session_revisions.sql"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/packages/db/src/drizzle-repository.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/packages/db/src/drizzle-repository.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/packages/db/src/errors.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/packages/db/src/errors.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/packages/db/src/memory-repository.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/packages/db/src/memory-repository.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/packages/db/src/repository.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/packages/db/src/repository.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/packages/types/src/schemas/common.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/packages/types/src/schemas/common.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/packages/types/src/schemas/session.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/packages/types/src/schemas/session.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/packages/types/src/session-projection.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/packages/types/src/session-projection.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/examples/test-assets/packages/types/src/session.ts",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/examples/test-assets/packages/types/src/session.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/reference/example-verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/fastify-modules/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/fastify-modules/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/fastify-modules/references/context-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/fastify-modules/references/context-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/fastify-modules/references/fastify-hooks.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/fastify-modules/references/fastify-hooks.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/fastify-modules/references/identity-boundaries.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/fastify-modules/references/identity-boundaries.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/fastify-modules/references/json-api-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/fastify-modules/references/json-api-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/fastify-modules/references/routing-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/fastify-modules/references/routing-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/freeze/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/freeze/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/full/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/full/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/full/references/cycle-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/full/references/cycle-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/full/references/example-run.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/full/references/example-run.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/full/references/execution-steps.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/full/references/execution-steps.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/full/references/safety-recovery.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/full/references/safety-recovery.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/help/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/help/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/help/references/tool-catalog.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/help/references/tool-catalog.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/init/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/init/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/init/references/codex-review-guidelines.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/init/references/codex-review-guidelines.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/init/references/injectable-template.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/init/references/injectable-template.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/intent-detection/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/intent-detection/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/intro/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/intro/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/intro/references/tutorial-content.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/intro/references/tutorial-content.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/investigate/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/investigate/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/investigate/references/debug-commands.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/investigate/references/debug-commands.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/investigate/references/error-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/investigate/references/error-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/investigate/references/investigation-template.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/investigate/references/investigation-template.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/learn-from-fix/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/learn-from-fix/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/learn-from-fix/references/common-mistakes.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/learn-from-fix/references/common-mistakes.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/narrow-catch/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/narrow-catch/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/narrow-catch/references/patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/narrow-catch/references/patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/narrow-catch/references/taxonomy.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/narrow-catch/references/taxonomy.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/perf/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/perf/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/perf/references/benchmarking.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/perf/references/benchmarking.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/permissions/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/permissions/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/permissions/references/extraction-script.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/permissions/references/extraction-script.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/permissions/references/risk-classification.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/permissions/references/risk-classification.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/permissions/references/settings-format.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/permissions/references/settings-format.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/plan/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/plan/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/plan/references/agent-selection.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/plan/references/agent-selection.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/plan/references/breadboarding.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/plan/references/breadboarding.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/plan/references/complexity-detail.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/plan/references/complexity-detail.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/plan/references/example-plan.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/plan/references/example-plan.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/plan/references/plan-template.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/plan/references/plan-template.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/plan/references/planning-workflow.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/plan/references/planning-workflow.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/pnpm-compression/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/pnpm-compression/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/pnpm-compression/references/install.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/pnpm-compression/references/install.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/pnpm-compression/references/rtk-filters.toml",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/pnpm-compression/references/rtk-filters.toml"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/pr-review/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/pr-review/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/pr-review/references/bot-triage.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/pr-review/references/bot-triage.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/pr-review/references/gh-commands.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/pr-review/references/gh-commands.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/pr-review/references/response-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/pr-review/references/response-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/quick/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/quick/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/react-patterns/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/react-patterns/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/react-patterns/references/async-streams.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/react-patterns/references/async-streams.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/react-patterns/references/components.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/react-patterns/references/components.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/react-patterns/references/forms-uploads.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/react-patterns/references/forms-uploads.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/react-patterns/references/js-interop.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/react-patterns/references/js-interop.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/react-patterns/references/participants-transports.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/react-patterns/references/participants-transports.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/react-patterns/references/projection-navigation.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/react-patterns/references/projection-navigation.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/react-state-audit/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/react-state-audit/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/recall/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/recall/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/recall/references/archaeology-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/recall/references/archaeology-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/research/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/research/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/research/references/library-evaluation.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/research/references/library-evaluation.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/review/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/review/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/review/references/agent-spawning.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/review/references/agent-spawning.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/review/references/blocker-handling.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/review/references/blocker-handling.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/review/references/conventions.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/review/references/conventions.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/review/references/example-review.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/review/references/example-review.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/review/references/requirements-detection.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/review/references/requirements-detection.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/review/references/review-template.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/review/references/review-template.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/runtime-inspection/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/runtime-inspection/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/runtime-inspection/references/proactive-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/runtime-inspection/references/proactive-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/runtime-inspection/references/tool-examples.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/runtime-inspection/references/tool-examples.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/runtime-inspection/references/validation-checklist.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/runtime-inspection/references/validation-checklist.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/security/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/security/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/security/references/advanced-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/security/references/advanced-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/security/references/authentication.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/security/references/authentication.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/security/references/authorization.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/security/references/authorization.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/security/references/input-validation.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/security/references/input-validation.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/security/references/oauth-linking.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/security/references/oauth-linking.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/security/references/rate-limiting.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/security/references/rate-limiting.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/security/references/security-headers.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/security/references/security-headers.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/techdebt/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/techdebt/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/testing/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/testing/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/testing/references/fixture-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/testing/references/fixture-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/testing/references/mock-boundaries.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/testing/references/mock-boundaries.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/testing/references/react-testing.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/testing/references/react-testing.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/testing/references/vitest-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/testing/references/vitest-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/trace/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/trace/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/trace/references/argument-extraction.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/trace/references/argument-extraction.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/trace/references/entry-points.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/trace/references/entry-points.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/trace/references/import-call-analysis.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/trace/references/import-call-analysis.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/triage/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/triage/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/triage/references/triage-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/triage/references/triage-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/typescript-idioms/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/typescript-idioms/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/typescript-idioms/references/anti-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/typescript-idioms/references/anti-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/typescript-idioms/references/async-composition.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/typescript-idioms/references/async-composition.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/typescript-idioms/references/discriminated-unions.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/typescript-idioms/references/discriminated-unions.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/typescript-idioms/references/error-handling.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/typescript-idioms/references/error-handling.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/typescript-idioms/references/node-lifecycle.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/typescript-idioms/references/node-lifecycle.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/typescript-idioms/references/pnpm-tasks.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/typescript-idioms/references/pnpm-tasks.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/typescript-idioms/references/strict-types.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/typescript-idioms/references/strict-types.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/typescript-idioms/references/troubleshooting.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/typescript-idioms/references/troubleshooting.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/typescript-idioms/references/version-compatibility.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/typescript-idioms/references/version-compatibility.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/verify/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/verify/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/verify/references/project-discovery.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/verify/references/project-discovery.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/watch-pr/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/watch-pr/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/watch-pr/references/watcher-mechanics.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/watch-pr/references/watcher-mechanics.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/watch-pr/scripts/watch-pr.sh",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/watch-pr/scripts/watch-pr.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/work/SKILL.md",
+      "kind": "skill",
+      "paths": [
+        "plugins/typescript-starter/skills/work/SKILL.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/work/references/error-recovery.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/work/references/error-recovery.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/work/references/execution-guide.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/work/references/execution-guide.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/work/references/file-formats.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/work/references/file-formats.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/work/references/harness-patterns.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/work/references/harness-patterns.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "plugins/typescript-starter/skills/work/references/resume-strategies.md",
+      "kind": "resource",
+      "paths": [
+        "plugins/typescript-starter/skills/work/references/resume-strategies.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/__init__.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/__init__.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/build_amp_skills.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/build_amp_skills.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/build_codex_skills.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/build_codex_skills.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/build_dsh_skills.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/build_dsh_skills.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/build_opencode_skills.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/build_opencode_skills.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/build_pi_skills.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/build_pi_skills.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/capture_registry.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/capture_registry.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/fetch-cc-changelog.sh",
+      "kind": "integration",
+      "paths": [
+        "scripts/fetch-cc-changelog.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/fetch-claude-docs.sh",
+      "kind": "integration",
+      "paths": [
+        "scripts/fetch-claude-docs.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/generated_target_snapshots.json",
+      "kind": "integration",
+      "paths": [
+        "scripts/generated_target_snapshots.json"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/generated_target_snapshots.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/generated_target_snapshots.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/install-hooks.mjs",
+      "kind": "integration",
+      "paths": [
+        "scripts/install-hooks.mjs"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/harness_lib/__init__.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/harness_lib/__init__.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/harness_lib/amp.py",
+      "kind": "generator",
+      "paths": [
+        "scripts/harness_lib/amp.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/harness_lib/codex.py",
+      "kind": "generator",
+      "paths": [
+        "scripts/harness_lib/codex.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/harness_lib/dsh.py",
+      "kind": "generator",
+      "paths": [
+        "scripts/harness_lib/dsh.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/harness_lib/frontmatter.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/harness_lib/frontmatter.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/harness_lib/generated_tree.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/harness_lib/generated_tree.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/harness_lib/opencode.py",
+      "kind": "generator",
+      "paths": [
+        "scripts/harness_lib/opencode.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/harness_lib/pi.py",
+      "kind": "generator",
+      "paths": [
+        "scripts/harness_lib/pi.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/harness_lib/skill_transforms.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/harness_lib/skill_transforms.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/pre-commit.sh",
+      "kind": "integration",
+      "paths": [
+        "scripts/pre-commit.sh"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/runtime_smoke.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/runtime_smoke.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/starter_snapshot.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/starter_snapshot.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/amp_plugin_harness.ts",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/amp_plugin_harness.ts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/amp_watch_pr_harness.mts",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/amp_watch_pr_harness.mts"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_amp.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_amp.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_capture_registry.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_capture_registry.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_claude_commands.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_claude_commands.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_codex.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_codex.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_dependency_workflows.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_dependency_workflows.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_dsh.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_dsh.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_frontmatter.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_frontmatter.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_generated_target_snapshots.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_generated_target_snapshots.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_generated_tree.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_generated_tree.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_git_fixture_isolation.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_git_fixture_isolation.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_install_hooks.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_install_hooks.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_opencode.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_opencode.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_packaged_resources.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_packaged_resources.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_pi.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_pi.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_runtime_smoke.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_runtime_smoke.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_session_metrics.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_session_metrics.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_skill_content.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_skill_content.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_skill_transforms.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_skill_transforms.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_starter_snapshot.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_starter_snapshot.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/tests/test_typescript_harness.py",
+      "kind": "test",
+      "paths": [
+        "scripts/tests/test_typescript_harness.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "scripts/validate_harness.py",
+      "kind": "integration",
+      "paths": [
+        "scripts/validate_harness.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "docs/quality/verification.md",
+      "kind": "documentation",
+      "paths": [
+        "docs/quality/verification.md"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    },
+    {
+      "id": "lab/eval/tests/test_eval_runner.py",
+      "kind": "test",
+      "paths": [
+        "lab/eval/tests/test_eval_runner.py"
+      ],
+      "status": "active",
+      "evidencePaths": [
+        "docs/quality/verification.md"
+      ]
+    }
+  ]
+}

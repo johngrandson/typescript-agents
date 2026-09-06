@@ -1,0 +1,22 @@
+{
+  "skill": "compound",
+  "description_summary": "Use after a verified fix to capture a searchable TypeScript starter solution with root cause, evidence and prevention.",
+  "should_trigger": [
+    "The stale response fix worked; capture it as a reusable solution.",
+    "Document the root cause and verified fix in our solution archive.",
+    "Turn this completed debugging session into a searchable solution note.",
+    "Save the tested workaround and the approaches that failed.",
+    "Record the incident symptoms, cause, verification and future prevention."
+  ],
+  "should_trigger_test": [
+    "Update an existing solution note with the newly confirmed cause.",
+    "Capture a solved worker lease bug without copying sensitive SQL parameters."
+  ],
+  "should_not_trigger": [
+    "Search our saved solution docs for the earlier stale subscription fix.",
+    "Diagnose this reproducible Fastify error before changing any code.",
+    "Execute the tasks in this existing implementation plan.",
+    "Watch this pull request for new review comments and check results.",
+    "Fetch official Fastify documentation for the version in our lockfile."
+  ]
+}

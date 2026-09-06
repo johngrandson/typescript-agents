@@ -1,0 +1,45 @@
+{
+  "name": "@starter/web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Next.js App Router client. Server actions are the only funnel to the API.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/build.mjs",
+    "start": "node .next/standalone/apps/web/server.js",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "dependencies": {
+    "@starter/types": "workspace:*",
+    "@starter/ui": "workspace:*",
+    "lucide-react": "^0.468.0",
+    "next": "15.5.25",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "server-only": "^0.0.1",
+    "@starter/env": "workspace:*"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "15.5.25",
+    "@starter/config": "workspace:*",
+    "@tailwindcss/postcss": "^4.0.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "19.0.14",
+    "@types/react-dom": "19.0.6",
+    "@vitest/coverage-v8": "5.0.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vite": "8.2.2",
+    "vitest": "5.0.0"
+  }
+}

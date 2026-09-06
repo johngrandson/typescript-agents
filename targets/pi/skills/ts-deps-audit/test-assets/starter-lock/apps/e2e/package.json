@@ -1,0 +1,28 @@
+{
+  "name": "@starter/e2e",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "End-to-end tests: the vertical slice exercised through a real browser.",
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "install:browsers": "playwright install --with-deps chromium",
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "report": "playwright show-report",
+    "test:deploy": "node --experimental-strip-types support/deployment-smoke.mts",
+    "test:dev": "node --experimental-strip-types support/development-smoke.mts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@starter/config": "workspace:*",
+    "@starter/types": "workspace:*",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "yaml": "2.9.0"
+  }
+}

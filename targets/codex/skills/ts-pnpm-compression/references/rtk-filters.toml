@@ -1,0 +1,52 @@
+schema_version = 1
+
+# Conservative optional filters. Keep failures/warnings/stacks and original exit status.
+# Never short-circuit on a passing line: later work can fail.
+# Blank lines are the only removed content; full raw logs remain available.
+[filters.pnpm-test]
+description = "Compact Vitest output without removing diagnostics"
+match_command = '^pnpm(?: --filter \S+)? (?:run )?test(?::run)?(?:\s|$)'
+strip_ansi = true
+filter_stderr = true
+strip_lines_matching = ['^\s*$']
+
+[[tests.pnpm-test]]
+name = "later failure survives earlier success"
+input = "\nTest Files 1 passed\n\nFAIL session.test.ts\nAssertionError: expected 1 to be 2\n  at session.test.ts:12:3\n"
+expected = "Test Files 1 passed\nFAIL session.test.ts\nAssertionError: expected 1 to be 2\n  at session.test.ts:12:3"
+
+[filters.pnpm-types]
+description = "Compact TypeScript output without suppressing errors"
+match_command = '^pnpm(?: --filter \S+)? (?:run )?check-types(?:\s|$)'
+strip_ansi = true
+filter_stderr = true
+strip_lines_matching = ['^\s*$']
+
+[[tests.pnpm-types]]
+name = "type error survives"
+input = "\nsrc/service.ts(12,3): error TS2322: Type 'string' is not assignable to type 'number'.\n"
+expected = "src/service.ts(12,3): error TS2322: Type 'string' is not assignable to type 'number'."
+
+[filters.pnpm-lint]
+description = "Compact ESLint output, retaining errors and warnings"
+match_command = '^pnpm(?: --filter \S+)? (?:run )?lint(?:\s|$)'
+strip_ansi = true
+filter_stderr = true
+strip_lines_matching = ['^\s*$']
+
+[[tests.pnpm-lint]]
+name = "lint locations and warning survive"
+input = "\napps/api/src/app.ts\n  10:2 warning Unexpected console statement no-console\n  11:2 error Missing await example-rule\n"
+expected = "apps/api/src/app.ts\n  10:2 warning Unexpected console statement no-console\n  11:2 error Missing await example-rule"
+
+[filters.turbo-checks]
+description = "Compact Turbo output without hiding failed tasks"
+match_command = '^pnpm (?:verify|exec turbo run (?:check-types|lint|test:run))(?:\s|$)'
+strip_ansi = true
+filter_stderr = true
+strip_lines_matching = ['^\s*$']
+
+[[tests.turbo-checks]]
+name = "Turbo failure and diagnostics survive"
+input = "\n@starter/types:test:run: Test Files 1 passed\n\n@starter/api:check-types: error TS2307: Cannot find module\nTasks: 1 successful, 2 total\nERROR run failed: command exited (1)\n"
+expected = "@starter/types:test:run: Test Files 1 passed\n@starter/api:check-types: error TS2307: Cannot find module\nTasks: 1 successful, 2 total\nERROR run failed: command exited (1)"

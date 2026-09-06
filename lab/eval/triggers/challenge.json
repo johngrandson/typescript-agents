@@ -1,0 +1,22 @@
+{
+  "skill": "challenge",
+  "description_summary": "Use when stress-testing Drizzle changes, React web/mobile interactions, worker lifecycle or PR readiness against concrete evidence.",
+  "should_trigger": [
+    "Challenge this proposed architecture before we commit to it.",
+    "Stress-test our migration plan with hard questions about rollback.",
+    "Question my assumption that this cache solves the actual bottleneck.",
+    "Find the weakest evidence in this design decision.",
+    "Act as a skeptical reviewer of these implementation tradeoffs."
+  ],
+  "should_trigger_test": [
+    "Challenge whether splitting this service improves anything measurable.",
+    "Question the failure modes we missed in the deployment proposal."
+  ],
+  "should_not_trigger": [
+    "Fix this typo in one mobile component with a contained edit.",
+    "Execute the tasks in this existing implementation plan.",
+    "Watch this pull request for new review comments and check results.",
+    "Fetch official Fastify documentation for the version in our lockfile.",
+    "The stale response fix worked; capture it as a reusable solution."
+  ]
+}

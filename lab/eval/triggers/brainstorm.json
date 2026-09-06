@@ -1,0 +1,22 @@
+{
+  "skill": "brainstorm",
+  "description_summary": "Use when a TypeScript starter feature is vague and needs requirements, alternatives or tradeoffs before a plan.",
+  "should_trigger": [
+    "I have a vague idea for session notifications; help explore requirements.",
+    "We need better mobile collaboration but have not chosen an approach.",
+    "Help compare alternatives for offline session editing before planning.",
+    "Explore the scope and tradeoffs of adding document version history.",
+    "Interview me about what a session archive feature should accomplish."
+  ],
+  "should_trigger_test": [
+    "Capture our feature discussion so a later implementation plan can reuse it.",
+    "Research uncertain requirements and return to the feature discussion afterward."
+  ],
+  "should_not_trigger": [
+    "Execute the tasks in this existing implementation plan.",
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Watch this pull request for new review comments and check results.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation."
+  ]
+}

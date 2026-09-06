@@ -1,0 +1,22 @@
+{
+  "skill": "fastify-modules",
+  "description_summary": "Use when editing Fastify routes, services, module registration, AppContext composition, error envelopes, or API module boundaries.",
+  "should_trigger": [
+    "Design a Fastify module with explicit AppContext and registry composition.",
+    "Separate transport validation from domain service behavior in this route.",
+    "Add a module without making API core import its domain implementation.",
+    "Explain how the Fastify plugin registry wires repository dependencies.",
+    "Refactor HTTP error handling while preserving the response envelope."
+  ],
+  "should_trigger_test": [
+    "Check teardown ownership for resources created by a Fastify plugin.",
+    "Keep service code framework independent while adding a new endpoint."
+  ],
+  "should_not_trigger": [
+    "Implement the web session mutation through the existing Server Action.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Watch this pull request for new review comments and check results.",
+    "Freeze edits to the database package for this investigation.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

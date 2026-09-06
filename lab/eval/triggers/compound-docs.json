@@ -1,0 +1,22 @@
+{
+  "skill": "compound-docs",
+  "description_summary": "Use when searching verified TypeScript/Fastify/Drizzle solution docs by symptom, component or root cause before a repeated investigation.",
+  "should_trigger": [
+    "Search our saved solution docs for the earlier stale subscription fix.",
+    "Find previous troubleshooting notes before investigating this recurring failure.",
+    "Look up an existing solution by package and error signature.",
+    "Load the documented workaround already stored under .claude/solutions.",
+    "Search the solution index for tested Postgres migration lessons."
+  ],
+  "should_trigger_test": [
+    "Check whether a retrieved solution applies to our current locked versions.",
+    "Find related solution notes through their metadata and links."
+  ],
+  "should_not_trigger": [
+    "The stale response fix worked; capture it as a reusable solution.",
+    "Capture the TypeScript package lesson from this successful fix.",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Create an implementation plan for a feature spanning API, database and clients.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

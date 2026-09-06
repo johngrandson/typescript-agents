@@ -1,0 +1,22 @@
+{
+  "skill": "audit",
+  "description_summary": "Use when assessing TypeScript starter health across architecture, performance, security, tests and dependencies; supports quick, full, focused and incremental audits.",
+  "should_trigger": [
+    "Assess the overall health of this TypeScript monorepo before release.",
+    "Run a project health audit across architecture, security, tests and dependencies.",
+    "Give me a quick health assessment before a full starter audit.",
+    "Audit only security across the starter and identify uninspected areas.",
+    "Compare project health with our previous audit after this refactor."
+  ],
+  "should_trigger_test": [
+    "Audit changes since commit abc123 across the affected starter packages.",
+    "Produce a scored health report with evidence from all specialist reviews."
+  ],
+  "should_not_trigger": [
+    "Fix this typo in one mobile component with a contained edit.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Freeze edits to the database package for this investigation.",
+    "Fetch official Fastify documentation for the version in our lockfile.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

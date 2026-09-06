@@ -1,0 +1,22 @@
+{
+  "skill": "deps-update",
+  "description_summary": "Update pnpm dependencies safely by importer with compatible patches, lock preparation, security audit and verification. Use when upgrading packages, reviewing outdated dependencies or preparing a maintenance PR.",
+  "should_trigger": [
+    "Update compatible dependency patches in the web workspace and verify them.",
+    "Inventory outdated pnpm packages before selecting a scoped upgrade.",
+    "Upgrade the Fastify package group while checking peer compatibility.",
+    "Prepare a new lock with lifecycle scripts disabled before auditing it.",
+    "Update only the requested Drizzle dependencies and review their changelogs."
+  ],
+  "should_trigger_test": [
+    "Handle the Expo dependency group without forcing its React version onto web.",
+    "Stop and preserve evidence when a scoped dependency update fails verification."
+  ],
+  "should_not_trigger": [
+    "Audit the pnpm lock dependency graph for supply-chain risks.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Watch this pull request for new review comments and check results.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

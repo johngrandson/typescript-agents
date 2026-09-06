@@ -1,0 +1,76 @@
+{
+  "name": "typescript-starter",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Monorepo TypeScript starter: Fastify + TypeBox API, Next.js web, Expo mobile, shared contracts.",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --filter=@starter/api... --filter=@starter/web...",
+    "check-types": "turbo run check-types",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "test": "turbo run test:run",
+    "test:run": "turbo run test:run",
+    "knip": "knip",
+    "verify": "turbo run check-types lint test:run && knip",
+    "prepare": "lefthook install || true",
+    "test:e2e": "turbo run test:e2e --filter=@starter/e2e",
+    "test:postgres": "turbo run test:postgres --filter=@starter/db",
+    "db:generate": "turbo run db:generate --filter=@starter/db",
+    "db:migrate": "turbo run db:migrate --filter=@starter/db",
+    "db:push": "turbo run db:push --filter=@starter/db",
+    "db:studio": "turbo run db:studio --filter=@starter/db",
+    "test:deploy": "turbo run test:deploy --filter=@starter/e2e",
+    "db:deploy": "turbo run db:deploy --filter=@starter/db",
+    "audit:dependencies": "node packages/config/scripts/dependency-review.mjs",
+    "export:android": "turbo run export:android --filter=@starter/mobile",
+    "export:ios": "turbo run export:ios --filter=@starter/mobile",
+    "dev:mobile": "turbo run dev --filter=@starter/api... --filter=@starter/mobile...",
+    "dev:persistent": "turbo run dev --filter=@starter/api... --filter=@starter/web... --filter=@starter/worker...",
+    "test:dev": "turbo run test:dev --filter=@starter/e2e"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "knip": "^5.42.1",
+    "lefthook": "^1.10.1",
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@10.6.5+sha512.cdf928fca20832cd59ec53826492b7dc25dc524d4370b6b4adbf65803d32efaa6c1c88147c0ae4e8d579a6c9eec715757b50d4fa35eea179d868eada4ed043af",
+  "engines": {
+    "node": "^22.13.0 || ^24.0.0 || >=26.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ],
+    "overrides": {
+      "postcss@>=8.0.0 <8.5.23": "8.5.28"
+    },
+    "packageExtensions": {
+      "next@15.5.25": {
+        "peerDependencies": {
+          "@types/react": "^19.0.0"
+        },
+        "peerDependenciesMeta": {
+          "@types/react": {
+            "optional": true
+          }
+        }
+      },
+      "lucide-react@0.468.0": {
+        "peerDependencies": {
+          "@types/react": "^19.0.0"
+        },
+        "peerDependenciesMeta": {
+          "@types/react": {
+            "optional": true
+          }
+        }
+      }
+    }
+  }
+}

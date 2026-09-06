@@ -1,0 +1,22 @@
+{
+  "skill": "watch-pr",
+  "description_summary": "Use when watching GitHub PR check/review deltas, resuming event cursors or running bounded authorized Codex cloud review rounds.",
+  "should_trigger": [
+    "Watch this pull request for new review comments and check results.",
+    "Monitor PR deltas in the background until a terminal state.",
+    "Resume the PR watcher from its saved event cursor.",
+    "Watch only the CI checks for this existing pull request.",
+    "Request bounded Codex cloud review rounds for the current PR head."
+  ],
+  "should_trigger_test": [
+    "Stop watching when the PR closes or the configured duration expires.",
+    "Detect a stale review completion that belongs to an older head commit."
+  ],
+  "should_not_trigger": [
+    "Address the unresolved review comments on this GitHub pull request.",
+    "Run local Codex review and fix findings until the bounded loop is clean.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation."
+  ]
+}

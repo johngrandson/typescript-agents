@@ -1,0 +1,22 @@
+{
+  "skill": "runtime-inspection",
+  "description_summary": "Use when debugging TypeScript/Fastify runtime state through HTTP/OpenAPI, /health, logs, SQL, React UI and available local tools.",
+  "should_trigger": [
+    "Inspect the running starter API health and confirm its storage driver.",
+    "Use the existing OpenAPI endpoint to inspect runtime routes.",
+    "Check the live application through the inspection tools already available.",
+    "Explain which local runtime observations can confirm this API behavior.",
+    "Inspect HTTP responses and logs without starting a new server."
+  ],
+  "should_trigger_test": [
+    "Distinguish a process on the default port from the actual starter health envelope.",
+    "Report that runtime inspection is unavailable instead of inventing an MCP connection."
+  ],
+  "should_not_trigger": [
+    "Create an implementation plan for a feature spanning API, database and clients.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "The stale response fix worked; capture it as a reusable solution."
+  ]
+}

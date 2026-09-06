@@ -1,0 +1,22 @@
+{
+  "skill": "testing",
+  "description_summary": "Use when writing or repairing Vitest, Fastify inject, repository contract, Testing Library, Playwright, or asynchronous lifecycle tests.",
+  "should_trigger": [
+    "Write Vitest coverage for this Fastify response envelope using inject.",
+    "Add a repository contract test shared by memory and Postgres adapters.",
+    "Fix test teardown so sockets and timers close after a failed assertion.",
+    "Add a Testing Library test for the web mutation error state.",
+    "Write a Playwright test for this browser session flow."
+  ],
+  "should_trigger_test": [
+    "Test cancellation and stale response ownership in a mobile service hook.",
+    "Use disposable Postgres to verify concurrent job claim fencing."
+  ],
+  "should_not_trigger": [
+    "Create an implementation plan for a feature spanning API, database and clients.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

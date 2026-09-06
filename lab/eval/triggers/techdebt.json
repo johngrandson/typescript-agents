@@ -1,0 +1,22 @@
+{
+  "skill": "techdebt",
+  "description_summary": "Use when assessing duplicated contracts, leaky service/repository boundaries, unused dependencies, or avoidable TypeScript starter complexity.",
+  "should_trigger": [
+    "Assess duplicated contracts and avoidable complexity in this starter.",
+    "Rank technical debt by current cost and change risk.",
+    "Find leaky service and repository abstractions without refactoring automatically.",
+    "Evaluate whether this repeated logic represents the same domain rule.",
+    "Identify unused dependencies and stale architecture documentation."
+  ],
+  "should_trigger_test": [
+    "Explain why an intentional repository port is not needless indirection.",
+    "Prioritize evidence-backed cleanup proposals after a broad codebase assessment."
+  ],
+  "should_not_trigger": [
+    "Fix this typo in one mobile component with a contained edit.",
+    "Execute the tasks in this existing implementation plan.",
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

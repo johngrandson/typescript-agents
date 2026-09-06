@@ -1,0 +1,22 @@
+{
+  "skill": "pr-review",
+  "description_summary": "Use when reviewing GitHub PR feedback, applying authorized TypeScript fixes, verifying tests and preparing replies or thread resolution.",
+  "should_trigger": [
+    "Address the unresolved review comments on this GitHub pull request.",
+    "Fetch reviewer feedback and prepare fixes for the current PR head.",
+    "Review each thread before deciding whether the suggested change is correct.",
+    "Draft responses to actionable PR feedback after checking the code.",
+    "Resolve the requested PR issues and run the affected checks."
+  ],
+  "should_trigger_test": [
+    "Identify outdated review threads that refer to a previous commit.",
+    "Keep bot suggestions separate from verified defects in this PR review."
+  ],
+  "should_not_trigger": [
+    "Watch this pull request for new review comments and check results.",
+    "Review this branch diff for correctness and starter architecture issues.",
+    "Audit the pnpm lock dependency graph for supply-chain risks.",
+    "Freeze edits to the database package for this investigation.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

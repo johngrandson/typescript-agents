@@ -1,0 +1,22 @@
+{
+  "skill": "intent-detection",
+  "description_summary": "Use when a starter request combines intents or is unclear about planning, debugging, reviewing or implementing across API, web, mobile and jobs.",
+  "should_trigger": [
+    "I have mixed Fastify and React concerns and am unsure which workflow fits.",
+    "Route this ambiguous starter request to the right technical guidance.",
+    "Determine whether this task needs investigation or coordinated planning.",
+    "I cannot tell whether the issue belongs to Drizzle or the API service.",
+    "Choose relevant starter knowledge for a request spanning server and mobile."
+  ],
+  "should_trigger_test": [
+    "Identify the main intent before suggesting a workflow for this vague bug report.",
+    "Separate the debugging request from the unrelated documentation request."
+  ],
+  "should_not_trigger": [
+    "Execute the tasks in this existing implementation plan.",
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

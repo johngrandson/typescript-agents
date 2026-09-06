@@ -1,0 +1,39 @@
+{
+  "name": "@starter/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Background job runner. Postgres-backed queue, no extra infrastructure.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --target=node22 --packages=external --sourcemap --outfile=dist/index.js",
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "dependencies": {
+    "@starter/db": "workspace:*",
+    "@starter/env": "workspace:*",
+    "@starter/logger": "workspace:*",
+    "@starter/types": "workspace:*"
+  },
+  "devDependencies": {
+    "@starter/config": "workspace:*",
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "5.0.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "8.2.2",
+    "vitest": "5.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@starter/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Drizzle schema, repositories, and migrations. Postgres in production, in-memory for tests.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "drizzle"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:postgres": "vitest run --config vitest.postgres.config.ts",
+    "db:generate": "node --import ./scripts/drizzle-env.mjs ./node_modules/drizzle-kit/bin.cjs generate",
+    "db:migrate": "node --import ./scripts/drizzle-env.mjs ./node_modules/drizzle-kit/bin.cjs migrate",
+    "db:push": "node --import ./scripts/drizzle-env.mjs ./node_modules/drizzle-kit/bin.cjs push",
+    "db:studio": "node --import ./scripts/drizzle-env.mjs ./node_modules/drizzle-kit/bin.cjs studio",
+    "db:deploy": "node dist/migrate.js"
+  },
+  "dependencies": {
+    "@starter/env": "workspace:*",
+    "@starter/types": "workspace:*",
+    "drizzle-orm": "0.45.2",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@starter/config": "workspace:*",
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "5.0.0",
+    "drizzle-kit": "0.31.10",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vite": "8.2.2",
+    "vitest": "5.0.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "skill": "typescript-idioms",
+  "description_summary": "Use when designing strict TypeScript modules, schemas, async control flow, unknown errors, Node lifecycle, or imports across Fastify/React workspaces.",
+  "should_trigger": [
+    "Use strict TypeScript narrowing for this unknown error value.",
+    "Design a discriminated union for these boundary outcomes.",
+    "Check Node async resource ownership and shutdown handling.",
+    "Choose the correct type-only and emitted ESM import forms.",
+    "Refactor floating promises while preserving required operation order."
+  ],
+  "should_trigger_test": [
+    "Explain why a timeout does not prove detached I/O has stopped.",
+    "Keep per-instance mutable state isolated across API tests."
+  ],
+  "should_not_trigger": [
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Watch this pull request for new review comments and check results.",
+    "Freeze edits to the database package for this investigation.",
+    "Initialize this plugin for the current TypeScript starter workspace."
+  ]
+}
