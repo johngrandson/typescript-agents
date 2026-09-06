@@ -1,0 +1,22 @@
+{
+  "skill": "learn-from-fix",
+  "description_summary": "Use after a verified correction to capture a concise TypeScript lesson or npm library rule with explicit project/personal scope.",
+  "should_trigger": [
+    "Capture the TypeScript package lesson from this successful fix.",
+    "Save version-specific Fastify knowledge as a project package skill.",
+    "Record this verified Drizzle API rule for future sessions.",
+    "Update the relevant lesson without overwriting hand-authored skill content.",
+    "Choose project or personal scope for this package-specific discovery."
+  ],
+  "should_trigger_test": [
+    "Normalize a scoped npm name before saving its generated knowledge skill.",
+    "Preserve the locked version and source evidence when recording the lesson."
+  ],
+  "should_not_trigger": [
+    "Search our saved solution docs for the earlier stale subscription fix.",
+    "Fetch official Fastify documentation for the version in our lockfile.",
+    "Diagnose this reproducible Fastify error before changing any code.",
+    "Execute the tasks in this existing implementation plan.",
+    "Freeze edits to the database package for this investigation."
+  ]
+}

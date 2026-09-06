@@ -1,0 +1,22 @@
+{
+  "skill": "brief",
+  "description_summary": "Interactive briefing of a plan file \u2014 explains reasoning, schema decisions, component choices. Use when developers need to understand a plan before approving.",
+  "should_trigger": [
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Explain the schema decisions in the plan without implementing it.",
+    "Give me a short briefing of the latest pending plan.",
+    "Explain what the completed plan phases changed and why.",
+    "Use the scratchpad to explain this plan tradeoff."
+  ],
+  "should_trigger_test": [
+    "Brief me on the differences between planned and completed tasks.",
+    "Show the plan explanation before asking me to continue the briefing."
+  ],
+  "should_not_trigger": [
+    "Create an implementation plan for a feature spanning API, database and clients.",
+    "Execute the tasks in this existing implementation plan.",
+    "Find the suspected N+1 queries in this Drizzle loader.",
+    "Audit the pnpm lock dependency graph for supply-chain risks.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

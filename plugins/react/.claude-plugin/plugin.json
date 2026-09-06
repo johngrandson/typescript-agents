@@ -1,0 +1,8 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Compatibility namespace for the TypeScript starter plugin's /react:* commands",
+  "author": {
+    "name": "João"
+  }
+}

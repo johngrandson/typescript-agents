@@ -1,0 +1,22 @@
+{
+  "skill": "document",
+  "description_summary": "Use when documenting tested TypeScript APIs, TypeBox contracts, Fastify/OpenAPI behavior, README sections or ADRs; not for docs lookup.",
+  "should_trigger": [
+    "Document the tested Fastify endpoint and its TypeBox response contract.",
+    "Update the README to explain the verified storage modes.",
+    "Write an ADR for this implemented package boundary decision.",
+    "Add API documentation matching the current OpenAPI response envelopes.",
+    "Document the worker lifecycle after its tests pass."
+  ],
+  "should_trigger_test": [
+    "Check that the documented Server Action error result matches implementation.",
+    "Update examples to reflect the tested migration and deployment commands."
+  ],
+  "should_not_trigger": [
+    "Fetch official Fastify documentation for the version in our lockfile.",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Execute the tasks in this existing implementation plan.",
+    "Find the suspected N+1 queries in this Drizzle loader.",
+    "Freeze edits to the database package for this investigation."
+  ]
+}

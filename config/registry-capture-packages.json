@@ -1,0 +1,5 @@
+{
+  "drizzle-orm": "0.45.2",
+  "fastify": "5.12.1",
+  "typescript": "5.9.3"
+}

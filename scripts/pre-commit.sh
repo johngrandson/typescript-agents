@@ -1,0 +1,128 @@
+#!/bin/sh
+# Pre-commit: scope-gated checks. Each check runs only when its file type is
+# staged. Matches `make ci` for the staged subset — keep in sync.
+
+# Tests may create disposable Git repositories. Refuse to commit if any check
+# changes this invocation's HEAD or staged tree, even if that check exits zero.
+PRE_COMMIT_HEAD=$(git rev-parse --verify HEAD 2>/dev/null || true)
+PRE_COMMIT_TREE=$(git write-tree) || exit 1
+
+STAGED_MD=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$' || true)
+STAGED_JSON=$(git diff --cached --name-only --diff-filter=ACM | grep '\.json$' || true)
+# targets/ holds generated runtime projections whose shell resources are copied
+# byte-for-byte from plugins/. Linting the copies re-reports every canonical
+# finding once per target and cannot be fixed in place, since the next
+# `make <target>-skills` regenerates them. CI scopes shellcheck the same way:
+# hooks/scripts and lab/ only, never targets/.
+STAGED_SH=$(git diff --cached --name-only --diff-filter=ACM | grep '\.sh$' | grep -v '^targets/' || true)
+STAGED_SKILL_AGENT=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^plugins/[^/]+/(skills|agents)/' || true)
+STAGED_CANONICAL_SKILLS=$(git diff --cached --name-only --diff-filter=ACMRD | grep -E '^plugins/typescript-starter/skills/' || true)
+STAGED_EVAL_FW=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^lab/eval/' || true)
+
+# Markdown lint
+if [ -n "$STAGED_MD" ]; then
+  echo "→ Linting Markdown..."
+  if command -v pnpm >/dev/null 2>&1; then
+    if ! echo "$STAGED_MD" | xargs pnpm exec markdownlint --ignore node_modules --ignore reports; then
+      echo ""
+      echo "Markdown lint errors. Fix or run: pnpm lint:fix"
+      exit 1
+    fi
+  else
+    echo "  pnpm not found, skipping markdown lint"
+  fi
+fi
+
+# JSON validation
+if [ -n "$STAGED_JSON" ]; then
+  echo "→ Validating JSON..."
+  for f in $STAGED_JSON; do
+    [ -f "$f" ] || continue
+    if ! python3 -m json.tool "$f" > /dev/null 2>&1; then
+      echo "Invalid JSON: $f"
+      exit 1
+    fi
+  done
+fi
+
+# Shell script checks (bash syntax + shellcheck if available)
+if [ -n "$STAGED_SH" ]; then
+  echo "→ Checking shell scripts..."
+  for f in $STAGED_SH; do
+    [ -f "$f" ] || continue
+    if ! bash -n "$f"; then
+      echo "Bash syntax error: $f"
+      exit 1
+    fi
+  done
+  if command -v shellcheck >/dev/null 2>&1; then
+    # shellcheck disable=SC2086  # intentional word-splitting of newline-separated paths
+    if ! shellcheck $STAGED_SH; then
+      echo "shellcheck failed"
+      exit 1
+    fi
+  else
+    echo "  shellcheck not installed, skipping (brew install shellcheck)"
+  fi
+fi
+
+# Plugin eval (only when skills/agents change)
+if [ -n "$STAGED_SKILL_AGENT" ]; then
+  echo "→ Running plugin eval (changed skills/agents)..."
+  if ! make eval > /tmp/precommit-eval.log 2>&1; then
+    echo "Plugin eval failed. See /tmp/precommit-eval.log or run: make eval-fix"
+    tail -30 /tmp/precommit-eval.log
+    exit 1
+  fi
+fi
+
+# Generated Amp target drift (only when canonical TypeScript starter skills change).
+# Validate first, then require any regenerated target edits to be staged so the
+# source and projection land in the same commit. CI repeats the drift check from
+# the committed tree for contributors without Lefthook.
+if [ -n "$STAGED_CANONICAL_SKILLS" ]; then
+  echo "→ Checking generated Amp target..."
+  if ! make amp-target-validate > /tmp/precommit-amp-target.log 2>&1; then
+    echo "Amp target is out of date. Run: make amp-target-sync"
+    tail -30 /tmp/precommit-amp-target.log
+    exit 1
+  fi
+
+  UNTRACKED_AMP_TARGET=$(git ls-files --others --exclude-standard -- targets/amp)
+  if ! git diff --quiet -- targets/amp || [ -n "$UNTRACKED_AMP_TARGET" ]; then
+    echo "Generated Amp target changes are not staged. Run: git add targets/amp"
+    exit 1
+  fi
+fi
+
+# Eval framework tests (only when lab/eval/ changes)
+if [ -n "$STAGED_EVAL_FW" ]; then
+  echo "→ Running eval framework tests..."
+  if ! python3 -m pytest lab/eval/tests/ -q > /tmp/precommit-test.log 2>&1; then
+    echo "Tests failed. See /tmp/precommit-test.log"
+    tail -30 /tmp/precommit-test.log
+    exit 1
+  fi
+fi
+
+# Release guard: a staged plugin.json version bump means this is a release
+# commit — require FULL make ci, not just the scope-gated checks above.
+# Scope-gating alone misses cross-file release breakage.
+if git diff --cached --name-only --diff-filter=ACM | grep -q 'plugins/typescript-starter/.claude-plugin/plugin.json'; then
+  if git diff --cached -- plugins/typescript-starter/.claude-plugin/plugin.json | grep -q '"version"'; then
+    echo "→ Release commit detected (plugin.json version bump) — running full make ci..."
+    if ! make ci > /tmp/precommit-ci.log 2>&1; then
+      echo "make ci failed. See /tmp/precommit-ci.log"
+      tail -30 /tmp/precommit-ci.log
+      exit 1
+    fi
+  fi
+fi
+
+if [ "$(git rev-parse --verify HEAD 2>/dev/null || true)" != "$PRE_COMMIT_HEAD" ] ||
+   [ "$(git write-tree)" != "$PRE_COMMIT_TREE" ]; then
+  echo "Verification changed HEAD or the staged tree; commit stopped. Inspect the check before retrying."
+  exit 1
+fi
+
+echo "✔ Pre-commit checks passed"

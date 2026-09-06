@@ -1,0 +1,22 @@
+{
+  "skill": "init",
+  "description_summary": "Use when installing/updating TypeScript starter project rules, Fastify/Drizzle/React skill routing, verification guidance or managed review guidelines.",
+  "should_trigger": [
+    "Initialize this plugin for the current TypeScript starter workspace.",
+    "Install starter instructions appropriate to this agent runtime.",
+    "Set up project rule references without overwriting existing instructions.",
+    "Detect actual package scripts before configuring the plugin.",
+    "Update the local plugin integration for this monorepo."
+  ],
+  "should_trigger_test": [
+    "Initialize from a package directory while keeping state at the workspace root.",
+    "Preserve custom project instructions when refreshing generated references."
+  ],
+  "should_not_trigger": [
+    "Walk me through how this TypeScript starter plugin is organized.",
+    "Which starter workflow should I use for this task?",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Execute the tasks in this existing implementation plan.",
+    "Record this reviewed exact package artifact in dependency-vet.json."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "skill": "drizzle-patterns",
+  "description_summary": "Use when editing Drizzle schemas, SQL queries, transactions, migrations, indexes, repository ports, or Postgres/memory contract parity.",
+  "should_trigger": [
+    "Implement a transactional write using the existing Drizzle repository adapter.",
+    "Design a schema migration while preserving memory and Postgres contracts.",
+    "Use parameterized Drizzle queries for this repository filter.",
+    "Keep generated SQL and schema changes consistent with migration history.",
+    "Add an explicit repository port method for this persistence operation."
+  ],
+  "should_trigger_test": [
+    "Choose an appropriate integer or decimal representation for a money column.",
+    "Preserve post-write consistency when a transaction updates related records."
+  ],
+  "should_not_trigger": [
+    "Implement the web session mutation through the existing Server Action.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Watch this pull request for new review comments and check results.",
+    "Freeze edits to the database package for this investigation.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

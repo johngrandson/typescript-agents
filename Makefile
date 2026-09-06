@@ -1,0 +1,174 @@
+.PHONY: help lint lint-fix eval eval-all eval-fix eval-full eval-ci eval-triggers eval-tournament eval-skills eval-agents eval-multimodel eval-compare-models test test-shell validate amp-target amp-target-sync amp-target-validate amp-skills amp-skills-sync amp-skills-validate amp-runtime-smoke codex-skills codex-skills-sync codex-skills-validate codex-runtime-smoke pi-skills pi-skills-sync pi-skills-validate pi-runtime-smoke opencode-skills opencode-skills-sync opencode-skills-validate opencode-runtime-smoke dsh-skills dsh-skills-sync dsh-skills-validate dsh-runtime-smoke generated-skills-sync generated-skills-snapshots generated-skills-snapshots-validate security ci-local ci clean
+
+# Default target
+help: ## Show available commands
+	@echo "Plugin Quality Commands:"
+	@echo ""
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-16s\033[0m %s\n", $$1, $$2}'
+
+# --- Lint ---
+
+lint: ## Lint markdown, YAML, JSON
+	@pnpm exec markdownlint "**/*.md" --ignore node_modules --ignore reports --ignore analysis --ignore scratchpad --ignore lab/findings
+
+lint-fix: ## Auto-fix markdown lint errors
+	@pnpm exec markdownlint "**/*.md" --fix --ignore node_modules --ignore reports --ignore analysis --ignore scratchpad --ignore lab/findings
+
+# --- Eval ---
+
+eval: ## Quick: lint + score changed skills/agents only
+	@bash lab/eval/run_eval.sh --changed
+
+eval-all: ## Score all 51 skills + 26 agents (structural)
+	@bash lab/eval/run_eval.sh --all
+
+eval-fix: ## Auto-fix lint + show failures + suggest autoresearch command
+	@bash lab/eval/run_eval.sh --fix
+
+eval-full: ## Structural + fresh behavioral gate; every skill must reach 75% (~60 min)
+	@bash lab/eval/run_eval.sh --all && bash lab/eval/run_eval.sh --triggers
+
+eval-ci: ## CI gate: lint + all skills + all agents
+	@bash lab/eval/run_eval.sh --ci
+
+eval-triggers: ## Re-run behavioral gate; every skill must reach 75% (~60 min, Haiku)
+	@bash lab/eval/run_eval.sh --triggers
+
+eval-multimodel: ## Run trigger eval against sonnet (slow, ~$$3, ~3 hr). Override: MODEL=opus make eval-multimodel
+	@python3 -m lab.eval.trigger_scorer --all --model $${MODEL:-sonnet}
+
+eval-compare-models: ## Compare per-skill accuracy across models. Override: MODELS=haiku,sonnet,opus make eval-compare-models
+	@python3 -m lab.eval.compare_models --models $${MODELS:-haiku,sonnet}
+
+eval-tournament: ## Run tournament on weak skills (<75% trigger accuracy)
+	@python3 -m lab.tournament.description_tournament --weak
+
+eval-skills: ## Score all skills only
+	@bash lab/eval/run_eval.sh --skills
+
+eval-agents: ## Score all agents only
+	@bash lab/eval/run_eval.sh --agents
+
+# --- Test ---
+
+test: ## Run pytest for eval framework and harness utilities
+	@python3 -m pytest lab/eval/tests/ scripts/tests/ plugins/typescript-starter/hooks/tests/ -v --tb=short
+
+test-shell: ## Run the existing shell safeguard regression suite
+	@bash plugins/typescript-starter/hooks/tests/block-dangerous-ops_test.sh
+
+test-quick: ## Run pytest (no verbose, fast)
+	@python3 -m pytest lab/eval/tests/ scripts/tests/ plugins/typescript-starter/hooks/tests/ -q
+
+# --- Validate ---
+
+validate: ## Validate inventory and manifests offline; also use Claude CLI when installed
+	@python3 -m scripts.validate_harness
+
+amp-target: amp-skills ## Generate the complete Amp skills and workflow plugin target
+
+amp-target-sync: amp-skills-sync ## Regenerate and verify the complete Amp target
+
+amp-target-validate: amp-skills-validate ## Check the complete Amp target for generated drift
+
+amp-skills: ## Generate the Amp skills and workflow plugin (backward-compatible name)
+	@python3 -m scripts.build_amp_skills
+
+amp-skills-sync: ## Regenerate and verify the committed Amp target
+	@$(MAKE) amp-skills
+	@$(MAKE) amp-skills-validate
+
+amp-skills-validate: ## Check the committed Amp target for generated drift
+	@python3 -m scripts.build_amp_skills --check
+
+amp-runtime-smoke: ## Optional: smoke-test local target with an isolated Amp runtime
+	@python3 -m scripts.runtime_smoke amp
+
+codex-skills: ## Generate the Codex skills plugin from the canonical Claude plugin
+	@python3 -m scripts.build_codex_skills
+
+codex-skills-sync: ## Regenerate and verify the committed Codex target
+	@$(MAKE) codex-skills
+	@$(MAKE) codex-skills-validate
+
+codex-skills-validate: ## Check committed Codex skills for generated drift
+	@python3 -m scripts.build_codex_skills --check
+
+codex-runtime-smoke: ## Optional: smoke-test local target with an isolated Codex runtime
+	@python3 -m scripts.runtime_smoke codex
+
+pi-skills: ## Generate the Pi skills package from the canonical Claude plugin
+	@python3 -m scripts.build_pi_skills
+
+pi-skills-sync: ## Regenerate and verify the committed Pi target
+	@$(MAKE) pi-skills
+	@$(MAKE) pi-skills-validate
+
+pi-skills-validate: ## Check committed Pi skills for generated drift
+	@python3 -m scripts.build_pi_skills --check
+
+pi-runtime-smoke: ## Optional: smoke-test local target with an isolated Pi runtime
+	@python3 -m scripts.runtime_smoke pi
+
+opencode-skills: ## Generate the OpenCode skills target
+	@python3 -m scripts.build_opencode_skills
+
+opencode-skills-sync: ## Regenerate and verify the committed OpenCode target
+	@$(MAKE) opencode-skills
+	@$(MAKE) opencode-skills-validate
+
+opencode-skills-validate: ## Check committed OpenCode skills for generated drift
+	@python3 -m scripts.build_opencode_skills --check
+
+opencode-runtime-smoke: ## Optional: smoke-test local target with an isolated OpenCode runtime
+	@python3 -m scripts.runtime_smoke opencode
+
+dsh-skills: ## Generate the DeepSeek Harness (dsh) skills target
+	@python3 -m scripts.build_dsh_skills
+
+dsh-skills-sync: ## Regenerate and verify the committed DeepSeek Harness target
+	@$(MAKE) dsh-skills
+	@$(MAKE) dsh-skills-validate
+
+dsh-skills-validate: ## Check committed DeepSeek Harness skills for generated drift
+	@python3 -m scripts.build_dsh_skills --check
+
+dsh-runtime-smoke: ## Optional: smoke-test local target against an isolated dsh web host
+	@python3 -m scripts.runtime_smoke dsh
+
+generated-skills-sync: ## Regenerate and verify Amp, Codex, Pi, OpenCode, and dsh targets
+	@$(MAKE) amp-skills-sync
+	@$(MAKE) codex-skills-sync
+	@$(MAKE) pi-skills-sync
+	@$(MAKE) opencode-skills-sync
+	@$(MAKE) dsh-skills-sync
+	@$(MAKE) generated-skills-snapshots-validate
+
+generated-skills-snapshots: ## Update reviewed byte-and-mode digests for all targets
+	@python3 -m scripts.generated_target_snapshots
+
+generated-skills-snapshots-validate: ## Check all targets against golden digests
+	@python3 -m scripts.generated_target_snapshots --check
+
+# --- Security ---
+
+security: ## SkillSpector scan of all skills + agents (skips if not installed)
+	@if command -v skillspector >/dev/null 2>&1; then \
+		bash lab/skillspector/scan.sh; \
+	else \
+		echo "⊘ skillspector not installed — skipping security scan."; \
+		echo "  Install: pipx install --python python3.13 \"git+https://github.com/NVIDIA/skillspector.git\""; \
+	fi
+
+# --- CI (full pipeline) ---
+
+ci-local: lint test test-shell validate amp-skills-validate codex-skills-validate pi-skills-validate opencode-skills-validate dsh-skills-validate generated-skills-snapshots-validate eval-all ## Local CI: lint + test + validate + generated targets + eval
+
+ci: ci-local security ## Full local gate plus optional security scanner
+
+# --- Clean ---
+
+clean: ## Remove Python cache files
+	@find lab/ scripts/ -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
+	@find lab/ scripts/ -name "*.pyc" -delete 2>/dev/null || true
+	@echo "Cleaned"

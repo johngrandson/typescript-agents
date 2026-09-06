@@ -1,0 +1,22 @@
+{
+  "skill": "background-jobs",
+  "description_summary": "Use when editing the custom Postgres job queue, worker handlers, registry, retries, leases, recurrence, idempotency, or shutdown behavior.",
+  "should_trigger": [
+    "Implement a worker handler that tolerates duplicate Postgres job delivery.",
+    "Check lease ownership before acknowledging this background job.",
+    "Add bounded retry handling to the custom worker registry.",
+    "Design worker shutdown so active handlers finish before storage closes.",
+    "Keep recurring jobs terminal across process restarts."
+  ],
+  "should_trigger_test": [
+    "Explain why batchSize does not control parallel handler concurrency.",
+    "Test a stale worker acknowledgement after another worker reclaimed the lease."
+  ],
+  "should_not_trigger": [
+    "Implement the web session mutation through the existing Server Action.",
+    "Fetch official Fastify documentation for the version in our lockfile.",
+    "Freeze edits to the database package for this investigation.",
+    "Address the unresolved review comments on this GitHub pull request.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

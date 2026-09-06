@@ -1,0 +1,22 @@
+{
+  "skill": "triage",
+  "description_summary": "Triage review findings interactively \u2014 approve, skip, or prioritize each issue. Use after /ts:review to filter findings before fixing.",
+  "should_trigger": [
+    "Prioritize the findings from the completed review before applying fixes.",
+    "Walk through which review issues to fix, skip or defer.",
+    "Create a fix queue from the selected review findings.",
+    "Group review findings by severity for a decision.",
+    "Triage this review report and retain the rejected recommendations."
+  ],
+  "should_trigger_test": [
+    "Separate deferred work from the current approved correction scope.",
+    "Show evidence for each finding before recording its triage decision."
+  ],
+  "should_not_trigger": [
+    "Review this branch diff for correctness and starter architecture issues.",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "skill": "examples",
+  "description_summary": "Use when asked for TypeScript starter sample code or a walkthrough of contracts, Fastify, Drizzle, React web/mobile, jobs, or workflow output.",
+  "should_trigger": [
+    "Show a minimal Fastify and TypeBox endpoint example matching this starter.",
+    "Give me a Drizzle repository example with a meaningful test.",
+    "Walk through a React client example using the existing session contracts.",
+    "Provide sample code for a custom worker handler with cancellation.",
+    "Explain a small TypeScript example using the installed package APIs."
+  ],
+  "should_trigger_test": [
+    "Show a mobile REST service example without web-only DOM components.",
+    "Demonstrate a domain service using the memory adapter in a test."
+  ],
+  "should_not_trigger": [
+    "Execute the tasks in this existing implementation plan.",
+    "Watch this pull request for new review comments and check results.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation.",
+    "Address the unresolved review comments on this GitHub pull request."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "skill": "docs-fetcher",
+  "description_summary": "Fetch official docs, TypeScript declarations and changelogs for exact npm versions resolved by pnpm. Use for package API research, including Fastify registration, React hooks and Drizzle queries, or upgrade compatibility.",
+  "should_trigger": [
+    "Fetch official Fastify documentation for the version in our lockfile.",
+    "Look up the installed Drizzle API in its primary documentation.",
+    "Retrieve version-aware TypeBox docs for this schema method.",
+    "Find official Expo documentation matching this mobile package version.",
+    "Read the upstream documentation for a specific pnpm package API."
+  ],
+  "should_trigger_test": [
+    "Resolve a scoped npm package name before fetching its API docs.",
+    "Report that documentation is unavailable instead of inventing a method signature."
+  ],
+  "should_not_trigger": [
+    "Document the tested Fastify endpoint and its TypeBox response contract.",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Execute the tasks in this existing implementation plan.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation."
+  ]
+}

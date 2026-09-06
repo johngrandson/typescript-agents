@@ -1,0 +1,22 @@
+{
+  "skill": "work",
+  "description_summary": "Use when executing a TypeScript starter plan, resuming with --continue or --from, and verifying tasks/phases with package checks and tests.",
+  "should_trigger": [
+    "Execute the tasks in this existing implementation plan.",
+    "Resume the in-progress plan from its remaining checkboxes.",
+    "Continue authorized plan phases with verification after each task.",
+    "Start work from task P2-T3 in the saved plan.",
+    "Read the scratchpad before implementing the next planned change."
+  ],
+  "should_trigger_test": [
+    "Record a blocker after three failed attempts instead of retrying blindly.",
+    "Finish the current plan scope without starting an unrelated review workflow."
+  ],
+  "should_not_trigger": [
+    "Create an implementation plan for a feature spanning API, database and clients.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Review this branch diff for correctness and starter architecture issues.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation."
+  ]
+}

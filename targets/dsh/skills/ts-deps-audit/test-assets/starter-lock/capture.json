@@ -1,0 +1,20 @@
+{
+  "kind": "captured",
+  "origin": "TypeScript starter repository snapshot 2026-09-05; graph inputs only, no audited npm package bytes or trust decisions.",
+  "files": {
+    "package.json": "ca082098272d8cd5deaea5cf3ca15fb8d8644def705de292714e137da9c17057",
+    "pnpm-lock.yaml": "804655edb5a89f5e062fcef861844307b7f8b6e045836d32c8e17b49ca12f013",
+    "pnpm-workspace.yaml": "253208fa7c1b64372c219b9e19cef15ed70ca93b66a4d5c4c4d2297a5aff8880",
+    "apps/e2e/package.json": "24208dbd3c8743d6ee7a095de48f2514329063bbad0a0a82a96a55e1790d766e",
+    "apps/web/package.json": "f8e9ee05258e1957470deae8697be11f291dbc501e0602bed520eeae2383f7b3",
+    "apps/api/package.json": "ebd4417240f71bd40d95ea23d1bba01e751bc06eb268a950470046f543753ddb",
+    "apps/mobile/package.json": "4f1ffae8d8deaabc2f49eca86b11699f7708bd5dac17f6c270ec1218f88ef1e6",
+    "apps/worker/package.json": "d8e3e36b4783594ae2c24d67a4c7cd9c74faf1417381d2594ca5631bb04ea81a",
+    "packages/types/package.json": "746e4d1d0fc5c14d59fb998ed2fae5ce3c089ef4d44225fc8d07e4089a020b0c",
+    "packages/env/package.json": "3826a78c9e96893cbebd56224c1807f08e93fc74c8ad69bbc2c56fe08c53c29f",
+    "packages/config/package.json": "40039d8a39a9dae5bdb21e7bec58b27bb9ede601c368d7fc9acb21f0260a09ea",
+    "packages/logger/package.json": "d004c2805d91eb7a94f0ff1ed6f5c6d0258a9bb38ad5fd1adda1d42ab63d3555",
+    "packages/db/package.json": "a02018d3e736e1d1bcf4fbc7c0fb849aa1e9b9b863501db6691b9a8b80ca9d1a",
+    "packages/ui/package.json": "1bedf3c6eef721e10654bd1c13fb6223a14a036d9cee0cfb807caed525946a12"
+  }
+}

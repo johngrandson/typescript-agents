@@ -1,0 +1,22 @@
+{
+  "skill": "intro",
+  "description_summary": "Use for a six-section tour of TypeScript Starter Harness commands, domain guidance, agent roles and workflow limits.",
+  "should_trigger": [
+    "Walk me through how this TypeScript starter plugin is organized.",
+    "I am new to this plugin; explain its commands and workflows.",
+    "Introduce the plugin lifecycle with a small example task.",
+    "Explain how skills, agents and hooks work together here.",
+    "Show a new contributor how to find starter guidance."
+  ],
+  "should_trigger_test": [
+    "Explain the differences between installed runtime capabilities.",
+    "Give me an onboarding tour without changing project files."
+  ],
+  "should_not_trigger": [
+    "Initialize this plugin for the current TypeScript starter workspace.",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Execute the tasks in this existing implementation plan.",
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Record this reviewed exact package artifact in dependency-vet.json."
+  ]
+}

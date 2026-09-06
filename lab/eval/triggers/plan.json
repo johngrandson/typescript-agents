@@ -1,0 +1,22 @@
+{
+  "skill": "plan",
+  "description_summary": "Use when planning coordinated changes across shared contracts, database, Fastify API, Next web, Expo mobile, realtime or jobs.",
+  "should_trigger": [
+    "Create an implementation plan for a feature spanning API, database and clients.",
+    "Plan the migration and consumer changes for a shared TypeBox contract.",
+    "Break this coordinated starter feature into verifiable tasks.",
+    "Design a plan with acceptance criteria and affected package checks.",
+    "Plan the implementation using the requirements we already agreed."
+  ],
+  "should_trigger_test": [
+    "Include rollback evidence and disposable Postgres checks in the migration plan.",
+    "Record unresolved decisions without starting unrequested implementation."
+  ],
+  "should_not_trigger": [
+    "Execute the tasks in this existing implementation plan.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "skill": "help",
+  "description_summary": "Use when choosing a TypeScript Starter Harness workflow for planning, debugging, review or verification; not for bare /help or a plugin tour.",
+  "should_trigger": [
+    "Which starter workflow should I use for this task?",
+    "List the available public TypeScript starter commands.",
+    "Help me choose between quick, plan and investigate.",
+    "Which workflow handles reviewer feedback on an existing PR?",
+    "Show the command for inspecting suspected repeated database queries."
+  ],
+  "should_trigger_test": [
+    "Explain which skills are background knowledge rather than public commands.",
+    "Find the relevant workflow without starting implementation."
+  ],
+  "should_not_trigger": [
+    "Execute the tasks in this existing implementation plan.",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

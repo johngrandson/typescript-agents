@@ -1,0 +1,22 @@
+{
+  "skill": "react-state-audit",
+  "description_summary": "Use when React or React Native retains stale state, duplicate snapshots, unbounded lists, listeners, sockets, or timers after navigation.",
+  "should_trigger": [
+    "Audit retained React state after repeated screen mount and unmount.",
+    "Find leaking subscriptions in this client session hook.",
+    "Inspect whether stale promises retain an old mobile screen instance.",
+    "Measure growing client memory during repeated stream reconnects.",
+    "Check resource cleanup and ownership in the current React state model."
+  ],
+  "should_trigger_test": [
+    "Identify unnecessary retained snapshots in this client store.",
+    "Trace a subscription that survives navigation when its screen should be disposed."
+  ],
+  "should_not_trigger": [
+    "Find the suspected N+1 queries in this Drizzle loader.",
+    "Implement a worker handler that tolerates duplicate Postgres job delivery.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Watch this pull request for new review comments and check results.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

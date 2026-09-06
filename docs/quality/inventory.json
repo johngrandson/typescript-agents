@@ -1,0 +1,582 @@
+{
+  "schemaVersion": 2,
+  "plugin": "typescript-starter",
+  "namespace": "ts",
+  "skills": [
+    {
+      "name": "audit",
+      "path": "plugins/typescript-starter/skills/audit/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-audit"
+    },
+    {
+      "name": "background-jobs",
+      "path": "plugins/typescript-starter/skills/background-jobs/SKILL.md",
+      "userInvocable": false,
+      "portableName": "background-jobs"
+    },
+    {
+      "name": "boundaries",
+      "path": "plugins/typescript-starter/skills/boundaries/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-boundaries"
+    },
+    {
+      "name": "brainstorm",
+      "path": "plugins/typescript-starter/skills/brainstorm/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-brainstorm"
+    },
+    {
+      "name": "brief",
+      "path": "plugins/typescript-starter/skills/brief/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-brief"
+    },
+    {
+      "name": "challenge",
+      "path": "plugins/typescript-starter/skills/challenge/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-challenge"
+    },
+    {
+      "name": "codex-loop",
+      "path": "plugins/typescript-starter/skills/codex-loop/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-codex-loop"
+    },
+    {
+      "name": "compound",
+      "path": "plugins/typescript-starter/skills/compound/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-compound"
+    },
+    {
+      "name": "compound-docs",
+      "path": "plugins/typescript-starter/skills/compound-docs/SKILL.md",
+      "userInvocable": false,
+      "portableName": "compound-docs"
+    },
+    {
+      "name": "deploy",
+      "path": "plugins/typescript-starter/skills/deploy/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-deploy"
+    },
+    {
+      "name": "deps-audit",
+      "path": "plugins/typescript-starter/skills/deps-audit/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-deps-audit"
+    },
+    {
+      "name": "deps-update",
+      "path": "plugins/typescript-starter/skills/deps-update/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-deps-update"
+    },
+    {
+      "name": "deps-vet",
+      "path": "plugins/typescript-starter/skills/deps-vet/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-deps-vet"
+    },
+    {
+      "name": "docs-fetcher",
+      "path": "plugins/typescript-starter/skills/docs-fetcher/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-docs-fetcher"
+    },
+    {
+      "name": "document",
+      "path": "plugins/typescript-starter/skills/document/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-document"
+    },
+    {
+      "name": "domain-resources",
+      "path": "plugins/typescript-starter/skills/domain-resources/SKILL.md",
+      "userInvocable": false,
+      "portableName": "domain-resources"
+    },
+    {
+      "name": "drizzle-constraint-debug",
+      "path": "plugins/typescript-starter/skills/drizzle-constraint-debug/SKILL.md",
+      "userInvocable": true,
+      "portableName": "drizzle-constraint-debug"
+    },
+    {
+      "name": "drizzle-n1-check",
+      "path": "plugins/typescript-starter/skills/drizzle-n1-check/SKILL.md",
+      "userInvocable": true,
+      "portableName": "drizzle-n1-check"
+    },
+    {
+      "name": "drizzle-patterns",
+      "path": "plugins/typescript-starter/skills/drizzle-patterns/SKILL.md",
+      "userInvocable": false,
+      "portableName": "drizzle-patterns"
+    },
+    {
+      "name": "examples",
+      "path": "plugins/typescript-starter/skills/examples/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-examples"
+    },
+    {
+      "name": "fastify-modules",
+      "path": "plugins/typescript-starter/skills/fastify-modules/SKILL.md",
+      "userInvocable": false,
+      "portableName": "fastify-modules"
+    },
+    {
+      "name": "freeze",
+      "path": "plugins/typescript-starter/skills/freeze/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-freeze"
+    },
+    {
+      "name": "full",
+      "path": "plugins/typescript-starter/skills/full/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-full"
+    },
+    {
+      "name": "help",
+      "path": "plugins/typescript-starter/skills/help/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-help"
+    },
+    {
+      "name": "init",
+      "path": "plugins/typescript-starter/skills/init/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-init"
+    },
+    {
+      "name": "intent-detection",
+      "path": "plugins/typescript-starter/skills/intent-detection/SKILL.md",
+      "userInvocable": false,
+      "portableName": "intent-detection"
+    },
+    {
+      "name": "intro",
+      "path": "plugins/typescript-starter/skills/intro/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-intro"
+    },
+    {
+      "name": "investigate",
+      "path": "plugins/typescript-starter/skills/investigate/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-investigate"
+    },
+    {
+      "name": "learn-from-fix",
+      "path": "plugins/typescript-starter/skills/learn-from-fix/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-learn-from-fix"
+    },
+    {
+      "name": "narrow-catch",
+      "path": "plugins/typescript-starter/skills/narrow-catch/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-narrow-catch"
+    },
+    {
+      "name": "perf",
+      "path": "plugins/typescript-starter/skills/perf/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-perf"
+    },
+    {
+      "name": "permissions",
+      "path": "plugins/typescript-starter/skills/permissions/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-permissions"
+    },
+    {
+      "name": "plan",
+      "path": "plugins/typescript-starter/skills/plan/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-plan"
+    },
+    {
+      "name": "pnpm-compression",
+      "path": "plugins/typescript-starter/skills/pnpm-compression/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-pnpm-compression"
+    },
+    {
+      "name": "pr-review",
+      "path": "plugins/typescript-starter/skills/pr-review/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-pr-review"
+    },
+    {
+      "name": "quick",
+      "path": "plugins/typescript-starter/skills/quick/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-quick"
+    },
+    {
+      "name": "react-patterns",
+      "path": "plugins/typescript-starter/skills/react-patterns/SKILL.md",
+      "userInvocable": false,
+      "portableName": "react-patterns"
+    },
+    {
+      "name": "react-state-audit",
+      "path": "plugins/typescript-starter/skills/react-state-audit/SKILL.md",
+      "userInvocable": true,
+      "portableName": "react-state-audit"
+    },
+    {
+      "name": "recall",
+      "path": "plugins/typescript-starter/skills/recall/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-recall"
+    },
+    {
+      "name": "research",
+      "path": "plugins/typescript-starter/skills/research/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-research"
+    },
+    {
+      "name": "review",
+      "path": "plugins/typescript-starter/skills/review/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-review"
+    },
+    {
+      "name": "runtime-inspection",
+      "path": "plugins/typescript-starter/skills/runtime-inspection/SKILL.md",
+      "userInvocable": false,
+      "portableName": "runtime-inspection"
+    },
+    {
+      "name": "security",
+      "path": "plugins/typescript-starter/skills/security/SKILL.md",
+      "userInvocable": false,
+      "portableName": "security"
+    },
+    {
+      "name": "techdebt",
+      "path": "plugins/typescript-starter/skills/techdebt/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-techdebt"
+    },
+    {
+      "name": "testing",
+      "path": "plugins/typescript-starter/skills/testing/SKILL.md",
+      "userInvocable": false,
+      "portableName": "testing"
+    },
+    {
+      "name": "trace",
+      "path": "plugins/typescript-starter/skills/trace/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-trace"
+    },
+    {
+      "name": "triage",
+      "path": "plugins/typescript-starter/skills/triage/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-triage"
+    },
+    {
+      "name": "typescript-idioms",
+      "path": "plugins/typescript-starter/skills/typescript-idioms/SKILL.md",
+      "userInvocable": false,
+      "portableName": "typescript-idioms"
+    },
+    {
+      "name": "verify",
+      "path": "plugins/typescript-starter/skills/verify/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-verify"
+    },
+    {
+      "name": "watch-pr",
+      "path": "plugins/typescript-starter/skills/watch-pr/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-watch-pr"
+    },
+    {
+      "name": "work",
+      "path": "plugins/typescript-starter/skills/work/SKILL.md",
+      "userInvocable": true,
+      "portableName": "ts-work"
+    }
+  ],
+  "agents": [
+    {
+      "name": "authorization-reviewer",
+      "path": "plugins/typescript-starter/agents/authorization-reviewer.md"
+    },
+    {
+      "name": "background-jobs-specialist",
+      "path": "plugins/typescript-starter/agents/background-jobs-specialist.md"
+    },
+    {
+      "name": "call-tracer",
+      "path": "plugins/typescript-starter/agents/call-tracer.md"
+    },
+    {
+      "name": "codex-reviewer",
+      "path": "plugins/typescript-starter/agents/codex-reviewer.md"
+    },
+    {
+      "name": "context-supervisor",
+      "path": "plugins/typescript-starter/agents/context-supervisor.md"
+    },
+    {
+      "name": "deep-bug-investigator",
+      "path": "plugins/typescript-starter/agents/deep-bug-investigator.md"
+    },
+    {
+      "name": "dependency-analyzer",
+      "path": "plugins/typescript-starter/agents/dependency-analyzer.md"
+    },
+    {
+      "name": "deployment-validator",
+      "path": "plugins/typescript-starter/agents/deployment-validator.md"
+    },
+    {
+      "name": "domain-resource-designer",
+      "path": "plugins/typescript-starter/agents/domain-resource-designer.md"
+    },
+    {
+      "name": "drizzle-schema-designer",
+      "path": "plugins/typescript-starter/agents/drizzle-schema-designer.md"
+    },
+    {
+      "name": "iron-law-judge",
+      "path": "plugins/typescript-starter/agents/iron-law-judge.md"
+    },
+    {
+      "name": "node-runtime-advisor",
+      "path": "plugins/typescript-starter/agents/node-runtime-advisor.md"
+    },
+    {
+      "name": "npm-deps-triager",
+      "path": "plugins/typescript-starter/agents/npm-deps-triager.md"
+    },
+    {
+      "name": "npm-library-researcher",
+      "path": "plugins/typescript-starter/agents/npm-library-researcher.md"
+    },
+    {
+      "name": "parallel-reviewer",
+      "path": "plugins/typescript-starter/agents/parallel-reviewer.md"
+    },
+    {
+      "name": "planning-orchestrator",
+      "path": "plugins/typescript-starter/agents/planning-orchestrator.md"
+    },
+    {
+      "name": "query-optimizer",
+      "path": "plugins/typescript-starter/agents/query-optimizer.md"
+    },
+    {
+      "name": "react-architect",
+      "path": "plugins/typescript-starter/agents/react-architect.md"
+    },
+    {
+      "name": "requirements-verifier",
+      "path": "plugins/typescript-starter/agents/requirements-verifier.md"
+    },
+    {
+      "name": "security-analyzer",
+      "path": "plugins/typescript-starter/agents/security-analyzer.md"
+    },
+    {
+      "name": "starter-patterns-analyst",
+      "path": "plugins/typescript-starter/agents/starter-patterns-analyst.md"
+    },
+    {
+      "name": "testing-reviewer",
+      "path": "plugins/typescript-starter/agents/testing-reviewer.md"
+    },
+    {
+      "name": "typescript-reviewer",
+      "path": "plugins/typescript-starter/agents/typescript-reviewer.md"
+    },
+    {
+      "name": "verification-runner",
+      "path": "plugins/typescript-starter/agents/verification-runner.md"
+    },
+    {
+      "name": "web-researcher",
+      "path": "plugins/typescript-starter/agents/web-researcher.md"
+    },
+    {
+      "name": "workflow-orchestrator",
+      "path": "plugins/typescript-starter/agents/workflow-orchestrator.md"
+    }
+  ],
+  "hooks": [
+    {
+      "name": "block-dangerous-ops.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/block-dangerous-ops.sh",
+      "events": [
+        "PreToolUse"
+      ]
+    },
+    {
+      "name": "check-branch-freshness.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/check-branch-freshness.sh",
+      "events": [
+        "SessionStart"
+      ]
+    },
+    {
+      "name": "check-format.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/check-format.sh",
+      "events": [
+        "PostToolUse"
+      ]
+    },
+    {
+      "name": "check-pending-plans.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/check-pending-plans.sh",
+      "events": [
+        "Stop"
+      ]
+    },
+    {
+      "name": "check-resume.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/check-resume.sh",
+      "events": [
+        "SessionStart"
+      ]
+    },
+    {
+      "name": "check-scratchpad.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/check-scratchpad.sh",
+      "events": [
+        "SessionStart"
+      ]
+    },
+    {
+      "name": "debug-statement-warning.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/debug-statement-warning.sh",
+      "events": [
+        "PostToolUse"
+      ]
+    },
+    {
+      "name": "deps-audit-gate.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/deps-audit-gate.sh",
+      "events": [
+        "PreToolUse"
+      ]
+    },
+    {
+      "name": "detect-domain-resources.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/detect-domain-resources.sh",
+      "events": [
+        "SessionStart"
+      ]
+    },
+    {
+      "name": "detect-runtime-tools.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/detect-runtime-tools.sh",
+      "events": [
+        "SessionStart"
+      ]
+    },
+    {
+      "name": "error-critic.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/error-critic.sh",
+      "events": [
+        "PostToolUseFailure"
+      ]
+    },
+    {
+      "name": "freeze-gate.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/freeze-gate.sh",
+      "events": [
+        "PreToolUse"
+      ]
+    },
+    {
+      "name": "inject-iron-laws.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/inject-iron-laws.sh",
+      "events": [
+        "SubagentStart"
+      ]
+    },
+    {
+      "name": "iron-law-verifier.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/iron-law-verifier.sh",
+      "events": [
+        "PostToolUse"
+      ]
+    },
+    {
+      "name": "log-progress.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/log-progress.sh",
+      "events": [
+        "PostToolUse"
+      ]
+    },
+    {
+      "name": "plan-stop-reminder.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/plan-stop-reminder.sh",
+      "events": [
+        "PostToolUse"
+      ]
+    },
+    {
+      "name": "postcompact-verify.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/postcompact-verify.sh",
+      "events": [
+        "PostCompact"
+      ]
+    },
+    {
+      "name": "precompact-rules.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/precompact-rules.sh",
+      "events": [
+        "PreCompact"
+      ]
+    },
+    {
+      "name": "route-intent.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/route-intent.sh",
+      "events": [
+        "UserPromptSubmit"
+      ]
+    },
+    {
+      "name": "security-reminder.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/security-reminder.sh",
+      "events": [
+        "PostToolUse"
+      ]
+    },
+    {
+      "name": "setup-dirs.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/setup-dirs.sh",
+      "events": [
+        "SessionStart"
+      ]
+    },
+    {
+      "name": "stop-failure-log.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/stop-failure-log.sh",
+      "events": [
+        "StopFailure"
+      ]
+    },
+    {
+      "name": "typescript-failure-hints.sh",
+      "path": "plugins/typescript-starter/hooks/scripts/typescript-failure-hints.sh",
+      "events": [
+        "PostToolUseFailure"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "skill": "security",
+  "description_summary": "Use when reviewing input validation, SQL injection, error exposure, storage paths, stream boundaries, secrets, or a proposed authentication/authorization boundary.",
+  "should_trigger": [
+    "Audit the starter boundary validation and accidental secret exposure.",
+    "Review SQL error handling for leaked parameters and driver details.",
+    "Check storage filename traversal and document shape validation.",
+    "Assess authorization assumptions before treating Session IDs as identity.",
+    "Review client bundles for server-only configuration leaks."
+  ],
+  "should_trigger_test": [
+    "Design security tests for a future identity feature without claiming auth exists today.",
+    "Inspect REST, SSE and WebSocket trust boundaries without destructive live probes."
+  ],
+  "should_not_trigger": [
+    "Audit retained React state after repeated screen mount and unmount.",
+    "Find the suspected N+1 queries in this Drizzle loader.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Freeze edits to the database package for this investigation.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

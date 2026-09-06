@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 1,
+  "starterSnapshotSha256": "a1ce35559cd9237e323123b3ce8143fd6add2d6bf94c6203d769243d7a380636",
+  "examples": [
+    {
+      "id": "contract-dto",
+      "sourcePath": "packages/types/src/session.ts",
+      "sourceSha256": "cd5abcb4ab2f0362d54117500de6e57df4c904df114fc0f49e1fc5771a7db932",
+      "snippet": "export type CreateSessionInput = Static<typeof CreateSessionSchema>;\n\n/** Partial by design: only the fields actually sent are applied. */",
+      "fixturePath": "test-assets/packages/types/src/session.ts",
+      "categories": [
+        "contract-dto"
+      ],
+      "verificationRunIds": [
+        "types-contracts"
+      ]
+    },
+    {
+      "id": "contract-envelope",
+      "sourcePath": "packages/types/src/schemas/common.ts",
+      "sourceSha256": "704f85dbe43d8e3b8378f669db307a99fd5505856e853383f27a339813dd0a65",
+      "snippet": "export const DetailOf = <T extends TSchema>(schema: T) =>\n  ObjectType({ data: schema });\n\n/** List totals retain the existing numeric wire contract. */\nexport const ListOf = <T extends TSchema>(schema: T) =>\n  ObjectType({\n    data: ArrayType(schema),\n    total: Integer({ minimum: 0 }),\n  });",
+      "fixturePath": "test-assets/packages/types/src/schemas/common.ts",
+      "categories": [
+        "response-envelope"
+      ],
+      "verificationRunIds": [
+        "types-contracts"
+      ]
+    },
+    {
+      "id": "route-create",
+      "sourcePath": "apps/api/src/modules/sessions/routes.ts",
+      "sourceSha256": "3e683de162f38753b09c693cb110900cc5acdeeabea3c126bba125667c621162",
+      "snippet": "    app.post(\n      '/sessions',\n      {\n        schema: {\n          summary: 'Create a session.',\n          tags: ['sessions'],\n          body: CreateSessionSchema,\n          response: { 201: SessionDetailSchema, 429: ErrorResponseSchema },\n        },\n      },\n      async (request, reply) =>\n        reply.code(201).send({ data: await service.create(request.body) }),\n    );",
+      "fixturePath": "test-assets/apps/api/src/modules/sessions/routes.ts",
+      "categories": [
+        "fastify-route"
+      ],
+      "verificationRunIds": [
+        "api-sessions"
+      ]
+    },
+    {
+      "id": "service-update",
+      "sourcePath": "apps/api/src/modules/sessions/service.ts",
+      "sourceSha256": "7d9d0393396c6549831fab54fdf9b05bf41c964b2bc8300d18917272ae240cb7",
+      "snippet": "  async update(\n    sessionId: SessionId,\n    patch: UpdateSessionInput,\n  ): Promise<SessionSnapshot> {\n    const result = await this.ctx.repositories.sessions.update(\n      sessionId,\n      patch,\n    );\n    if (!result) throw notFound(sessionId);\n\n    const { value: snapshot, ...metadata } = result;\n    const withParticipants = this.withParticipants(snapshot);\n    this.ctx.bus.broadcast(sessionId, {\n      ...metadata,\n      type: 'session_updated',\n      sessionId,\n      session: withParticipants,\n    });\n    return withParticipants;\n  }",
+      "fixturePath": "test-assets/apps/api/src/modules/sessions/service.ts",
+      "categories": [
+        "fastify-service"
+      ],
+      "verificationRunIds": [
+        "api-sessions"
+      ]
+    },
+    {
+      "id": "job-port",
+      "sourcePath": "packages/db/src/repository.ts",
+      "sourceSha256": "8b154bb240982b005afc3d652670a3f636308a475a5fedfb7e944eb41967fe94",
+      "snippet": "export interface JobOwnership {\n  id: string;\n  token: string;\n}\n\nexport interface ClaimedJob extends JobRecord {\n  leaseExpiresAt: Date;\n  ownershipToken: string;\n}",
+      "fixturePath": "test-assets/packages/db/src/repository.ts",
+      "categories": [
+        "job-ownership"
+      ],
+      "verificationRunIds": [
+        "memory-and-isolation"
+      ]
+    },
+    {
+      "id": "job-tick",
+      "sourcePath": "apps/worker/src/runner.ts",
+      "sourceSha256": "551d670aaeab8edd5917f3c3fe577b24b8eea0797d8009ffd260938dc493d383",
+      "snippet": "  tick(): Promise<TickResult> {\n    if (this.stopped || this.active)\n      return Promise.resolve({ processed: 0, failed: 0 });\n    this.active = this.drainBatch().finally(() => {\n      this.active = null;\n    });\n    return this.active;\n  }",
+      "fixturePath": "test-assets/apps/worker/src/runner.ts",
+      "categories": [
+        "job-sequencing"
+      ],
+      "verificationRunIds": [
+        "worker-retry-idempotency"
+      ]
+    },
+    {
+      "id": "database-error",
+      "sourcePath": "packages/db/src/errors.ts",
+      "sourceSha256": "434e3e53fd95fe66bbdbbefc956a44a8728584de2696c79df5c9cb116767bb45",
+      "snippet": "export function databaseErrorMessage(error: unknown): string | undefined {\n  if (!(error instanceof DrizzleQueryError)) return undefined;\n\n  const cause = error.cause;\n  const code = cause && 'code' in cause ? cause.code : undefined;\n  return typeof code === 'string' &&\n    code.length === 5 &&\n    /^[0-9A-Z]{5}$/.test(code)\n    ? `Database query failed (SQLSTATE ${code})`\n    : 'Database query failed';\n}",
+      "fixturePath": "test-assets/packages/db/src/errors.ts",
+      "categories": [
+        "database-error"
+      ],
+      "verificationRunIds": [
+        "postgres-and-migrations"
+      ]
+    },
+    {
+      "id": "projection",
+      "sourcePath": "packages/types/src/session-projection.ts",
+      "sourceSha256": "7c74dc33ce99d148e5216c73f0d0897b3ecefa4b6b92d74fbac4b704917db897",
+      "snippet": "function dedupeParticipants(\n  participants: SessionParticipant[],\n): SessionParticipant[] {\n  const seen = new Map<string, SessionParticipant>();\n  for (const participant of participants) {\n    seen.set(participant.clientId, participant);\n  }\n  return [...seen.values()];\n}",
+      "fixturePath": "test-assets/packages/types/src/session-projection.ts",
+      "categories": [
+        "client-projection"
+      ],
+      "verificationRunIds": [
+        "types-contracts"
+      ]
+    },
+    {
+      "id": "server-action",
+      "sourcePath": "apps/web/app/actions/actions.ts",
+      "sourceSha256": "f1cb5437daf1d7975141850e7c902e24828834c0e1396d829e7fba6782731f95",
+      "snippet": "export async function updateSession(\n  sessionId: SessionId,\n  input: UpdateSessionInput,\n): Promise<ActionResult<SessionSnapshot>> {\n  return runMutation(\n    () => client().updateSession(sessionId, input),\n    `/sessions/${sessionId}`,\n  );\n}",
+      "fixturePath": "test-assets/apps/web/app/actions/actions.ts",
+      "categories": [
+        "server-action"
+      ],
+      "verificationRunIds": [
+        "web-server-actions"
+      ]
+    },
+    {
+      "id": "mobile-port",
+      "sourcePath": "apps/mobile/src/services/apiService.ts",
+      "sourceSha256": "41d6eb269a0588d419018b53cd887dadbe27d0597f91d425e6765808cb6523ba",
+      "snippet": "export interface ApiService {\n  listSessions(): Promise<SessionSummary[]>;\n  getSession(sessionId: SessionId): Promise<SessionSnapshot>;\n  createSession(input: CreateSessionInput): Promise<SessionSnapshot>;\n  updateSession(\n    sessionId: SessionId,\n    input: UpdateSessionInput,\n  ): Promise<SessionSnapshot>;\n  addItem(\n    sessionId: SessionId,\n    input: CreateSessionItemInput,\n  ): Promise<SessionItem>;\n  updateItem(\n    sessionId: SessionId,\n    itemId: SessionItemId,\n    input: UpdateSessionItemInput,\n  ): Promise<SessionItem>;\n  removeItem(sessionId: SessionId, itemId: SessionItemId): Promise<void>;\n}",
+      "fixturePath": "test-assets/apps/mobile/src/services/apiService.ts",
+      "categories": [
+        "mobile-port"
+      ],
+      "verificationRunIds": [
+        "mobile-service"
+      ]
+    },
+    {
+      "id": "narrow-storage-error",
+      "sourcePath": "apps/worker/src/handlers/archive-session.ts",
+      "sourceSha256": "f927f29c3ad4a882b2c34d42efa14f3615d482930e9d180da70aa015de3d2a2c",
+      "snippet": "      async function alreadyPublished(): Promise<boolean> {\n        ctx.signal.throwIfAborted();\n        try {\n          await store.read(fileName);\n          ctx.signal.throwIfAborted();\n          return true;\n        } catch (error) {\n          ctx.signal.throwIfAborted();\n          if (error instanceof DocumentStoreError) {\n            if (error.kind === 'not-found') return false;\n            if (error.kind === 'invalid-document')\n              throw new PermanentJobError(\n                'Existing archive is invalid; operator repair is required.',\n              );\n          }\n          throw error;\n        }\n      }",
+      "fixturePath": "test-assets/apps/worker/src/handlers/archive-session.ts",
+      "categories": [
+        "narrow-storage-error"
+      ],
+      "verificationRunIds": [
+        "worker-retry-idempotency"
+      ]
+    },
+    {
+      "id": "inject-test",
+      "sourcePath": "apps/api/src/modules/sessions/__tests__/routes.test.ts",
+      "sourceSha256": "d00fbf67ef1b62303f9306430342b846853ebd94389b5eabc7983de1f906342f",
+      "snippet": "  it('rejects an invalid body with the canonical error envelope', async () => {\n    const response = await app.inject({\n      method: 'POST',\n      url: '/sessions',\n      payload: { name: '' },\n    });\n\n    expect(response.statusCode).toBe(400);\n    expect(response.json()).toEqual({\n      error: { code: 'VALIDATION_FAILED', message: expect.any(String) },\n    });\n  });",
+      "fixturePath": "test-assets/apps/api/src/modules/sessions/__tests__/routes.test.ts",
+      "categories": [
+        "inject-test"
+      ],
+      "verificationRunIds": [
+        "api-sessions"
+      ]
+    },
+    {
+      "id": "typebox-input",
+      "sourcePath": "packages/types/src/schemas/session.ts",
+      "sourceSha256": "818545b66dfda834bdd8f90d294d062fc1c9e4d1d56f21d4746dcfa5ae0616b9",
+      "snippet": "export const CreateSessionSchema = ObjectType(\n  {\n    name: StringType({ minLength: 1, maxLength: 200 }),\n    items: Optional(ArrayType(CreateSessionItemSchema, { maxItems: 500 })),\n  },\n  { additionalProperties: false },\n);",
+      "fixturePath": "test-assets/packages/types/src/schemas/session.ts",
+      "categories": [
+        "typebox-contract"
+      ],
+      "verificationRunIds": [
+        "types-contracts"
+      ]
+    },
+    {
+      "id": "memory-repository",
+      "sourcePath": "packages/db/src/memory-repository.ts",
+      "sourceSha256": "e96df6d0ba64a3a50cfa779086653807d786d89e420a42ca0a8d18a817ccbd93",
+      "snippet": "  async create(\n    input: CreateSessionInput,\n  ): Promise<SessionMutation<SessionSnapshot>> {\n    const now = new Date().toISOString();\n    const session: StoredSession = {\n      id: randomUUID(),\n      revision: 1,\n      name: input.name,\n      status: 'idle',\n      items: (input.items ?? []).map((item, index) => buildItem(item, index)),\n      createdAt: now,\n      updatedAt: now,\n      lastReadAt: Date.now(),\n    };\n    this.sessions.set(session.id, session);\n    return sessionResult(toSnapshot(session), session);\n  }",
+      "fixturePath": "test-assets/packages/db/src/memory-repository.ts",
+      "categories": [
+        "repository-memory"
+      ],
+      "verificationRunIds": [
+        "memory-and-isolation"
+      ]
+    },
+    {
+      "id": "postgres-repository",
+      "sourcePath": "packages/db/src/drizzle-repository.ts",
+      "sourceSha256": "a5a7d78f5e0601db55402ba870d33b4d3597e5e6e247505655a7f5a2b752a7fc",
+      "snippet": "  private async readSnapshot(sessionId: SessionId) {\n    // Session fields, children and revision come from one MVCC statement snapshot.\n    const rows = await this.db\n      .select({ session: sessions, item: sessionItems })\n      .from(sessions)\n      .leftJoin(sessionItems, eq(sessionItems.sessionId, sessions.id))\n      .where(eq(sessions.id, sessionId));\n    const first = rows[0];\n    return first\n      ? {\n          session: first.session,\n          items: rows.flatMap(({ item }) => (item ? [item] : [])),\n        }\n      : null;\n  }",
+      "fixturePath": "test-assets/packages/db/src/drizzle-repository.ts",
+      "categories": [
+        "repository-postgres"
+      ],
+      "verificationRunIds": [
+        "postgres-and-migrations"
+      ]
+    },
+    {
+      "id": "session-revision-migration",
+      "sourcePath": "packages/db/drizzle/0004_session_revisions.sql",
+      "sourceSha256": "b6e1e907d267d90f18b111c3a5136a45d543834f585e265ac659fa430f608b04",
+      "snippet": "ALTER TABLE \"sessions\" ADD COLUMN \"revision\" bigint DEFAULT 0 NOT NULL;--> statement-breakpoint\nALTER TABLE \"sessions\" ADD CONSTRAINT \"sessions_revision_check\" CHECK (\"sessions\".\"revision\" between 0 and 9007199254740991);",
+      "fixturePath": "test-assets/packages/db/drizzle/0004_session_revisions.sql",
+      "categories": [
+        "schema-migration"
+      ],
+      "verificationRunIds": [
+        "postgres-and-migrations"
+      ]
+    },
+    {
+      "id": "sse-proxy",
+      "sourcePath": "apps/web/app/api/sessions/[sessionId]/events/route.ts",
+      "sourceSha256": "e3e3c4d834b28a11bde4187392bc0a8f6a81ec9e3f92fb8913350fd6a7b49cdc",
+      "snippet": "  const protocol = request.nextUrl.searchParams.getAll('protocol');\n  const query = new URLSearchParams();\n  for (const value of protocol) query.append('protocol', value);\n  const streamUrl = `${baseUrl}/sessions/${encodeURIComponent(sessionId)}/events${query.size ? `?${query}` : ''}`;\n  const deadline = createRequestDeadline(10_000, request.signal);\n  try {\n    deadline.signal.throwIfAborted();\n    const upstream = await fetch(streamUrl, {\n      headers: { Accept: 'text/event-stream' },\n      signal: deadline.signal,\n      cache: 'no-store',\n    });",
+      "fixturePath": "test-assets/apps/web/app/api/sessions/[sessionId]/events/route.ts",
+      "categories": [
+        "sse-proxy"
+      ],
+      "verificationRunIds": [
+        "web-sse-recovery"
+      ]
+    },
+    {
+      "id": "sse-update",
+      "sourcePath": "apps/web/lib/session-stream.ts",
+      "sourceSha256": "6cc05ebb3aea5392922bbe78a8e3fd8cbf43c708ad9592275519827ceea5b9d9",
+      "snippet": "      const next = applySessionRecoveryEvent(recovery, value);\n      if (next === recovery) return;\n      const previous = recovery.status;\n      recovery = next;\n      handlers.onRecovery(recovery);\n      if (!current()) return;\n      if (recovery.status === 'deleted' || recovery.status === 'unsupported') {\n        stop();\n        handlers.onStatusChange(\n          recovery.status === 'deleted' ? 'closed' : 'error',\n        );\n      } else if (recovery.status === 'resync') retry('error');\n      else if (recovery.status === 'live' && previous !== 'live') {\n        clearBootstrap();\n        delay = INITIAL_DELAY_MS;\n        handlers.onStatusChange('open');\n      }",
+      "fixturePath": "test-assets/apps/web/lib/session-stream.ts",
+      "categories": [
+        "sse-update"
+      ],
+      "verificationRunIds": [
+        "web-sse-recovery"
+      ]
+    },
+    {
+      "id": "mobile-store",
+      "sourcePath": "apps/mobile/src/store/sessionsStore.ts",
+      "sourceSha256": "82c0cc9e118ae0a71764eb96cd88c10b720a1857ac22d3e8641409e8c31e075a",
+      "snippet": "  setRecovery: (owner, recovery) =>\n    set((state) => {\n      if (state.activeOwner !== owner) return state;\n      if (recovery.status === 'deleted')\n        return {\n          active: null,\n          summaries: state.summaries.filter(\n            (row) => row.id !== recovery.sessionId,\n          ),\n        };\n      if (recovery.status === 'unsupported') return { active: null };\n      if (!recovery.snapshot || recovery.snapshot === state.active)\n        return state;\n      return {\n        active: recovery.snapshot,\n        summaries: syncSummary(state.summaries, recovery.snapshot),\n      };\n    }),",
+      "fixturePath": "test-assets/apps/mobile/src/store/sessionsStore.ts",
+      "categories": [
+        "mobile-store"
+      ],
+      "verificationRunIds": [
+        "mobile-store-and-hook"
+      ]
+    },
+    {
+      "id": "mobile-hook",
+      "sourcePath": "apps/mobile/src/screens/SessionDetail/useSessionDetail.ts",
+      "sourceSha256": "7103f77353155074580f3322916589337bb9a27df217fcae3622a500ea8d6076",
+      "snippet": "  const connection = useMemo(\n    () => ({ api, apiUrl, sessionId, token: Symbol(sessionId) }),\n    [api, apiUrl, sessionId],\n  );\n  const session = useSessionsStore((state) =>\n    state.activeOwner === connection.token ? state.active : null,\n  );",
+      "fixturePath": "test-assets/apps/mobile/src/screens/SessionDetail/useSessionDetail.ts",
+      "categories": [
+        "mobile-hook"
+      ],
+      "verificationRunIds": [
+        "mobile-store-and-hook"
+      ]
+    },
+    {
+      "id": "mobile-service-update",
+      "sourcePath": "apps/mobile/src/services/apiService.ts",
+      "sourceSha256": "41d6eb269a0588d419018b53cd887dadbe27d0597f91d425e6765808cb6523ba",
+      "snippet": "    updateSession: (sessionId, input) =>\n      data(`/sessions/${sessionId}`, isSessionSnapshot, {\n        method: 'PATCH',\n        body: input,\n      }),",
+      "fixturePath": "test-assets/apps/mobile/src/services/apiService.ts",
+      "categories": [
+        "mobile-service"
+      ],
+      "verificationRunIds": [
+        "mobile-service"
+      ]
+    },
+    {
+      "id": "job-retry",
+      "sourcePath": "apps/worker/src/runner.ts",
+      "sourceSha256": "551d670aaeab8edd5917f3c3fe577b24b8eea0797d8009ffd260938dc493d383",
+      "snippet": "          const backoff = this.backoffFor(job.attempts);\n          const permanent = failure instanceof PermanentJobError;\n          const retrying = !permanent && job.attempts < job.maxAttempts;\n          this.log.warn('job failed', {\n            kind: job.kind,\n            id: job.id,\n            attempt: job.attempts,\n            maxAttempts: job.maxAttempts,\n            disposition: permanent\n              ? 'abandoned'\n              : retrying\n                ? 'retry'\n                : 'exhausted',\n            ...(retrying ? { retryInMs: backoff } : {}),\n            error: databaseErrorMessage(failure) ?? failure,\n          });\n          await this.acknowledge(permanent ? 'abandon' : 'fail', () =>\n            permanent\n              ? this.repositories.jobs.abandon(ownership, message)\n              : this.repositories.jobs.fail(ownership, message, backoff),\n          );",
+      "fixturePath": "test-assets/apps/worker/src/runner.ts",
+      "categories": [
+        "job-retry"
+      ],
+      "verificationRunIds": [
+        "worker-retry-idempotency"
+      ]
+    },
+    {
+      "id": "job-idempotency",
+      "sourcePath": "apps/worker/src/handlers/archive-session.ts",
+      "sourceSha256": "f927f29c3ad4a882b2c34d42efa14f3615d482930e9d180da70aa015de3d2a2c",
+      "snippet": "      if (await alreadyPublished()) {\n        ctx.log.info('archive already published', {\n          sessionId,\n          jobId,\n          fileName,\n        });\n        return;\n      }",
+      "fixturePath": "test-assets/apps/worker/src/handlers/archive-session.ts",
+      "categories": [
+        "job-idempotency"
+      ],
+      "verificationRunIds": [
+        "worker-retry-idempotency"
+      ]
+    }
+  ],
+  "verificationRuns": [
+    {
+      "id": "types-contracts",
+      "command": [
+        "pnpm",
+        "--filter",
+        "@starter/types",
+        "exec",
+        "vitest",
+        "run",
+        "src/__tests__/session-inputs.test.ts",
+        "src/__tests__/response-envelopes.test.ts",
+        "src/__tests__/session-projection.test.ts"
+      ],
+      "testFiles": [
+        {
+          "path": "packages/types/src/__tests__/session-inputs.test.ts",
+          "sha256": "8908f5e5059efb5260c1d33f13c5e88fa83ab7c21800afb09646fa51276fec95"
+        },
+        {
+          "path": "packages/types/src/__tests__/response-envelopes.test.ts",
+          "sha256": "81deb76355825d254dfb83b4d2484ae038dd9f03a6ce5195d5a88afa9ec9b691"
+        },
+        {
+          "path": "packages/types/src/__tests__/session-projection.test.ts",
+          "sha256": "49ef0ec665bfa90d34b7599ef61d11c5916be01e97b456cce2f4dbfb09c49efa"
+        }
+      ],
+      "exitCode": 0,
+      "passedTests": 54,
+      "durationSeconds": 1.18,
+      "evidencePath": "docs/reference/example-verification.md"
+    },
+    {
+      "id": "api-sessions",
+      "command": [
+        "pnpm",
+        "--filter",
+        "@starter/api",
+        "exec",
+        "vitest",
+        "run",
+        "src/modules/sessions/__tests__/service.test.ts",
+        "src/modules/sessions/__tests__/routes.test.ts"
+      ],
+      "testFiles": [
+        {
+          "path": "apps/api/src/modules/sessions/__tests__/service.test.ts",
+          "sha256": "e6933d9ce806d7184b99bcb477395aea526a3b3e65161c297891ae24134ad90d"
+        },
+        {
+          "path": "apps/api/src/modules/sessions/__tests__/routes.test.ts",
+          "sha256": "d00fbf67ef1b62303f9306430342b846853ebd94389b5eabc7983de1f906342f"
+        }
+      ],
+      "exitCode": 0,
+      "passedTests": 26,
+      "durationSeconds": 4.64,
+      "evidencePath": "docs/reference/example-verification.md"
+    },
+    {
+      "id": "memory-and-isolation",
+      "command": [
+        "pnpm",
+        "--filter",
+        "@starter/db",
+        "exec",
+        "vitest",
+        "run",
+        "src/__tests__/repositories.test.ts",
+        "src/__tests__/disposable-postgres.test.ts"
+      ],
+      "testFiles": [
+        {
+          "path": "packages/db/src/__tests__/repositories.test.ts",
+          "sha256": "3e170240769710b20d1a8ffca1f3c82e4ef716b987ae95ad4ff28a53e9deeb84"
+        },
+        {
+          "path": "packages/db/src/__tests__/disposable-postgres.test.ts",
+          "sha256": "e7cae8cda0d2df7a4af5dd2a6b354c9269986882712164a93571f0f17e1dc37e"
+        }
+      ],
+      "exitCode": 0,
+      "passedTests": 112,
+      "durationSeconds": 1.04,
+      "evidencePath": "docs/reference/example-verification.md"
+    },
+    {
+      "id": "postgres-and-migrations",
+      "command": [
+        "pnpm",
+        "--filter",
+        "@starter/db",
+        "test:postgres"
+      ],
+      "testFiles": [
+        {
+          "path": "packages/db/src/__tests__/postgres.test.ts",
+          "sha256": "d1784536245eb8954a122dd4081f77800a7591aa89b44ec57cccce6b0d94bc33"
+        },
+        {
+          "path": "packages/db/src/__tests__/postgres-session-migration.ts",
+          "sha256": "795e71c08de222cb73f7e2d6c9aa6c149ac82c6c05b5ab53dca5fa3d820ab3e9"
+        },
+        {
+          "path": "packages/db/src/__tests__/postgres-job-migration.ts",
+          "sha256": "2bf53e195c09ef70ec57a27cefc7624934918ef0c787676c72671f189c1ab4af"
+        }
+      ],
+      "exitCode": 0,
+      "passedTests": 112,
+      "durationSeconds": 22.21,
+      "evidencePath": "docs/reference/example-verification.md"
+    },
+    {
+      "id": "web-server-actions",
+      "command": [
+        "pnpm",
+        "--filter",
+        "@starter/web",
+        "exec",
+        "vitest",
+        "run",
+        "lib/__tests__/action-results.test.ts"
+      ],
+      "testFiles": [
+        {
+          "path": "apps/web/lib/__tests__/action-results.test.ts",
+          "sha256": "161ea55330b4f2d3fefdb22be48ea4a30ddbf2e5734b933fedcf7d119c38d224"
+        }
+      ],
+      "exitCode": 0,
+      "passedTests": 22,
+      "durationSeconds": 3.31,
+      "evidencePath": "docs/reference/example-verification.md"
+    },
+    {
+      "id": "web-sse-recovery",
+      "command": [
+        "pnpm",
+        "--filter",
+        "@starter/web",
+        "exec",
+        "vitest",
+        "run",
+        "lib/__tests__/sse-proxy.test.ts",
+        "lib/__tests__/session-stream.test.ts"
+      ],
+      "testFiles": [
+        {
+          "path": "apps/web/lib/__tests__/sse-proxy.test.ts",
+          "sha256": "a532fe3a8373822feb97568bbb145e4aba4d607430cbcf0934505bd86cabb682"
+        },
+        {
+          "path": "apps/web/lib/__tests__/session-stream.test.ts",
+          "sha256": "865e250aa1984e210dff30a407cd2ac23abfbf6310cf909e04e3e9183d61fa91"
+        }
+      ],
+      "exitCode": 0,
+      "passedTests": 24,
+      "durationSeconds": 1.02,
+      "evidencePath": "docs/reference/example-verification.md"
+    },
+    {
+      "id": "mobile-service",
+      "command": [
+        "pnpm",
+        "--filter",
+        "@starter/mobile",
+        "exec",
+        "vitest",
+        "run",
+        "src/services/__tests__/apiService.test.ts"
+      ],
+      "testFiles": [
+        {
+          "path": "apps/mobile/src/services/__tests__/apiService.test.ts",
+          "sha256": "a68c63f9cf2b71b89879220391fff7240f960f38ec82aba4695690fd35f611dd"
+        }
+      ],
+      "exitCode": 0,
+      "passedTests": 22,
+      "durationSeconds": 2.13,
+      "evidencePath": "docs/reference/example-verification.md"
+    },
+    {
+      "id": "mobile-store-and-hook",
+      "command": [
+        "pnpm",
+        "--filter",
+        "@starter/mobile",
+        "exec",
+        "vitest",
+        "run",
+        "src/store/__tests__/sessionsStore.test.ts",
+        "src/screens/SessionDetail/__tests__/useSessionDetail.test.ts",
+        "src/screens/SessionDetail/__tests__/loadOwnership.test.ts",
+        "src/screens/SessionDetail/__tests__/recovery.test.ts"
+      ],
+      "testFiles": [
+        {
+          "path": "apps/mobile/src/store/__tests__/sessionsStore.test.ts",
+          "sha256": "ab897720c791e29f6fc2af91c9c73f686953fda88450c7f4d918ab42fd82a790"
+        },
+        {
+          "path": "apps/mobile/src/screens/SessionDetail/__tests__/useSessionDetail.test.ts",
+          "sha256": "6a38237575794f38231e7db80b99739ba157537a32f4bf67de17b6cadda90dc6"
+        },
+        {
+          "path": "apps/mobile/src/screens/SessionDetail/__tests__/loadOwnership.test.ts",
+          "sha256": "fa2a14c561afb002562debc2ef51f1e5b922f831ac72c25e451785cb409cfa35"
+        },
+        {
+          "path": "apps/mobile/src/screens/SessionDetail/__tests__/recovery.test.ts",
+          "sha256": "91156dbc7289ec3c193bd83a14630a317c1bb8073779f545cc79aa7febadf535"
+        }
+      ],
+      "exitCode": 0,
+      "passedTests": 28,
+      "durationSeconds": 1.29,
+      "evidencePath": "docs/reference/example-verification.md"
+    },
+    {
+      "id": "worker-retry-idempotency",
+      "command": [
+        "pnpm",
+        "--filter",
+        "@starter/worker",
+        "exec",
+        "vitest",
+        "run",
+        "src/__tests__/runner.test.ts",
+        "src/__tests__/leases.test.ts",
+        "src/handlers/__tests__/archive-session.test.ts"
+      ],
+      "testFiles": [
+        {
+          "path": "apps/worker/src/__tests__/runner.test.ts",
+          "sha256": "d7077bc9e8f6141c6bede24c925c0a2c3cd11138132ae81274fd75a7508955ed"
+        },
+        {
+          "path": "apps/worker/src/__tests__/leases.test.ts",
+          "sha256": "619e953559389ca12a5bbd3eb72ba296e28b4a893c86f9d206c3be69e594276c"
+        },
+        {
+          "path": "apps/worker/src/handlers/__tests__/archive-session.test.ts",
+          "sha256": "4c78057cf5b4c05983cd07f30ecbdb87a0ee191e16d39a79e247e9708b0e990c"
+        }
+      ],
+      "exitCode": 0,
+      "passedTests": 50,
+      "durationSeconds": 3.47,
+      "evidencePath": "docs/reference/example-verification.md"
+    }
+  ]
+}

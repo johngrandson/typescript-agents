@@ -1,0 +1,22 @@
+{
+  "skill": "verify",
+  "description_summary": "Use after TypeScript starter edits to verify workspace typechecks, ESLint, Vitest tests, schema contracts and relevant integration gates.",
+  "should_trigger": [
+    "Run the appropriate typechecks, lint and tests for these starter changes.",
+    "Verify the affected workspace and its shared-contract consumers.",
+    "Choose integration checks after this database migration change.",
+    "Run pnpm verify before claiming this task is complete.",
+    "Report failed, unavailable and unexecuted verification separately."
+  ],
+  "should_trigger_test": [
+    "Select mobile compatibility checks without claiming browser tests cover native rendering.",
+    "Verify package exports with builds when typechecks alone do not exercise packaging."
+  ],
+  "should_not_trigger": [
+    "Write Vitest coverage for this Fastify response envelope using inject.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation.",
+    "Watch this pull request for new review comments and check results."
+  ]
+}

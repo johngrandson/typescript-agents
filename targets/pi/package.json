@@ -1,0 +1,32 @@
+{
+  "name": "pi-typescript-starter",
+  "version": "1.0.0",
+  "description": "Generated TypeScript, Fastify, React, Drizzle, worker, testing, and security skills for Pi",
+  "keywords": [
+    "typescript",
+    "node",
+    "fastify",
+    "typebox",
+    "react",
+    "react-native",
+    "expo",
+    "nextjs",
+    "turborepo",
+    "drizzle",
+    "postgresql",
+    "pi-package"
+  ],
+  "author": {
+    "name": "João"
+  },
+  "homepage": null,
+  "repository": null,
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  }
+}

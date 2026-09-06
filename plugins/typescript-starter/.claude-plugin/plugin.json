@@ -1,0 +1,25 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "TypeScript starter workflows for Fastify, TypeBox, Next.js, Expo, Turborepo, Drizzle and PostgreSQL",
+  "keywords": [
+    "typescript",
+    "node",
+    "fastify",
+    "typebox",
+    "react",
+    "react-native",
+    "expo",
+    "nextjs",
+    "turborepo",
+    "drizzle",
+    "postgresql"
+  ],
+  "author": {
+    "name": "João"
+  },
+  "dependencies": [
+    "drizzle",
+    "react"
+  ]
+}

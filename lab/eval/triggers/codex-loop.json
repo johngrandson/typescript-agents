@@ -1,0 +1,22 @@
+{
+  "skill": "codex-loop",
+  "description_summary": "Use when the Codex CLI should review TypeScript starter changes in a bounded review, fix and verify loop before a PR.",
+  "should_trigger": [
+    "Run local Codex review and fix findings until the bounded loop is clean.",
+    "Use the installed Codex CLI to review this working tree repeatedly.",
+    "Repair actionable findings from local codex review with verification between rounds.",
+    "Continue the local Codex review loop for at most three rounds.",
+    "Review local changes with Codex and retain failure exit codes."
+  ],
+  "should_trigger_test": [
+    "Handle an unavailable Codex CLI without claiming the review passed.",
+    "Stop the review loop when the same finding cannot be resolved safely."
+  ],
+  "should_not_trigger": [
+    "Watch this pull request for new review comments and check results.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Audit the pnpm lock dependency graph for supply-chain risks.",
+    "Find the suspected N+1 queries in this Drizzle loader.",
+    "Initialize this plugin for the current TypeScript starter workspace."
+  ]
+}

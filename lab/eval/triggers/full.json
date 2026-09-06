@@ -1,0 +1,22 @@
+{
+  "skill": "full",
+  "description_summary": "Use when delivering a new coordinated starter feature through planning, implementation, verification, review and solution capture; existing plans route to work.",
+  "should_trigger": [
+    "Run the complete feature lifecycle from planning through verified review.",
+    "Implement this feature with the full bounded plan work review workflow.",
+    "Resume the autonomous workflow from its recorded progress state.",
+    "Run full mode with a limited number of review correction cycles.",
+    "Carry this authorized feature through planning, implementation and final checks."
+  ],
+  "should_trigger_test": [
+    "Preserve the full workflow cycle count after context compaction.",
+    "Stop full mode with an explicit blocker when its recovery limit is reached."
+  ],
+  "should_not_trigger": [
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Fix this typo in one mobile component with a contained edit.",
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Freeze edits to the database package for this investigation."
+  ]
+}

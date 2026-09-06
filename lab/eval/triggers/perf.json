@@ -1,0 +1,22 @@
+{
+  "skill": "perf",
+  "description_summary": "Use when measuring starter SQL/API latency, event-loop stalls, retained React state, mobile transport delays, or worker throughput.",
+  "should_trigger": [
+    "Measure the cause of this slow API response before optimizing.",
+    "Investigate event loop delay and retained state under load.",
+    "Profile the mobile screen slowdown during repeated reconnects.",
+    "Find the dominant latency in this server and database request path.",
+    "Compare a performance baseline before and after this optimization."
+  ],
+  "should_trigger_test": [
+    "Measure JSON serialization cost for growing session snapshots.",
+    "Distinguish CPU blocking from slow I/O in the Node worker."
+  ],
+  "should_not_trigger": [
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Watch this pull request for new review comments and check results.",
+    "Freeze edits to the database package for this investigation.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}

@@ -1,0 +1,13 @@
+rules:
+  - id: decoded-eval
+    languages: [javascript, typescript]
+    message: Decoded bytes reach eval. Inspect source and lifecycle context.
+    severity: ERROR
+    pattern-either:
+      - pattern: eval(atob($VALUE))
+      - pattern: eval(Buffer.from($VALUE, "base64").toString())
+  - id: lifecycle-shell-download
+    languages: [javascript, typescript]
+    message: Child process execution needs review.
+    severity: WARNING
+    pattern: require("child_process").execSync($COMMAND)

@@ -1,0 +1,22 @@
+{
+  "skill": "deps-vet",
+  "description_summary": "Record dependency review evidence in dependency-vet.json after a pnpm/npm security audit. Use to inspect, seed, check, clear a justified finding or record an explicitly authorized accepted risk.",
+  "should_trigger": [
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Revoke the previous acceptance of this dependency artifact.",
+    "Review whether this audit meets our required deployment criterion.",
+    "Import a legacy dependency review as unverified evidence.",
+    "Record an explicitly accepted risk with the actual reviewer identity."
+  ],
+  "should_trigger_test": [
+    "Reject a vetting entry whose integrity no longer matches the lock.",
+    "Check whether an old package approval remains valid after a patch changed."
+  ],
+  "should_not_trigger": [
+    "Audit the pnpm lock dependency graph for supply-chain risks.",
+    "Update compatible dependency patches in the web workspace and verify them.",
+    "Review this branch diff for correctness and starter architecture issues.",
+    "Freeze edits to the database package for this investigation.",
+    "Fetch official Fastify documentation for the version in our lockfile."
+  ]
+}

@@ -1,0 +1,2 @@
+ALTER TABLE "sessions" ADD COLUMN "revision" bigint DEFAULT 0 NOT NULL;--> statement-breakpoint
+ALTER TABLE "sessions" ADD CONSTRAINT "sessions_revision_check" CHECK ("sessions"."revision" between 0 and 9007199254740991);

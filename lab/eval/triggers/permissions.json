@@ -1,0 +1,22 @@
+{
+  "skill": "permissions",
+  "description_summary": "Use when reviewing recent shell commands to propose narrowly scoped runtime permissions based on actual pnpm scripts and their effects.",
+  "should_trigger": [
+    "Recommend scoped Bash permissions for the actual pnpm package scripts.",
+    "Reduce repeated permission prompts without allowing destructive commands.",
+    "Inspect script contents before proposing command allow patterns.",
+    "Set up safe agent permissions for typechecks, lint and tests.",
+    "Review which deployment commands require separate target authorization."
+  ],
+  "should_trigger_test": [
+    "Explain why a broad pnpm wildcard grants more than verification commands.",
+    "Derive workspace permissions without enabling force pushes or database resets."
+  ],
+  "should_not_trigger": [
+    "Freeze edits to the database package for this investigation.",
+    "Execute the tasks in this existing implementation plan.",
+    "Audit the pnpm lock dependency graph for supply-chain risks.",
+    "Walk me through the reasoning behind this existing implementation plan.",
+    "Fetch official Fastify documentation for the version in our lockfile."
+  ]
+}

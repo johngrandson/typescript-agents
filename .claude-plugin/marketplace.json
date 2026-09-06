@@ -1,0 +1,74 @@
+{
+  "name": "typescript-starter-harness",
+  "owner": {
+    "name": "João"
+  },
+  "metadata": {
+    "description": "TypeScript Starter Harness: local development workflows",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "typescript-starter",
+      "description": "TypeScript/Fastify/React/Expo/Drizzle development workflows, specialist agents and local safeguards",
+      "author": {
+        "name": "João"
+      },
+      "source": "./plugins/typescript-starter",
+      "category": "development",
+      "tags": [
+        "typescript",
+        "node",
+        "react",
+        "expo",
+        "drizzle",
+        "turborepo"
+      ]
+    },
+    {
+      "name": "drizzle",
+      "description": "Compatibility namespace for the TypeScript starter plugin's /drizzle:* commands",
+      "author": {
+        "name": "João"
+      },
+      "source": "./plugins/drizzle",
+      "category": "development",
+      "tags": [
+        "typescript",
+        "drizzle",
+        "compatibility"
+      ]
+    },
+    {
+      "name": "react",
+      "description": "Compatibility namespace for the TypeScript starter plugin's /react:* commands",
+      "author": {
+        "name": "João"
+      },
+      "source": "./plugins/react",
+      "category": "development",
+      "tags": [
+        "typescript",
+        "react",
+        "react-native",
+        "compatibility"
+      ]
+    },
+    {
+      "name": "catchup",
+      "description": "Async-team return-from-absence briefing — /catchup fans out to GitHub, git, Linear, and calendar, then emits one prioritized Context Brief instead of a firehose. Framework-agnostic.",
+      "author": {
+        "name": "João"
+      },
+      "source": "./plugins/catchup",
+      "category": "productivity",
+      "tags": [
+        "productivity",
+        "briefing",
+        "async-team",
+        "github",
+        "linear"
+      ]
+    }
+  ]
+}

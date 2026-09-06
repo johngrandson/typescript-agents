@@ -1,0 +1,22 @@
+{
+  "skill": "drizzle-n1-check",
+  "description_summary": "Use when N+1 queries are suspected in repository calls inside loops or repeated SQL per parent record; not for unrelated database performance.",
+  "should_trigger": [
+    "Find the suspected N+1 queries in this Drizzle loader.",
+    "Count repeated repository queries as the result list grows.",
+    "Check whether this loop executes one SQL query per session.",
+    "Investigate missing batching in this database read path.",
+    "Compare query counts before and after eager loading these records."
+  ],
+  "should_trigger_test": [
+    "Confirm the suspected N+1 with actual SQL evidence instead of source hits alone.",
+    "Check whether a proposed join multiplies rows while reducing query count."
+  ],
+  "should_not_trigger": [
+    "Diagnose this Postgres unique constraint failure in a Drizzle repository.",
+    "Audit retained React state after repeated screen mount and unmount.",
+    "Record this reviewed exact package artifact in dependency-vet.json.",
+    "Watch this pull request for new review comments and check results.",
+    "Walk me through the reasoning behind this existing implementation plan."
+  ]
+}
