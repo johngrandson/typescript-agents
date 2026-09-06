@@ -38,3 +38,29 @@ Structural evaluations do not measure model-trigger accuracy.
 The [reference example observations](../reference/example-verification.md) pin
 source excerpts to the captured application. They do not replace current
 harness verification.
+
+## Observed local verification
+
+Verified on 2026-09-06 10:01 UTC in a fresh local clone of `16431f1`.
+Dependencies were installed from `requirements.txt` and the frozen pnpm lockfile
+in new local environments. No ignored project files were needed.
+
+- `pnpm verify`: passed.
+- Python suite: 561 passed, with no failures or skips.
+- Shell safeguard suite: 84 passed, zero failures.
+- Inventory, coverage, resource links and native Claude manifests: passed.
+- All five generated targets and their reviewed snapshots: passed.
+- Structural evaluations: all 51 skills passed the 0.95 threshold; all 26 agents
+  scored 1.000. Skill average was 0.984.
+- Markdown lint and local documentation links: passed.
+
+Tool versions were Node v22.23.1, pnpm 10.6.5,
+Python 3.12.2, and Bun 1.3.14. The initial commit also passed
+the full `make ci` release gate through the installed pre-commit hook.
+The repository checks also passed Ruff, YAML lint and ShellCheck.
+
+These are local results. Hosted GitHub Actions, native runtime smoke tests,
+provider evaluations, registry refresh and application database/browser/device
+checks were not run as part of this preparation. The optional SkillSpector scan
+was not run because the scanner was unavailable. No push or release publication
+was performed.
